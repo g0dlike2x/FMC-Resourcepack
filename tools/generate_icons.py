@@ -242,19 +242,25 @@ def sparkle_pts(cx, cy, r):
 # ── Zeichenflaeche ──────────────────────────────────────────────────────────
 
 class Icon:
-    def __init__(self):
-        self.m = N * SS
-        size = self.m * self.m
+    """Zeichenflaeche. Koordinaten sind "Einheiten"; ein Icon ist N x N Einheiten gross und wird mit
+    1 Pixel pro Einheit ausgegeben. Fuer groessere Flaechen (Panel) lassen sich Breite/Hoehe in Einheiten,
+    Pixel pro Einheit (scale) und Ueberabtastung (ss) angeben."""
+
+    def __init__(self, w=N, h=N, scale=1, ss=SS):
+        self.w, self.h, self.scale, self.ss = w, h, scale, ss
+        self.mw = w * scale * ss
+        self.mh = h * scale * ss
+        size = self.mw * self.mh
         self.R = [0.0] * size
         self.G = [0.0] * size
         self.B = [0.0] * size
         self.A = [0.0] * size
 
     def paint(self, sdf, color, grow=0.0, box=None):
-        S, m = SS, self.m
-        x0, y0, x1, y1 = box if box else (0, 0, N, N)
-        i0, i1 = max(0, int(x0 * S)), min(m, int(math.ceil(x1 * S)))
-        j0, j1 = max(0, int(y0 * S)), min(m, int(math.ceil(y1 * S)))
+        S, m = self.scale * self.ss, self.mw
+        x0, y0, x1, y1 = box if box else (0, 0, self.w, self.h)
+        i0, i1 = max(0, int(x0 * S)), min(self.mw, int(math.ceil(x1 * S)))
+        j0, j1 = max(0, int(y0 * S)), min(self.mh, int(math.ceil(y1 * S)))
         is_fn = callable(color)
         R, G, B, A = self.R, self.G, self.B, self.A
         for j in range(j0, j1):
@@ -280,7 +286,7 @@ class Icon:
         """Gefuellte Form mit Umriss, vertikalem Farbverlauf und Licht/Schatten am Rand."""
         top, bot = colors
         outline = outline or darker(bot, 0.6)
-        box = (0, max(0, y0 - 3), N, min(N, y1 + 3))
+        box = (0, max(0, y0 - 3), self.w, min(self.h, y1 + 3))
         self.paint(sdf, outline, grow=out, box=box)
         base = vgrad(y0, y1, top, bot)
         mid = (y0 + y1) / 2
@@ -299,19 +305,19 @@ class Icon:
 
         def col(x, y):
             return (255, 255, 255, strength * max(0.0, 1 - (y - y0) / (cut - y0)))
-        self.paint(region, col, box=(0, y0 - 1, N, cut + 1))
+        self.paint(region, col, box=(0, y0 - 1, self.w, cut + 1))
 
     def sparkle(self, cx, cy, r, alpha=0.95):
         self.paint(sd_poly(sparkle_pts(cx, cy, r)), (255, 255, 255, alpha),
                    box=(cx - r - 1, cy - r - 1, cx + r + 1, cy + r + 1))
 
     def render(self):
-        """Rechnet auf N x N herunter. Rueckgabe: Zeilen aus (r, g, b, a) mit 0-255."""
-        S, m = SS, self.m
+        """Rechnet auf (w*scale) x (h*scale) Pixel herunter. Rueckgabe: Zeilen aus (r, g, b, a) mit 0-255."""
+        S, m = self.ss, self.mw
         rows = []
-        for py in range(N):
+        for py in range(self.h * self.scale):
             row = []
-            for px in range(N):
+            for px in range(self.w * self.scale):
                 sa = sr = sg = sb = 0.0
                 for dy in range(S):
                     base = (py * S + dy) * m + px * S
@@ -1346,6 +1352,55 @@ SPACE_POS = {1: "\uF802", 2: "\uF803", 4: "\uF804", 8: "\uF805", 16: "\uF806", 3
 BAR_SEGMENT = "\uF810"
 ICONS = {name: (chr(0xE000 + i), fn) for i, (name, fn) in enumerate(_ICON_LIST)}
 
+# ── Panel (Hintergrundbild fuer Menues) ─────────────────────────────────────
+# Ein grosses Zeichen in der Font: Rahmen, rote Linie oben, Profilkarte mit Stern-Kasten.
+# Es steht in der ersten Textzeile eines Menues und ragt nach unten ueber die folgenden Zeilen
+# und die (echten) Buttons hinaus. Alle Masse in GUI-Pixeln.
+PANEL_CHAR = "\uF830"
+X_BIG_CHAR = "\uF831"          # das Schliessen-X (badge_close) in 14 Pixeln Hoehe
+PANEL_W, PANEL_H, PANEL_SCALE = 256, 150, 3
+PANEL_ASCENT = 7               # Oberkante des Panels = Oberkante der ersten Zeile
+X_BIG_H, X_BIG_ASCENT = 14, 3  # sitzt 4 Pixel unter der Panel-Oberkante
+CARD = (8, 24, 248, 58)        # Profilkarte: x0, y0, x1, y1
+STAR_BOX = (15, 28, 41, 54)    # Stern-Kasten in der Karte
+NAME_X = 49                    # Textbeginn in der Karte
+TEXT_RIGHT = 240               # rechter Textrand in der Karte
+X_BIG_X = 234                  # linke Kante des Schliessen-X
+
+
+def make_panel():
+    ic = Icon(PANEL_W, PANEL_H, scale=PANEL_SCALE, ss=2)
+    outer = sd_box(0, 0, PANEL_W, PANEL_H, 3)
+    ic.paint(outer, vgrad(0, PANEL_H, hexc("#1A1530"), hexc("#110E1F")))
+    ic.paint(sub(outer, sd_box(1, 1, PANEL_W - 1, PANEL_H - 1, 2)), hexc("#3B3558"))
+    # rote Linie am oberen Rand, Verlauf von Rot nach Orange
+    ic.paint(inter(outer, above(2.0)),
+             lambda x, y: mixc(hexc("#FF5A6A"), hexc("#FFB347"), x / PANEL_W), box=(0, 0, PANEL_W, 3))
+
+    x0, y0, x1, y1 = CARD
+    card = sd_box(x0, y0, x1, y1, 3)
+    box = (x0 - 1, y0 - 1, x1 + 1, y1 + 1)
+    ic.paint(card, vgrad(y0, y1, hexc("#261C3D"), hexc("#1B1530")), box=box)
+    ic.paint(sub(card, sd_box(x0 + 1.2, y0 + 1.2, x1 - 1.2, y1 - 1.2, 2)),
+             lambda x, y: mixc(hexc("#FF5A6A"), hexc("#FFB347"), (x - x0) / (x1 - x0)), box=box)
+    ic.paint(inter(card, left_of(x0 + 3.5)), hexc("#FF5A6A"), box=box)
+
+    sx0, sy0, sx1, sy1 = STAR_BOX
+    star_box = sd_box(sx0, sy0, sx1, sy1, 4)
+    sbox = (sx0 - 1, sy0 - 1, sx1 + 1, sy1 + 1)
+    ic.paint(star_box, hexc("#FF5A6A"), box=sbox)
+    ic.paint(sd_box(sx0 + 1.5, sy0 + 1.5, sx1 - 1.5, sy1 - 1.5, 3), vgrad(sy0, sy1, hexc("#2E2548"), hexc("#1B1530")), box=sbox)
+    cx, cy = (sx0 + sx1) / 2, (sy0 + sy1) / 2 + 0.6
+    ic.shape(sd_poly(star_pts(cx, cy, 9.4, 4.1)), GOLD, cy - 9.4, cy + 9.4, outline=hexc("#7A4300"), out=0.7)
+    return ic
+
+
+def glyph_advance(rows, height):
+    """Vorschub, den Minecraft einem Bitmap-Zeichen gibt: int(0.5 + Breite * Skalierung) + 1."""
+    h = len(rows)
+    maxcol = max((x for row in rows for x, c in enumerate(row) if c[3] > 0), default=-1)
+    return int(0.5 + (maxcol + 1) * height / h) + 1
+
 
 def render_by_name(name):
     return name, ICONS[name][1]().render()
@@ -1377,8 +1432,9 @@ PLUGIN_DIR = os.path.abspath(os.environ.get("FMC_PLUGIN_DIR") or os.path.join(RO
 JAVA_ENUM = os.path.join(PLUGIN_DIR, "src", "main", "java", "com", "example", "myplugin", "ui", "UiIcon.java")
 
 
-def write_java_enum():
-    """Schreibt die Zeichen-Zuordnung als Java-Enum ins Plugin, damit beides nie auseinanderlaeuft."""
+def write_java_enum(advances, panel_adv, x_big_adv, bar_adv):
+    """Schreibt Zeichen und Vorschub (Breite in Pixeln) als Java-Enum ins Plugin, damit beides nie
+    auseinanderlaeuft. Der Vorschub wird fuers Ausrichten von Text gebraucht."""
     if not os.path.isdir(PLUGIN_DIR):
         print("Hinweis: FMC-Plugin-Ordner nicht gefunden, UiIcon.java wurde nicht geschrieben "
               "(Pfad per FMC_PLUGIN_DIR setzen).")
@@ -1400,11 +1456,28 @@ def write_java_enum():
     names = list(ICONS)
     for i, name in enumerate(names):
         end = ";" if i == len(names) - 1 else ","
-        lines.append("    %s(%s)%s" % (name.upper(), lit(ICONS[name][0]), end))
+        lines.append("    %s(%s, %d)%s" % (name.upper(), lit(ICONS[name][0]), advances[name], end))
     lines += [
         "",
-        "    /** Abbildung eines Balken-Segments (4 Pixel breit, per Textfarbe einfaerbbar). */",
+        "    /** Balken-Segment (4 Pixel breit, per Textfarbe einfaerbbar) und sein Vorschub. */",
         "    public static final String BAR_SEGMENT = %s;" % lit(BAR_SEGMENT),
+        "    public static final int BAR_ADVANCE = %d;" % bar_adv,
+        "",
+        "    /** Panel-Hintergrundbild: Zeichen, Vorschub und Groesse in GUI-Pixeln. */",
+        "    public static final String PANEL = %s;" % lit(PANEL_CHAR),
+        "    public static final int PANEL_ADVANCE = %d;" % panel_adv,
+        "    public static final int PANEL_WIDTH = %d;" % PANEL_W,
+        "    public static final int PANEL_HEIGHT = %d;" % PANEL_H,
+        "    /** Karte im Panel (x0, y0, x1, y1), Textbeginn und rechter Textrand in der Karte. */",
+        "    public static final int NAME_X = %d;" % NAME_X,
+        "    public static final int TEXT_RIGHT = %d;" % TEXT_RIGHT,
+        "",
+        "    /** Grosses Schliessen-X (14 Pixel hoch), Zeichen, Vorschub und linke Kante im Panel. */",
+        "    public static final String X_BIG = %s;" % lit(X_BIG_CHAR),
+        "    public static final int X_BIG_ADVANCE = %d;" % x_big_adv,
+        "    public static final int X_BIG_X = %d;" % X_BIG_X,
+        "",
+        "    /** Abstandszeichen: Vorschub in Pixeln, positiv (nach rechts) und negativ (zurueck). */",
     ]
     for w in sorted(SPACE_POS):
         lines.append("    public static final String SPACE_PLUS_%d = %s;" % (w, lit(SPACE_POS[w])))
@@ -1413,13 +1486,20 @@ def write_java_enum():
     lines += [
         "",
         "    private final String glyph;",
+        "    private final int advance;",
         "",
-        "    UiIcon(String glyph) {",
+        "    UiIcon(String glyph, int advance) {",
         "        this.glyph = glyph;",
+        "        this.advance = advance;",
         "    }",
         "",
         "    public String glyph() {",
         "        return glyph;",
+        "    }",
+        "",
+        "    /** Breite des Icons im Text in Pixeln (inklusive 1 Pixel Abstand). */",
+        "    public int advance() {",
+        "        return advance;",
         "    }",
         "}",
         "",
@@ -1447,8 +1527,21 @@ def main():
     providers.append({"type": "space", "advances": advances})
     providers.append({"type": "bitmap", "file": "fmc:font/ui/bar_seg.png",
                       "ascent": 7, "height": 8, "chars": [BAR_SEGMENT]})
+
+    # Panel und grosses Schliessen-X
+    panel_rows = make_panel().render()
+    write_png(os.path.join(PACK, "assets", "fmc", "textures", "font", "ui", "panel.png"), panel_rows)
+    providers.append({"type": "bitmap", "file": "fmc:font/ui/panel.png",
+                      "ascent": PANEL_ASCENT, "height": PANEL_H, "chars": [PANEL_CHAR]})
+    providers.append({"type": "bitmap", "file": "fmc:font/icons/badge_close.png",
+                      "ascent": X_BIG_ASCENT, "height": X_BIG_H, "chars": [X_BIG_CHAR]})
+
     ui_textures.write_all(PACK, write_png)
-    write_java_enum()
+    advances = {name: glyph_advance(rendered[name], GLYPH_HEIGHT) for name in ICONS}
+    write_java_enum(advances,
+                    glyph_advance(panel_rows, PANEL_H),
+                    glyph_advance(rendered["badge_close"], X_BIG_H),
+                    5)
     os.makedirs(os.path.dirname(FONT_JSON), exist_ok=True)
     with open(FONT_JSON, "w", encoding="utf-8", newline="\n") as f:
         json.dump({"providers": providers}, f, indent=2)

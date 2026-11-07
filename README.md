@@ -119,6 +119,29 @@ Wichtig:
   prüfen und sonst eine schlichte Variante ohne Icons zeigen.
 - Bedrock-Spieler (Name beginnt mit `.`) bekommen das Pack nicht.
 
+## Menüs mit Hintergrund-Panel (wie im Vorbild)
+
+Das Panel (Rahmen, rote Linie, Profilkarte) ist ein **einzelnes großes Zeichen** der Schrift (`UiIcon.PANEL`). Es steht in
+der ersten Textzeile eines Dialogs und ragt nach unten über die weiteren Zeilen und die echten Buttons hinaus. Texte
+liegen darüber und werden mit `UiLine` pixelgenau platziert:
+
+```java
+Component line = UiLine.create()
+    .to(UiIcon.NAME_X).text(name, NamedTextColor.WHITE, true)        // links, fett
+    .right(UiIcon.TEXT_RIGHT, UiLine.create().text("12.500", NamedTextColor.YELLOW, false)
+        .gap(2).icon(UiIcon.TOKENS))                                   // rechtsbündig
+    .build(UiIcon.PANEL_WIDTH);                                        // alle Zeilen gleich breit
+```
+
+- Alle Zeilen müssen **dieselbe Gesamtbreite** haben (`build(UiIcon.PANEL_WIDTH)`), sonst zentriert Minecraft sie
+  unterschiedlich und der Text verrutscht. Eine Zeile ist 9 Pixel hoch.
+- Die Breiten kommen aus `FontMetrics.java` (Minecraft-Schrift) und `UiIcon.advance()` (Icons). Beide Dateien werden
+  erzeugt: `generate_icons.py` für die Icons, `python tools/gen_font_widths.py <client.jar>` für die Schrift. Das
+  Skript für die Schrift muss nur nach einem Minecraft-Update mit geänderter Schrift neu laufen.
+- Das Panel und die Karte sind in `make_panel()` in `generate_icons.py` gezeichnet (Maße oben im Abschnitt „Panel“).
+  Ändert man die Zeilenhöhe oder die Position der Karte, müssen die Werte `CARD`, `STAR_BOX`, `NAME_X` dort und die
+  Zeilen im Menü (`FmcMenuCommand`) zusammenpassen.
+
 ## Wer bekommt das Pack?
 
 - Die Permission heißt **`fmc.resourcepack`** (Standard: niemand). Vergabe über LuckPerms, zum Beispiel:

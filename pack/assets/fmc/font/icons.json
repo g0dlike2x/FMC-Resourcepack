@@ -709,6 +709,24 @@
       "chars": [
         "\uf810"
       ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel.png",
+      "ascent": 7,
+      "height": 150,
+      "chars": [
+        "\uf830"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/badge_close.png",
+      "ascent": 3,
+      "height": 14,
+      "chars": [
+        "\uf831"
+      ]
     }
   ]
 }
