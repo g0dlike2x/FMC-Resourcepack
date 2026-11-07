@@ -1356,9 +1356,12 @@ ICONS = {name: (chr(0xE000 + i), fn) for i, (name, fn) in enumerate(_ICON_LIST)}
 # Ein grosses Zeichen in der Font: Rahmen, rote Linie oben, Profilkarte mit Stern-Kasten.
 # Es steht in der ersten Textzeile eines Menues und ragt nach unten ueber die folgenden Zeilen
 # und die (echten) Buttons hinaus. Alle Masse in GUI-Pixeln.
-PANEL_CHAR = "\uF830"
+# Minecraft legt Schriftzeichen in einen 256x256-Atlas. Groessere Bilder werden NICHT geladen (es
+# erscheint ein weisses Kaestchen). Das Panel ist deshalb in Kacheln zerlegt, jede maximal 128x150 Texel.
+PANEL_CHAR = "\uF840"          # erste Kachel; die weiteren folgen fortlaufend (Zeile fuer Zeile)
 X_BIG_CHAR = "\uF831"          # das Schliessen-X (badge_close) in 14 Pixeln Hoehe
-PANEL_W, PANEL_H, PANEL_SCALE = 256, 150, 3
+PANEL_W, PANEL_H, PANEL_SCALE = 256, 150, 2
+PANEL_COLS, PANEL_ROWS = 4, 2  # Kacheln: 4 nebeneinander (je 64 breit), 2 uebereinander (je 75 hoch)
 PANEL_ASCENT = 7               # Oberkante des Panels = Oberkante der ersten Zeile
 X_BIG_H, X_BIG_ASCENT = 14, 3  # sitzt 4 Pixel unter der Panel-Oberkante
 CARD = (8, 24, 248, 58)        # Profilkarte: x0, y0, x1, y1
@@ -1393,6 +1396,21 @@ def make_panel():
     cx, cy = (sx0 + sx1) / 2, (sy0 + sy1) / 2 + 0.6
     ic.shape(sd_poly(star_pts(cx, cy, 9.4, 4.1)), GOLD, cy - 9.4, cy + 9.4, outline=hexc("#7A4300"), out=0.7)
     return ic
+
+
+def panel_tiles(panel_rows):
+    """Zerlegt das Panelbild in PANEL_ROWS x PANEL_COLS Kacheln (Zeile fuer Zeile)."""
+    th = len(panel_rows) // PANEL_ROWS
+    tw = len(panel_rows[0]) // PANEL_COLS
+    tiles = []
+    for r in range(PANEL_ROWS):
+        for c in range(PANEL_COLS):
+            tiles.append([row[c * tw:(c + 1) * tw] for row in panel_rows[r * th:(r + 1) * th]])
+    return tiles
+
+
+def panel_tile_char(index):
+    return chr(ord(PANEL_CHAR) + index)
 
 
 def glyph_advance(rows, height):
@@ -1463,9 +1481,16 @@ def write_java_enum(advances, panel_adv, x_big_adv, bar_adv):
         "    public static final String BAR_SEGMENT = %s;" % lit(BAR_SEGMENT),
         "    public static final int BAR_ADVANCE = %d;" % bar_adv,
         "",
-        "    /** Panel-Hintergrundbild: Zeichen, Vorschub und Groesse in GUI-Pixeln. */",
-        "    public static final String PANEL = %s;" % lit(PANEL_CHAR),
-        "    public static final int PANEL_ADVANCE = %d;" % panel_adv,
+        "    /**",
+        "     * Panel-Hintergrundbild, in Kacheln zerlegt (PANEL_ROWS x PANEL_COLS, Zeile fuer Zeile). Jede Kachel",
+        "     * ist PANEL_TILE_ADVANCE breit (inklusive 1 Pixel Abstand), Groesse des ganzen Panels in GUI-Pixeln.",
+        "     */",
+        "    public static final String[] PANEL_TILES = {",
+        ",\n".join("        %s" % lit(panel_tile_char(i)) for i in range(PANEL_ROWS * PANEL_COLS)),
+        "    };",
+        "    public static final int PANEL_COLS = %d;" % PANEL_COLS,
+        "    public static final int PANEL_ROWS = %d;" % PANEL_ROWS,
+        "    public static final int PANEL_TILE_ADVANCE = %d;" % panel_adv,
         "    public static final int PANEL_WIDTH = %d;" % PANEL_W,
         "    public static final int PANEL_HEIGHT = %d;" % PANEL_H,
         "    /** Karte im Panel (x0, y0, x1, y1), Textbeginn und rechter Textrand in der Karte. */",
@@ -1530,16 +1555,29 @@ def main():
 
     # Panel und grosses Schliessen-X
     panel_rows = make_panel().render()
-    write_png(os.path.join(PACK, "assets", "fmc", "textures", "font", "ui", "panel.png"), panel_rows)
-    providers.append({"type": "bitmap", "file": "fmc:font/ui/panel.png",
-                      "ascent": PANEL_ASCENT, "height": PANEL_H, "chars": [PANEL_CHAR]})
+    tile_h = PANEL_H // PANEL_ROWS                      # Hoehe einer Kachel in GUI-Pixeln
+    tile_advances = set()
+    ui_dir = os.path.join(PACK, "assets", "fmc", "textures", "font", "ui")
+    for old in os.listdir(ui_dir):                       # alte Panel-Dateien aufraeumen
+        if old.startswith("panel"):
+            os.remove(os.path.join(ui_dir, old))
+    for i, tile in enumerate(panel_tiles(panel_rows)):
+        r = i // PANEL_COLS
+        write_png(os.path.join(ui_dir, f"panel_{i}.png"), tile)
+        tile_advances.add(glyph_advance(tile, tile_h))
+        # Untere Kacheln liegen tile_h Pixel tiefer: dafuer die Oberkante per (negativem) ascent verschieben
+        providers.append({"type": "bitmap", "file": f"fmc:font/ui/panel_{i}.png",
+                          "ascent": PANEL_ASCENT - r * tile_h, "height": tile_h,
+                          "chars": [panel_tile_char(i)]})
+    assert len(tile_advances) == 1, f"Kacheln haben verschiedene Breiten: {tile_advances}"
+    panel_adv = tile_advances.pop()
     providers.append({"type": "bitmap", "file": "fmc:font/icons/badge_close.png",
                       "ascent": X_BIG_ASCENT, "height": X_BIG_H, "chars": [X_BIG_CHAR]})
 
     ui_textures.write_all(PACK, write_png)
     advances = {name: glyph_advance(rendered[name], GLYPH_HEIGHT) for name in ICONS}
     write_java_enum(advances,
-                    glyph_advance(panel_rows, PANEL_H),
+                    panel_adv,
                     glyph_advance(rendered["badge_close"], X_BIG_H),
                     5)
     os.makedirs(os.path.dirname(FONT_JSON), exist_ok=True)

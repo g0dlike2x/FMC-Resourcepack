@@ -121,9 +121,12 @@ Wichtig:
 
 ## Menüs mit Hintergrund-Panel (wie im Vorbild)
 
-Das Panel (Rahmen, rote Linie, Profilkarte) ist ein **einzelnes großes Zeichen** der Schrift (`UiIcon.PANEL`). Es steht in
-der ersten Textzeile eines Dialogs und ragt nach unten über die weiteren Zeilen und die echten Buttons hinaus. Texte
-liegen darüber und werden mit `UiLine` pixelgenau platziert:
+Das Panel (Rahmen, rote Linie, Profilkarte) besteht aus **8 Kacheln** (4 x 2) der Schrift (`UiIcon.PANEL_TILES`), die
+`UiLine.panel()` zusammensetzt. Es steht in der ersten Textzeile eines Dialogs und ragt nach unten über die weiteren
+Zeilen und die echten Buttons hinaus. Texte liegen darüber und werden mit `UiLine` pixelgenau platziert.
+
+**Wichtig:** Minecraft lädt Schriftbilder nur bis **256 x 256 Pixel**. Ein größeres Bild wird still ignoriert, und es
+erscheint stattdessen ein weißes Kästchen. Deshalb ist das Panel in Kacheln zerlegt (je 128 x 150 Pixel).
 
 ```java
 Component line = UiLine.create()

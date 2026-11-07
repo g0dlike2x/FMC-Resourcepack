@@ -712,11 +712,74 @@
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/ui/panel.png",
+      "file": "fmc:font/ui/panel_0.png",
       "ascent": 7,
-      "height": 150,
+      "height": 75,
       "chars": [
-        "\uf830"
+        "\uf840"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_1.png",
+      "ascent": 7,
+      "height": 75,
+      "chars": [
+        "\uf841"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_2.png",
+      "ascent": 7,
+      "height": 75,
+      "chars": [
+        "\uf842"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_3.png",
+      "ascent": 7,
+      "height": 75,
+      "chars": [
+        "\uf843"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_4.png",
+      "ascent": -68,
+      "height": 75,
+      "chars": [
+        "\uf844"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_5.png",
+      "ascent": -68,
+      "height": 75,
+      "chars": [
+        "\uf845"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_6.png",
+      "ascent": -68,
+      "height": 75,
+      "chars": [
+        "\uf846"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_7.png",
+      "ascent": -68,
+      "height": 75,
+      "chars": [
+        "\uf847"
       ]
     },
     {
