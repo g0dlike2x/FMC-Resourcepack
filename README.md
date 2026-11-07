@@ -156,6 +156,24 @@ kopieren und die Inhalte auszutauschen.
   erzeugt: `generate_icons.py` für die Icons, `python tools/gen_font_widths.py <client.jar>` für die Schrift (nur
   nach einem Minecraft-Update mit geänderter Schrift nötig).
 - Aussehen von Rahmen, Karte und Stern: `make_panel_tile()` und `make_card_tile()` in `generate_icons.py`.
+## Kisten-GUIs (ChestGui)
+
+Inventar-Menüs (Kisten) bekommen ihr Design über den Titel: ein Zeichen der Font `fmc:icons` legt ein Hintergrundbild
+über die ganze Kiste, die Items bleiben normale, klickbare Items. Aktuell gestaltet: `/enderchest` (`U+EA00`, 54 Slots)
+und `/bank` (`U+EA01`, 27 Slots).
+
+- Bilder zeichnen: `tools/chest_textures.py` (1 Bildpixel = 1 GUI-Pixel, 176 x 222 bzw. 168). Neues Menü = neue
+  Funktion in `CHESTS` eintragen, dann `python tools/generate_icons.py` (schreibt auch die Zeichen nach `UiIcon.java`).
+- Im Plugin: `ChestGui.available(plugin, player)` prüfen, dann `ChestGui.enderChestTitle(...)` bzw.
+  `ChestGui.bankTitle(...)` als Titel nehmen. Ohne Pack (oder Bedrock) bleibt der bisherige schlichte Titel.
+- Die Slot-Positionen ändern sich durch das Design nicht. Wer im Bild Plattenpositionen ändert, muss die Items im
+  Plugin passend verschieben.
+- Leere Slots mit Füller-Items sind mit `ChestGui.filler()` unsichtbar (`fmc:blank`, nur mit Pack benutzen).
+- Erkannt werden die Menüs nicht am Titel: Bank über einen `InventoryHolder`, Endertruhe über `isEcTitle` (Text
+  `EC von `, Farbcodes und Schrift-Zeichen werden ignoriert).
+- Offen/ungeprüft im Spiel: Offsets (`CHEST_ASCENT = 13`, Titel bei x = 8) und ob die Items sicher vor dem
+  Hintergrund liegen. Sitzt das Bild verschoben, nur diese Konstanten in `chest_textures.py` anpassen.
+
 ## Wer bekommt das Pack?
 
 - Die Permission heißt **`fmc.resourcepack`** (Standard: niemand). Vergabe über LuckPerms, zum Beispiel:

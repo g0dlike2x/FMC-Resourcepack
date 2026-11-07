@@ -9934,6 +9934,24 @@
       "chars": [
         "\ue902"
       ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/chest_ec.png",
+      "ascent": 13,
+      "height": 222,
+      "chars": [
+        "\uea00"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/chest_bank.png",
+      "ascent": 13,
+      "height": 168,
+      "chars": [
+        "\uea01"
+      ]
     }
   ]
 }

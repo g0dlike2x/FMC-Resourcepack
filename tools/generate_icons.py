@@ -30,6 +30,7 @@ import os
 import struct
 import zlib
 
+import chest_textures
 import ui_textures
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -1593,6 +1594,15 @@ def write_java_enum(icon_adv, info):
     lines += const("BTN_MID_ADVANCE", info["btn_mid_adv"], "Vorschub der Mitte (inklusive 1 Pixel Abstand).")
     lines += const("BTN_H", BTN_H, "Hoehe des Buttons in Pixeln.")
 
+    lines += ["", "    // ── Kisten-GUIs: Hintergrundbild im Inventartitel (siehe tools/chest_textures.py) ──",
+              "    /** Hintergrund der Endertruhe (54 Slots, 176 x 222 Pixel). */",
+              "    public static final String CHEST_EC = %s;" % lit(info["chest"]["ec"]),
+              "    /** Hintergrund der Bank (27 Slots, 176 x 168 Pixel). */",
+              "    public static final String CHEST_BANK = %s;" % lit(info["chest"]["bank"])]
+    lines += const("CHEST_ADVANCE", info["chest_adv"], "Vorschub des Hintergrundbilds (Breite + 1 Pixel Abstand).")
+    lines += const("CHEST_TITLE_X", chest_textures.CHEST_TITLE_X, "Der Inventartitel beginnt so viele Pixel vom linken Rand.")
+    lines += const("CHEST_WIDTH", chest_textures.W, "Breite des Kisten-GUIs in Pixeln.")
+
     lines += ["", "    // ── Abstandszeichen: Vorschub in Pixeln, positiv (nach rechts) und negativ (zurueck) ──"]
     for w in sorted(SPACE_POS):
         lines.append("    public static final String SPACE_PLUS_%d = %s;" % (w, lit(SPACE_POS[w])))
@@ -1710,6 +1720,8 @@ def main():
     btn_mid_adv = single_advance([btn_rows["mid"]], BTN_H, "Button-Mitte")
 
     ui_textures.write_all(PACK, write_png)
+    chest_providers, chest_chars, chest_adv = chest_textures.write_all(PACK, write_png)
+    providers.extend(chest_providers)
     icon_adv = {name: glyph_advance(rendered[name], GLYPH_HEIGHT) for name in ICONS}
     write_java_enum(icon_adv, {
         "panel_adv": panel_adv,
@@ -1719,6 +1731,8 @@ def main():
         "btn_end_adv": btn_end_adv,
         "btn_mid_adv": btn_mid_adv,
         "bar_adv": 5,
+        "chest": chest_chars,
+        "chest_adv": chest_adv,
     })
     os.makedirs(os.path.dirname(FONT_JSON), exist_ok=True)
     with open(FONT_JSON, "w", encoding="utf-8", newline="\n") as f:
