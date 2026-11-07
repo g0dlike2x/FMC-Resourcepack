@@ -103,14 +103,17 @@ Umgebungsvariable `FMC_PLUGIN_DIR` setzen. Ist der Ordner nicht da, wird `UiIcon
 ## Icons im Plugin benutzen
 
 ```java
-Component text = UiKit.icon(UiIcon.BANK)           // Icon (immer weiß, nicht fett)
-    .append(UiKit.space(4))                          // 4 Pixel Abstand
-    .append(Component.text("Bank", NamedTextColor.WHITE));
+Component text = UiKit.row(                          // Zeile aus mehreren Teilen
+    UiKit.icon(UiIcon.BANK),                         // Icon (immer weiß, nicht fett)
+    UiKit.space(4),                                  // 4 Pixel Abstand
+    Component.text("Bank", NamedTextColor.WHITE));
 
 Component bar = UiKit.bar(64, 20, from, to);        // Fortschrittsbalken aus 20 Segmenten
 ```
 
 Wichtig:
+- **Text nie mit `.append(...)` an ein Icon hängen**, immer `UiKit.row(...)` benutzen. Kinder erben die Schrift des
+  Elternteils, der Text erschiene sonst in der Icon-Schrift als Kästchen.
 - Icons sind fertig eingefärbt und werden mit **weißer** Textfarbe benutzt, sonst werden sie getönt.
 - Ohne geladenes Pack erscheinen Platzhalter-Kästchen. Vorher mit `plugin.getResourcePackManager().hasPack(player)`
   prüfen und sonst eine schlichte Variante ohne Icons zeigen.

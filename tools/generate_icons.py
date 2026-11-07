@@ -1281,25 +1281,15 @@ def icon_cookie():
 
 # ── Batch 3: Bausteine fuer Dialoge/Menues ──────────────────────────────────
 
-def _badge_box(ic):
-    box = sd_box(3.5, 3.5, 28.5, 28.5, 5.5)
-    ic.shape(box, (hexc("#2E2548"), hexc("#1B1530")), 3.5, 28.5, outline=hexc("#FF5A6A"), out=1.9, rim=False)
-    return box
-
-
 def icon_badge_star():
-    ic = Icon()
-    _badge_box(ic)
-    ic.shape(sd_poly(star_pts(16.0, 16.8, 8.8, 3.9)), GOLD, 7.0, 25.0, outline=hexc("#7A4300"), out=0.8)
-    return ic
+    """Stern fuer Profilzeilen. Fruehere Fassung hatte einen rosa Rahmenkasten, der stoerte -> jetzt
+    ohne Hintergrund. Der Name bleibt, damit sich die Zeichen der Icons dahinter nicht verschieben."""
+    return icon_star()
 
 
 def icon_badge_close():
-    ic = Icon()
-    _badge_box(ic)
-    x = union(sd_seg((10.5, 10.5), (21.5, 21.5), 3.6), sd_seg((21.5, 10.5), (10.5, 21.5), 3.6))
-    ic.shape(x, (hexc("#FF8A96"), hexc("#E03A52")), 9.0, 23.0, outline=hexc("#5E0A1B"), out=0.7, rim=False)
-    return ic
+    """Schliessen-X ohne Rahmenkasten (siehe icon_badge_star)."""
+    return icon_close()
 
 
 def icon_chevron():
