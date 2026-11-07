@@ -9911,8 +9911,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/btn_left.png",
-      "ascent": 2,
-      "height": 16,
+      "ascent": 7,
+      "height": 27,
       "chars": [
         "\ue900"
       ]
@@ -9920,8 +9920,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/btn_mid.png",
-      "ascent": 2,
-      "height": 16,
+      "ascent": 7,
+      "height": 27,
       "chars": [
         "\ue901"
       ]
@@ -9929,8 +9929,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/btn_right.png",
-      "ascent": 2,
-      "height": 16,
+      "ascent": 7,
+      "height": 27,
       "chars": [
         "\ue902"
       ]

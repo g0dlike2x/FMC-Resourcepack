@@ -1376,11 +1376,12 @@ PANEL_BOT_VAR_MIN = 2
 PANEL_SCALE = 2
 
 # Button-Hintergrund fuer Textbuttons im Panel (sitzt im Text, nicht als echter Dialog-Button):
-# links (59 Pixel), Mitte (60 Pixel, beliebig oft wiederholbar) und rechts (59 Pixel), 16 Pixel hoch.
+# links (59 Pixel), Mitte (60 Pixel, beliebig oft wiederholbar) und rechts (59 Pixel), 27 Pixel hoch (= drei\r\n# Textzeilen, damit der ganze Button klickbar ist). Sichtbar sind davon 24 Pixel (Zeile 1 bis 24), der Rest ist Abstand.
 # Breite 118 = links + rechts, 238 = links + 2x Mitte + rechts.
-BTN_H = 16
+BTN_H = 27
+BTN_TOP, BTN_BOTTOM = 1, 25        # sichtbarer Teil des Buttons in der Kachel
 BTN_END_W, BTN_MID_W = 59, 60
-BTN_ASCENT = 2                 # Oberkante des Buttons = 5 Pixel unter der Oberkante der Zeile, in der er steht
+BTN_ASCENT = 7                 # Oberkante der Kachel = Oberkante der Zeile, in der sie steht
 BTN_LEFT_CHAR, BTN_MID_CHAR, BTN_RIGHT_CHAR = "\uE900", "\uE901", "\uE902"
 BTN_FILL = ("#1E1A33", "#181428")
 BTN_BORDER = "#3B3558"
@@ -1451,11 +1452,11 @@ def make_button_tile(kind):
     ic = Icon(w, BTN_H, scale=PANEL_SCALE, ss=3)
     x0 = 0 if kind == "left" else -200       # ausserhalb der Kachel gibt es keinen Rand
     x1 = w if kind == "right" else 200
-    outer = sd_box(x0, 0, x1, BTN_H, 2)
-    inner = sd_box(x0 + 1, 1, x1 - 1, BTN_H - 1, 1.2)
+    outer = sd_box(x0, BTN_TOP, x1, BTN_BOTTOM, 3)
+    inner = sd_box(x0 + 1, BTN_TOP + 1, x1 - 1, BTN_BOTTOM - 1, 2.2)
     ic.paint(outer, hexc(BTN_BORDER))
-    ic.paint(inner, vgrad(1, BTN_H - 1, hexc(BTN_FILL[0]), hexc(BTN_FILL[1])))
-    ic.paint(inter(inner, above(2.0)), hexc(BTN_LIGHT))
+    ic.paint(inner, vgrad(BTN_TOP + 1, BTN_BOTTOM - 1, hexc(BTN_FILL[0]), hexc(BTN_FILL[1])))
+    ic.paint(inter(inner, above(BTN_TOP + 2.0)), hexc(BTN_LIGHT))
     return ic
 
 
