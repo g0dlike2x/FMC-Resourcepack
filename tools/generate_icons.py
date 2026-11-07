@@ -1375,6 +1375,17 @@ PANEL_BOT_VAR_BASE = 0xE500
 PANEL_BOT_VAR_MIN = 2
 PANEL_SCALE = 2
 
+# Button-Hintergrund fuer Textbuttons im Panel (sitzt im Text, nicht als echter Dialog-Button):
+# links (59 Pixel), Mitte (60 Pixel, beliebig oft wiederholbar) und rechts (59 Pixel), 16 Pixel hoch.
+# Breite 118 = links + rechts, 238 = links + 2x Mitte + rechts.
+BTN_H = 16
+BTN_END_W, BTN_MID_W = 59, 60
+BTN_ASCENT = 2                 # Oberkante des Buttons = 5 Pixel unter der Oberkante der Zeile, in der er steht
+BTN_LEFT_CHAR, BTN_MID_CHAR, BTN_RIGHT_CHAR = "\uE900", "\uE901", "\uE902"
+BTN_FILL = ("#1E1A33", "#181428")
+BTN_BORDER = "#3B3558"
+BTN_LIGHT = "#2A2547"
+
 CARD_COLS, CARD_TILE_W = 4, 60
 CARD_W, CARD_H = 240, 34       # x = 8 .. 248 im Panel
 CARD_X = 8
@@ -1431,6 +1442,20 @@ def make_panel_bottom_variant(col, v):
     outer, inner = _shift_x(outer, ox), _shift_x(inner, ox)
     ic.paint(outer, hexc(PANEL_FILL))
     ic.paint(sub(outer, inner), hexc(PANEL_BORDER))
+    return ic
+
+
+def make_button_tile(kind):
+    """Teil eines Button-Hintergrunds: "left", "mid" oder "right" (dunkel, 1 Pixel Rand, hellere Oberkante)."""
+    w = BTN_MID_W if kind == "mid" else BTN_END_W
+    ic = Icon(w, BTN_H, scale=PANEL_SCALE, ss=3)
+    x0 = 0 if kind == "left" else -200       # ausserhalb der Kachel gibt es keinen Rand
+    x1 = w if kind == "right" else 200
+    outer = sd_box(x0, 0, x1, BTN_H, 2)
+    inner = sd_box(x0 + 1, 1, x1 - 1, BTN_H - 1, 1.2)
+    ic.paint(outer, hexc(BTN_BORDER))
+    ic.paint(inner, vgrad(1, BTN_H - 1, hexc(BTN_FILL[0]), hexc(BTN_FILL[1])))
+    ic.paint(inter(inner, above(2.0)), hexc(BTN_LIGHT))
     return ic
 
 
@@ -1556,6 +1581,17 @@ def write_java_enum(icon_adv, info):
     lines += const("X_BIG_ADVANCE", info["x_adv"])
     lines += const("X_BIG_X", X_BIG_X)
 
+    lines += ["", "    // ── Button-Hintergrund (Textbutton im Panel) ──",
+              "    /** Links, Mitte und rechts. 118 Pixel Breite = links + rechts, 238 = links + 2x Mitte + rechts. */",
+              "    public static final String BTN_LEFT = %s;" % lit(BTN_LEFT_CHAR),
+              "    public static final String BTN_MID = %s;" % lit(BTN_MID_CHAR),
+              "    public static final String BTN_RIGHT = %s;" % lit(BTN_RIGHT_CHAR)]
+    lines += const("BTN_END_W", BTN_END_W, "Breite von links und rechts in Pixeln.")
+    lines += const("BTN_MID_W", BTN_MID_W, "Breite der Mitte in Pixeln.")
+    lines += const("BTN_END_ADVANCE", info["btn_end_adv"], "Vorschub von links und rechts (inklusive 1 Pixel Abstand).")
+    lines += const("BTN_MID_ADVANCE", info["btn_mid_adv"], "Vorschub der Mitte (inklusive 1 Pixel Abstand).")
+    lines += const("BTN_H", BTN_H, "Hoehe des Buttons in Pixeln.")
+
     lines += ["", "    // ── Abstandszeichen: Vorschub in Pixeln, positiv (nach rechts) und negativ (zurueck) ──"]
     for w in sorted(SPACE_POS):
         lines.append("    public static final String SPACE_PLUS_%d = %s;" % (w, lit(SPACE_POS[w])))
@@ -1662,6 +1698,16 @@ def main():
     providers.append({"type": "bitmap", "file": "fmc:font/icons/badge_close.png",
                       "ascent": X_BIG_ASCENT, "height": X_BIG_H, "chars": [X_BIG_CHAR]})
 
+    # Button-Hintergrund (links / Mitte / rechts)
+    btn_rows = {}
+    for kind, char in (("left", BTN_LEFT_CHAR), ("mid", BTN_MID_CHAR), ("right", BTN_RIGHT_CHAR)):
+        btn_rows[kind] = make_button_tile(kind).render()
+        write_png(os.path.join(ui_dir, f"btn_{kind}.png"), btn_rows[kind])
+        providers.append({"type": "bitmap", "file": f"fmc:font/ui/btn_{kind}.png", "ascent": BTN_ASCENT,
+                          "height": BTN_H, "chars": [char]})
+    btn_end_adv = single_advance([btn_rows["left"], btn_rows["right"]], BTN_H, "Button-Enden")
+    btn_mid_adv = single_advance([btn_rows["mid"]], BTN_H, "Button-Mitte")
+
     ui_textures.write_all(PACK, write_png)
     icon_adv = {name: glyph_advance(rendered[name], GLYPH_HEIGHT) for name in ICONS}
     write_java_enum(icon_adv, {
@@ -1669,6 +1715,8 @@ def main():
         "card_adv": card_adv,
         "star_adv": glyph_advance(rendered["star"], STAR_BIG_H),
         "x_adv": glyph_advance(rendered["badge_close"], X_BIG_H),
+        "btn_end_adv": btn_end_adv,
+        "btn_mid_adv": btn_mid_adv,
         "bar_adv": 5,
     })
     os.makedirs(os.path.dirname(FONT_JSON), exist_ok=True)

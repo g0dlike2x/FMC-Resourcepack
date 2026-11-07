@@ -203,7 +203,7 @@ Zum Ausprobieren gibt es das Demo-Menü `/fmcmenu` (Permission `fmc.ui.demo`, nu
   normale Minecraft-Menü dunkel.
 - Die Icons liegen in der eigenen Schrift `fmc:icons` (Zeichen ab `U+E000`). Abstände und Balkensegment liegen bei
   `U+F801` bis `U+F810`. Die Rahmenkacheln liegen bei `U+E100` bis `U+E4xx`, die unteren Kacheln mit hochgesetzter
-  Randlinie (pixelgenaue Panelhöhe) bei `U+E500` bis `U+E85F`. Diese Bereiche nicht für anderes benutzen.
+  Randlinie (pixelgenaue Panelhöhe) bei `U+E500` bis `U+E85F`, der Hintergrund der Textbuttons bei `U+E900` bis `U+E902`. Diese Bereiche nicht für anderes benutzen.
 
 ## Ordnerstruktur
 

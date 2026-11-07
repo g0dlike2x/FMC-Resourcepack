@@ -9907,6 +9907,33 @@
       "chars": [
         "\uf831"
       ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/btn_left.png",
+      "ascent": 2,
+      "height": 16,
+      "chars": [
+        "\ue900"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/btn_mid.png",
+      "ascent": 2,
+      "height": 16,
+      "chars": [
+        "\ue901"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/btn_right.png",
+      "ascent": 2,
+      "height": 16,
+      "chars": [
+        "\ue902"
+      ]
     }
   ]
 }
