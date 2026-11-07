@@ -2404,6 +2404,7458 @@
     },
     {
       "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue504"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue505"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue506"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue507"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue508"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue509"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue50a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue50b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue50c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue50d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue50e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue50f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue510"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue511"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue512"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue513"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue514"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue515"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue516"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue517"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue518"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue519"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue51a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue51b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue51c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue51d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue51e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue51f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue520"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue521"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue522"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue523"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue524"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue525"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue526"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue527"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue528"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue529"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue52a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue52b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue52c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue52d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue52e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue52f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue530"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue531"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue532"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue533"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue534"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue535"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue536"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue537"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue538"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue539"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue53a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue53b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue53c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue53d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue53e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue53f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue540"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue541"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue542"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue543"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue544"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue545"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue546"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue547"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue548"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue549"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue54a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue54b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue54c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue54d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue54e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue54f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue550"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue551"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue552"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue553"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue554"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue555"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue556"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue557"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue558"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue559"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue55a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue55b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_0.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue55c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_1.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue55d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_2.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue55e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_2_3.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue55f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue564"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue565"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue566"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue567"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue568"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue569"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue56a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue56b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue56c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue56d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue56e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue56f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue570"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue571"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue572"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue573"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue574"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue575"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue576"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue577"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue578"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue579"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue57a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue57b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue57c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue57d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue57e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue57f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue580"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue581"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue582"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue583"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue584"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue585"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue586"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue587"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue588"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue589"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue58a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue58b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue58c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue58d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue58e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue58f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue590"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue591"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue592"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue593"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue594"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue595"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue596"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue597"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue598"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue599"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue59a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue59b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue59c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue59d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue59e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue59f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue5a0"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue5a1"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue5a2"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue5a3"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue5a4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue5a5"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue5a6"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue5a7"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue5a8"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue5a9"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue5aa"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue5ab"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue5ac"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue5ad"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue5ae"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue5af"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue5b0"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue5b1"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue5b2"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue5b3"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue5b4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue5b5"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue5b6"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue5b7"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue5b8"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue5b9"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue5ba"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue5bb"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_0.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue5bc"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_1.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue5bd"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_2.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue5be"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_3_3.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue5bf"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue5c4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue5c5"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue5c6"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue5c7"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue5c8"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue5c9"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue5ca"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue5cb"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue5cc"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue5cd"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue5ce"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue5cf"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue5d0"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue5d1"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue5d2"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue5d3"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue5d4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue5d5"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue5d6"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue5d7"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue5d8"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue5d9"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue5da"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue5db"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue5dc"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue5dd"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue5de"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue5df"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue5e0"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue5e1"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue5e2"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue5e3"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue5e4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue5e5"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue5e6"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue5e7"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue5e8"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue5e9"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue5ea"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue5eb"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue5ec"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue5ed"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue5ee"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue5ef"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue5f0"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue5f1"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue5f2"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue5f3"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue5f4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue5f5"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue5f6"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue5f7"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue5f8"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue5f9"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue5fa"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue5fb"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue5fc"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue5fd"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue5fe"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue5ff"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue600"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue601"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue602"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue603"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue604"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue605"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue606"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue607"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue608"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue609"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue60a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue60b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue60c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue60d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue60e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue60f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue610"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue611"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue612"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue613"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue614"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue615"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue616"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue617"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue618"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue619"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue61a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue61b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_0.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue61c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_1.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue61d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_2.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue61e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_4_3.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue61f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue624"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue625"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue626"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue627"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue628"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue629"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue62a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue62b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue62c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue62d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue62e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue62f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue630"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue631"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue632"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue633"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue634"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue635"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue636"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue637"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue638"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue639"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue63a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue63b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue63c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue63d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue63e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue63f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue640"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue641"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue642"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue643"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue644"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue645"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue646"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue647"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue648"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue649"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue64a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue64b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue64c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue64d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue64e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue64f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue650"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue651"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue652"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue653"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue654"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue655"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue656"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue657"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue658"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue659"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue65a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue65b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue65c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue65d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue65e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue65f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue660"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue661"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue662"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue663"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue664"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue665"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue666"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue667"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue668"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue669"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue66a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue66b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue66c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue66d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue66e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue66f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue670"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue671"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue672"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue673"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue674"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue675"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue676"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue677"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue678"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue679"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue67a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue67b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_0.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue67c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_1.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue67d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_2.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue67e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_5_3.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue67f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue684"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue685"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue686"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue687"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue688"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue689"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue68a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue68b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue68c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue68d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue68e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue68f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue690"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue691"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue692"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue693"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue694"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue695"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue696"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue697"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue698"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue699"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue69a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue69b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue69c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue69d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue69e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue69f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue6a0"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue6a1"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue6a2"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue6a3"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue6a4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue6a5"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue6a6"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue6a7"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue6a8"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue6a9"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue6aa"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue6ab"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue6ac"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue6ad"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue6ae"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue6af"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue6b0"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue6b1"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue6b2"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue6b3"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue6b4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue6b5"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue6b6"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue6b7"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue6b8"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue6b9"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue6ba"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue6bb"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue6bc"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue6bd"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue6be"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue6bf"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue6c0"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue6c1"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue6c2"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue6c3"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue6c4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue6c5"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue6c6"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue6c7"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue6c8"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue6c9"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue6ca"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue6cb"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue6cc"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue6cd"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue6ce"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue6cf"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue6d0"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue6d1"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue6d2"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue6d3"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue6d4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue6d5"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue6d6"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue6d7"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue6d8"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue6d9"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue6da"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue6db"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_0.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue6dc"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_1.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue6dd"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_2.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue6de"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_6_3.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue6df"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue6e4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue6e5"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue6e6"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue6e7"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue6e8"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue6e9"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue6ea"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue6eb"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue6ec"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue6ed"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue6ee"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue6ef"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue6f0"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue6f1"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue6f2"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue6f3"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue6f4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue6f5"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue6f6"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue6f7"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue6f8"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue6f9"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue6fa"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue6fb"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue6fc"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue6fd"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue6fe"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue6ff"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue700"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue701"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue702"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue703"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue704"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue705"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue706"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue707"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue708"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue709"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue70a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue70b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue70c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue70d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue70e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue70f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue710"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue711"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue712"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue713"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue714"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue715"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue716"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue717"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue718"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue719"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue71a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue71b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue71c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue71d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue71e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue71f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue720"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue721"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue722"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue723"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue724"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue725"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue726"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue727"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue728"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue729"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue72a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue72b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue72c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue72d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue72e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue72f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue730"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue731"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue732"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue733"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue734"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue735"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue736"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue737"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue738"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue739"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue73a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue73b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_0.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue73c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_1.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue73d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_2.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue73e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_7_3.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue73f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue744"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue745"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue746"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue747"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue748"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue749"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue74a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue74b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue74c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue74d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue74e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue74f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue750"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue751"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue752"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue753"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue754"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue755"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue756"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue757"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue758"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue759"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue75a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue75b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue75c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue75d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue75e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue75f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue760"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue761"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue762"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue763"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue764"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue765"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue766"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue767"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue768"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue769"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue76a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue76b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue76c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue76d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue76e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue76f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue770"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue771"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue772"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue773"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue774"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue775"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue776"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue777"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue778"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue779"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue77a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue77b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue77c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue77d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue77e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue77f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue780"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue781"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue782"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue783"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue784"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue785"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue786"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue787"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue788"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue789"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue78a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue78b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue78c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue78d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue78e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue78f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue790"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue791"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue792"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue793"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue794"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue795"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue796"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue797"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue798"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue799"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue79a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue79b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_0.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue79c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_1.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue79d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_2.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue79e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_8_3.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue79f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue7a4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue7a5"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue7a6"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue7a7"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue7a8"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue7a9"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue7aa"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue7ab"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue7ac"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue7ad"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue7ae"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue7af"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue7b0"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue7b1"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue7b2"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue7b3"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue7b4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue7b5"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue7b6"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue7b7"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue7b8"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue7b9"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue7ba"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue7bb"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue7bc"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue7bd"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue7be"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue7bf"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue7c0"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue7c1"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue7c2"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue7c3"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue7c4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue7c5"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue7c6"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue7c7"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue7c8"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue7c9"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue7ca"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue7cb"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue7cc"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue7cd"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue7ce"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue7cf"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue7d0"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue7d1"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue7d2"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue7d3"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue7d4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue7d5"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue7d6"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue7d7"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue7d8"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue7d9"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue7da"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue7db"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue7dc"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue7dd"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue7de"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue7df"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue7e0"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue7e1"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue7e2"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue7e3"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue7e4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue7e5"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue7e6"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue7e7"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue7e8"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue7e9"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue7ea"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue7eb"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue7ec"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue7ed"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue7ee"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue7ef"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue7f0"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue7f1"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue7f2"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue7f3"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue7f4"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue7f5"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue7f6"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue7f7"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue7f8"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue7f9"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue7fa"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue7fb"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_0.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue7fc"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_1.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue7fd"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_2.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue7fe"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_9_3.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue7ff"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue804"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue805"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue806"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue807"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue808"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue809"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue80a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue80b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue80c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue80d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue80e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue80f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue810"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue811"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue812"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue813"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue814"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue815"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue816"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue817"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue818"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue819"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue81a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue81b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue81c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue81d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue81e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue81f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue820"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue821"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue822"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue823"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue824"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue825"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue826"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue827"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue828"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue829"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue82a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue82b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue82c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue82d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue82e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue82f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue830"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue831"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue832"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue833"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue834"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue835"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue836"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue837"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue838"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue839"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue83a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue83b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue83c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue83d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue83e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue83f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue840"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue841"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue842"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue843"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue844"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue845"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue846"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue847"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue848"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue849"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue84a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue84b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue84c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue84d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue84e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue84f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue850"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue851"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue852"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue853"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue854"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue855"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue856"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue857"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue858"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue859"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue85a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue85b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_0.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue85c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_1.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue85d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_2.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue85e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_botv_10_3.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue85f"
+      ]
+    },
+    {
+      "type": "bitmap",
       "file": "fmc:font/ui/card_0.png",
       "ascent": 1,
       "height": 34,

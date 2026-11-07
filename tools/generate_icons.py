@@ -1367,6 +1367,12 @@ PANEL_UNIT = 12                # Hoehe einer Kachelreihe in GUI-Pixeln
 PANEL_ROWS_MAX = 24            # maximale Reihenzahl -> Panelhoehe bis 288 Pixel
 PANEL_ASCENT = 7               # Oberkante des Panels = Oberkante der ersten Zeile
 PANEL_TOP_BASE, PANEL_MID_BASE, PANEL_BOT_BASE = 0xE100, 0xE200, 0xE300   # + Reihe*4 + Spalte
+# Untere Kachel mit der Randlinie in einer hoeheren Pixelzeile der Kachel (nicht ganz unten), damit das Panel
+# auf den Pixel genau enden kann. Variante v (PANEL_BOT_VAR_MIN..PANEL_UNIT-2) hat die Linie in Kachelzeile v;
+# Variante PANEL_UNIT-1 ist die normale untere Kachel. Zeichen = Basis + ((v - MIN) * PANEL_ROWS_MAX + Reihe) * 4 + Spalte.
+# Ab Zeile 2, damit die abgerundete Ecke (3 Pixel) noch in die Kachel passt.
+PANEL_BOT_VAR_BASE = 0xE500
+PANEL_BOT_VAR_MIN = 2
 PANEL_SCALE = 2
 
 CARD_COLS, CARD_TILE_W = 4, 60
@@ -1412,6 +1418,19 @@ def make_panel_tile(kind, col):
     if kind == "top":
         ic.paint(inter(outer, above(2.0)),
                  lambda x, y: mixc(hexc(RED_LINE[0]), hexc(RED_LINE[1]), (x + ox) / PANEL_W))
+    return ic
+
+
+def make_panel_bottom_variant(col, v):
+    """Untere Kachel, deren Randlinie in Kachelzeile v liegt (darunter ist die Kachel leer)."""
+    u = PANEL_UNIT
+    b = v + 1
+    ic = Icon(PANEL_TILE_W, u, scale=PANEL_SCALE, ss=3)
+    outer, inner = sd_box(0, -60, PANEL_W, b, 3), sd_box(1, -61, PANEL_W - 1, b - 1, 2)
+    ox = col * PANEL_TILE_W
+    outer, inner = _shift_x(outer, ox), _shift_x(inner, ox)
+    ic.paint(outer, hexc(PANEL_FILL))
+    ic.paint(sub(outer, inner), hexc(PANEL_BORDER))
     return ic
 
 
@@ -1508,7 +1527,10 @@ def write_java_enum(icon_adv, info):
               "    /** Basis-Zeichen der Rahmenkacheln; Zeichen = Basis + Reihe * PANEL_COLS + Spalte. */",
               "    public static final char PANEL_TOP_BASE = (char) 0x%04X;" % PANEL_TOP_BASE,
               "    public static final char PANEL_MID_BASE = (char) 0x%04X;" % PANEL_MID_BASE,
-              "    public static final char PANEL_BOT_BASE = (char) 0x%04X;" % PANEL_BOT_BASE]
+              "    public static final char PANEL_BOT_BASE = (char) 0x%04X;" % PANEL_BOT_BASE,
+              "    /** Untere Kacheln mit Randlinie in Kachelzeile v: Basis + ((v - MIN) * ROWS_MAX + Reihe) * COLS + Spalte. */",
+              "    public static final char PANEL_BOT_VAR_BASE = (char) 0x%04X;" % PANEL_BOT_VAR_BASE]
+    lines += const("PANEL_BOT_VAR_MIN", PANEL_BOT_VAR_MIN, "Kleinste Kachelzeile mit Randlinie; darunter gibt es keine Variante.")
     lines += const("PANEL_COLS", PANEL_COLS)
     lines += const("PANEL_TILE_ADVANCE", info["panel_adv"], "Breite einer Rahmenkachel (inklusive 1 Pixel Abstand).")
     lines += const("PANEL_WIDTH", PANEL_W, "Breite des Panels in GUI-Pixeln.")
@@ -1611,7 +1633,20 @@ def main():
                 providers.append({"type": "bitmap", "file": f"fmc:font/ui/panel_{kind}_{c}.png",
                                   "ascent": PANEL_ASCENT - r * PANEL_UNIT, "height": PANEL_UNIT,
                                   "chars": [panel_char(base, r, c)]})
-    panel_adv = single_advance(panel_tiles.values(), PANEL_UNIT, "Panel")
+    # Untere Kacheln mit hoeher liegender Randlinie (pixelgenaue Panelhoehe)
+    var_tiles = []
+    for v in range(PANEL_BOT_VAR_MIN, PANEL_UNIT - 1):
+        for c in range(PANEL_COLS):
+            rows = make_panel_bottom_variant(c, v).render()
+            var_tiles.append(rows)
+            write_png(os.path.join(ui_dir, f"panel_botv_{v}_{c}.png"), rows)
+        for r in range(1, PANEL_ROWS_MAX):
+            for c in range(PANEL_COLS):
+                providers.append({"type": "bitmap", "file": f"fmc:font/ui/panel_botv_{v}_{c}.png",
+                                  "ascent": PANEL_ASCENT - r * PANEL_UNIT, "height": PANEL_UNIT,
+                                  "chars": [chr(PANEL_BOT_VAR_BASE
+                                                + ((v - PANEL_BOT_VAR_MIN) * PANEL_ROWS_MAX + r) * PANEL_COLS + c)]})
+    panel_adv = single_advance(list(panel_tiles.values()) + var_tiles, PANEL_UNIT, "Panel")
 
     # Profilkarte, grosser Stern, Schliessen-X
     card_tiles = []

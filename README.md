@@ -202,7 +202,8 @@ Zum Ausprobieren gibt es das Demo-Menü `/fmcmenu` (Permission `fmc.ui.demo`, nu
   **ganzen Client**, solange das Pack aktiv ist, nicht nur in den FMC-Menüs. Für das Team ist deshalb auch das
   normale Minecraft-Menü dunkel.
 - Die Icons liegen in der eigenen Schrift `fmc:icons` (Zeichen ab `U+E000`). Abstände und Balkensegment liegen bei
-  `U+F801` bis `U+F810`. Diese Bereiche nicht für anderes benutzen.
+  `U+F801` bis `U+F810`. Die Rahmenkacheln liegen bei `U+E100` bis `U+E4xx`, die unteren Kacheln mit hochgesetzter
+  Randlinie (pixelgenaue Panelhöhe) bei `U+E500` bis `U+E85F`. Diese Bereiche nicht für anderes benutzen.
 
 ## Ordnerstruktur
 
