@@ -712,74 +712,1739 @@
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/ui/panel_0.png",
+      "file": "fmc:font/ui/panel_top_0.png",
       "ascent": 7,
-      "height": 75,
+      "height": 12,
       "chars": [
-        "\uf840"
+        "\ue100"
       ]
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/ui/panel_1.png",
+      "file": "fmc:font/ui/panel_top_1.png",
       "ascent": 7,
-      "height": 75,
+      "height": 12,
       "chars": [
-        "\uf841"
+        "\ue101"
       ]
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/ui/panel_2.png",
+      "file": "fmc:font/ui/panel_top_2.png",
       "ascent": 7,
-      "height": 75,
+      "height": 12,
       "chars": [
-        "\uf842"
+        "\ue102"
       ]
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/ui/panel_3.png",
+      "file": "fmc:font/ui/panel_top_3.png",
       "ascent": 7,
-      "height": 75,
+      "height": 12,
       "chars": [
-        "\uf843"
+        "\ue103"
       ]
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/ui/panel_4.png",
-      "ascent": -68,
-      "height": 75,
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -5,
+      "height": 12,
       "chars": [
-        "\uf844"
+        "\ue204"
       ]
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/ui/panel_5.png",
-      "ascent": -68,
-      "height": 75,
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -5,
+      "height": 12,
       "chars": [
-        "\uf845"
+        "\ue205"
       ]
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/ui/panel_6.png",
-      "ascent": -68,
-      "height": 75,
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -5,
+      "height": 12,
       "chars": [
-        "\uf846"
+        "\ue206"
       ]
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/ui/panel_7.png",
-      "ascent": -68,
-      "height": 75,
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -5,
+      "height": 12,
       "chars": [
-        "\uf847"
+        "\ue207"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue304"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue305"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue306"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -5,
+      "height": 12,
+      "chars": [
+        "\ue307"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue208"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue209"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue20a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue20b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue308"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue309"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue30a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -17,
+      "height": 12,
+      "chars": [
+        "\ue30b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue20c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue20d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue20e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue20f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue30c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue30d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue30e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -29,
+      "height": 12,
+      "chars": [
+        "\ue30f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue210"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue211"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue212"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue213"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue310"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue311"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue312"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -41,
+      "height": 12,
+      "chars": [
+        "\ue313"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue214"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue215"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue216"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue217"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue314"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue315"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue316"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -53,
+      "height": 12,
+      "chars": [
+        "\ue317"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue218"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue219"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue21a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue21b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue318"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue319"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue31a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -65,
+      "height": 12,
+      "chars": [
+        "\ue31b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue21c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue21d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue21e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue21f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue31c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue31d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue31e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -77,
+      "height": 12,
+      "chars": [
+        "\ue31f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue220"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue221"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue222"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue223"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue320"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue321"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue322"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -89,
+      "height": 12,
+      "chars": [
+        "\ue323"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue224"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue225"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue226"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue227"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue324"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue325"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue326"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -101,
+      "height": 12,
+      "chars": [
+        "\ue327"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue228"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue229"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue22a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue22b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue328"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue329"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue32a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -113,
+      "height": 12,
+      "chars": [
+        "\ue32b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue22c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue22d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue22e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue22f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue32c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue32d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue32e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -125,
+      "height": 12,
+      "chars": [
+        "\ue32f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue230"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue231"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue232"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue233"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue330"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue331"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue332"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -137,
+      "height": 12,
+      "chars": [
+        "\ue333"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue234"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue235"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue236"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue237"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue334"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue335"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue336"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -149,
+      "height": 12,
+      "chars": [
+        "\ue337"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue238"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue239"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue23a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue23b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue338"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue339"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue33a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -161,
+      "height": 12,
+      "chars": [
+        "\ue33b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue23c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue23d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue23e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue23f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue33c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue33d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue33e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -173,
+      "height": 12,
+      "chars": [
+        "\ue33f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue240"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue241"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue242"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue243"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue340"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue341"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue342"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -185,
+      "height": 12,
+      "chars": [
+        "\ue343"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue244"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue245"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue246"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue247"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue344"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue345"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue346"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -197,
+      "height": 12,
+      "chars": [
+        "\ue347"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue248"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue249"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue24a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue24b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue348"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue349"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue34a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -209,
+      "height": 12,
+      "chars": [
+        "\ue34b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue24c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue24d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue24e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue24f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue34c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue34d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue34e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -221,
+      "height": 12,
+      "chars": [
+        "\ue34f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue250"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue251"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue252"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue253"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue350"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue351"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue352"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -233,
+      "height": 12,
+      "chars": [
+        "\ue353"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue254"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue255"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue256"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue257"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue354"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue355"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue356"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -245,
+      "height": 12,
+      "chars": [
+        "\ue357"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue258"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue259"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue25a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue25b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue358"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue359"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue35a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -257,
+      "height": 12,
+      "chars": [
+        "\ue35b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_0.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue25c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_1.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue25d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_2.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue25e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_mid_3.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue25f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_0.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue35c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_1.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue35d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_2.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue35e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/panel_bot_3.png",
+      "ascent": -269,
+      "height": 12,
+      "chars": [
+        "\ue35f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/card_0.png",
+      "ascent": 1,
+      "height": 34,
+      "chars": [
+        "\ue400"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/card_1.png",
+      "ascent": 1,
+      "height": 34,
+      "chars": [
+        "\ue401"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/card_2.png",
+      "ascent": 1,
+      "height": 34,
+      "chars": [
+        "\ue402"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/card_3.png",
+      "ascent": 1,
+      "height": 34,
+      "chars": [
+        "\ue403"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/star.png",
+      "ascent": -4,
+      "height": 24,
+      "chars": [
+        "\ue410"
       ]
     },
     {

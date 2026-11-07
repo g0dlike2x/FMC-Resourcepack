@@ -119,32 +119,43 @@ Wichtig:
   prüfen und sonst eine schlichte Variante ohne Icons zeigen.
 - Bedrock-Spieler (Name beginnt mit `.`) bekommen das Pack nicht.
 
-## Menüs mit Hintergrund-Panel (wie im Vorbild)
+## Neues Menü bauen (PanelMenu)
 
-Das Panel (Rahmen, rote Linie, Profilkarte) besteht aus **8 Kacheln** (4 x 2) der Schrift (`UiIcon.PANEL_TILES`), die
-`UiLine.panel()` zusammensetzt. Es steht in der ersten Textzeile eines Dialogs und ragt nach unten über die weiteren
-Zeilen und die echten Buttons hinaus. Texte liegen darüber und werden mit `UiLine` pixelgenau platziert.
-
-**Wichtig:** Minecraft lädt Schriftbilder nur bis **256 x 256 Pixel**. Ein größeres Bild wird still ignoriert, und es
-erscheint stattdessen ein weißes Kästchen. Deshalb ist das Panel in Kacheln zerlegt (je 128 x 150 Pixel).
+Alle Menüs im FMC-Stil werden mit `PanelMenu` gebaut (`FMC-Plugin/.../ui/PanelMenu.java`). Das Panel passt seine Höhe
+automatisch an den Inhalt an. Ein komplettes Menü:
 
 ```java
-Component line = UiLine.create()
-    .to(UiIcon.NAME_X).text(name, NamedTextColor.WHITE, true)        // links, fett
-    .right(UiIcon.TEXT_RIGHT, UiLine.create().text("12.500", NamedTextColor.YELLOW, false)
-        .gap(2).icon(UiIcon.TOKENS))                                   // rechtsbündig
-    .build(UiIcon.PANEL_WIDTH);                                        // alle Zeilen gleich breit
+PanelMenu.create(plugin)
+    .title(UiIcon.BANK, "Bank")                                   // Titel oben (außerhalb des Rahmens)
+    .card(                                                        // optional: Profilkarte mit Stern
+        UiLine.inCard().text(player.getName(), NamedTextColor.WHITE, true),
+        UiLine.inCard().icon(UiIcon.TOKENS).gap(2).text("12.500", NamedTextColor.YELLOW, false),
+        null)                                                     // null = leere Zeile
+    .line(UiLine.create().to(8).text("Freier Text unter der Karte"))   // optional: weitere Zeilen
+    .button(UiIcon.TOKENS, "Einzahlen", p -> deposit(p))          // Buttons im Raster (2 Spalten)
+    .button(UiIcon.TOKENS, "Abheben", p -> withdraw(p))
+    .fallback(p -> openSimpleBankMenu(p))                         // für Spieler OHNE Pack
+    .open(player);
 ```
 
-- Alle Zeilen müssen **dieselbe Gesamtbreite** haben (`build(UiIcon.PANEL_WIDTH)`), sonst zentriert Minecraft sie
-  unterschiedlich und der Text verrutscht. Eine Zeile ist 9 Pixel hoch.
-- Die Breiten kommen aus `FontMetrics.java` (Minecraft-Schrift) und `UiIcon.advance()` (Icons). Beide Dateien werden
-  erzeugt: `generate_icons.py` für die Icons, `python tools/gen_font_widths.py <client.jar>` für die Schrift. Das
-  Skript für die Schrift muss nur nach einem Minecraft-Update mit geänderter Schrift neu laufen.
-- Das Panel und die Karte sind in `make_panel()` in `generate_icons.py` gezeichnet (Maße oben im Abschnitt „Panel“).
-  Ändert man die Zeilenhöhe oder die Position der Karte, müssen die Werte `CARD`, `STAR_BOX`, `NAME_X` dort und die
-  Zeilen im Menü (`FmcMenuCommand`) zusammenpassen.
+Weitere Optionen: `.columns(1)`, `.closeButton(false)`, `.cardStar(false)`, `.chevron(false)`, `.blank()`.
+Ein fertiges Beispiel zum Abschauen ist `FmcMenuCommand` (`/fmcmenu`). Für ein neues Menü genügt es, diese Klasse zu
+kopieren und die Inhalte auszutauschen.
 
+**Wie es funktioniert (nur wichtig, wenn man am Stil selbst arbeitet):**
+- Der Rahmen ist ein Hintergrundbild aus Kacheln der Schrift, das in der ersten Textzeile steht und nach unten über alle
+  weiteren Zeilen und die echten Buttons hinausragt. Die Texte liegen darüber und werden mit `UiLine` pixelgenau
+  platziert (`to(x)`, `gap(px)`, `right(...)`).
+- **Wichtig:** Minecraft lädt Schriftbilder nur bis **256 x 256 Pixel**. Größere erscheinen als weißes Kästchen. Deshalb
+  besteht der Rahmen aus Kacheln (je 64 x 12 Pixel, in 12er-Reihen gestapelt, bis 288 Pixel Höhe).
+- Alle Textzeilen müssen **dieselbe Gesamtbreite** haben (`build(W)`, macht `PanelMenu` selbst), sonst zentriert Minecraft sie
+  unterschiedlich. Eine Zeile ist 9 Pixel hoch.
+- Die Maße des Vanilla-Layouts (Abstand zu den Buttons, Buttonhöhe) stehen als Konstanten oben in `PanelMenu`. Weicht
+  ein Menü im Spiel ab (Buttons sitzen zu hoch/tief im Rahmen), nur dort `BUTTON_GAP` o. Ä. anpassen.
+- Die Breiten kommen aus `FontMetrics.java` (Minecraft-Schrift) und `UiIcon.advance()` (Icons). Beide Dateien werden
+  erzeugt: `generate_icons.py` für die Icons, `python tools/gen_font_widths.py <client.jar>` für die Schrift (nur
+  nach einem Minecraft-Update mit geänderter Schrift nötig).
+- Aussehen von Rahmen, Karte und Stern: `make_panel_tile()` und `make_card_tile()` in `generate_icons.py`.
 ## Wer bekommt das Pack?
 
 - Die Permission heißt **`fmc.resourcepack`** (Standard: niemand). Vergabe über LuckPerms, zum Beispiel:
