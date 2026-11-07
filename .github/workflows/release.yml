@@ -1,0 +1,41 @@
+name: Release Resourcepack
+
+# Baut aus pack/ die ZIP und ersetzt das Release "latest". Die Download-URL
+#   https://github.com/g0dlike2x/FMC-Resourcepack/releases/download/latest/FMC-Resourcepack.zip
+# bleibt dadurch immer gleich. Danach auf dem Server /fmcpack reload ausfuehren.
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "pack/**"
+      - "tools/build_zip.py"
+      - ".github/workflows/release.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repo holen
+        uses: actions/checkout@v4
+
+      - name: ZIP bauen
+        id: build
+        run: |
+          python3 tools/build_zip.py
+          echo "sha1=$(sha1sum dist/FMC-Resourcepack.zip | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
+
+      - name: Release "latest" ersetzen
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SHA1: ${{ steps.build.outputs.sha1 }}
+        run: |
+          gh release delete latest --yes --cleanup-tag || true
+          gh release create latest dist/FMC-Resourcepack.zip \
+            --target "$GITHUB_SHA" \
+            --title "FMC Resourcepack" \
+            --notes "Automatisch gebaut aus Commit ${GITHUB_SHA::7}. SHA-1: $SHA1. Auf dem Server danach /fmcpack reload ausführen."
