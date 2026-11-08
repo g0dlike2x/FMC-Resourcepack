@@ -10585,7 +10585,7 @@
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/icons/tokens.png",
+      "file": "fmc:font/icons/tokens_big.png",
       "ascent": -4,
       "height": 24,
       "chars": [

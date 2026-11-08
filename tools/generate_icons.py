@@ -461,8 +461,8 @@ def _emboss(ic, sdf, dark_top, dark_bot, light, y0, y1):
     ic.paint(sdf, vgrad(y0, y1, dark_top, dark_bot))
 
 
-def icon_tokens():
-    ic = Icon()
+def icon_tokens(scale=1):
+    ic = Icon(scale=scale)
     coin = _coin(ic, hexc("#FFE680"), hexc("#E8940F"), hexc("#F2A917"), hexc("#FFDB55"),
                  hexc("#B96C00"), hexc("#6B3F00"))
     t = [(9.6, 9.6), (22.4, 9.6), (22.4, 13.4), (17.9, 13.4), (17.9, 23.2), (14.1, 23.2), (14.1, 13.4), (9.6, 13.4)]
@@ -1402,6 +1402,7 @@ CARD_ASCENT = 1                # Oberkante der Karte = 6 Pixel unter der Oberkan
 
 STAR_BIG_CHAR = "\uE410"
 STAR_BIG_H = 24
+TOKENS_BIG_SCALE = 3          # Aufloesung der grossen Token-Muenze: 3 Texturpixel je Einheit (96 x 96)
 TOKENS_BIG_CHAR = "\uE411"      # grosse Token-Muenze, gleiche Groesse und Lage wie der Stern
 STAR_BIG_ASCENT = -4           # zentriert den Stern in der Karte
 STAR_X = 18                    # linke Kante des Sterns im Panel
@@ -1737,9 +1738,13 @@ def main():
         providers.append({"type": "bitmap", "file": f"fmc:font/ui/card_{c}.png", "ascent": CARD_ASCENT,
                           "height": CARD_H, "chars": [chr(CARD_BASE + c)]})
     card_adv = single_advance(card_tiles, CARD_H, "Karte")
+    # Grosse Token-Muenze: eigene Textur in 3-facher Aufloesung (96 x 96 statt 32 x 32). Sie wird mit 24 Pixeln Hoehe
+    # angezeigt; aus der 32er-Textur wurde sie ungleichmaessig herunterskaliert und wirkte verpixelt.
+    tokens_big_rows = icon_tokens(scale=TOKENS_BIG_SCALE).render()
+    write_png(os.path.join(ICON_DIR, "tokens_big.png"), tokens_big_rows)
     providers.append({"type": "bitmap", "file": "fmc:font/icons/star.png",
                       "ascent": STAR_BIG_ASCENT, "height": STAR_BIG_H, "chars": [STAR_BIG_CHAR]})
-    providers.append({"type": "bitmap", "file": "fmc:font/icons/tokens.png",
+    providers.append({"type": "bitmap", "file": "fmc:font/icons/tokens_big.png",
                       "ascent": STAR_BIG_ASCENT, "height": STAR_BIG_H, "chars": [TOKENS_BIG_CHAR]})
     providers.append({"type": "bitmap", "file": "fmc:font/icons/badge_close.png",
                       "ascent": X_BIG_ASCENT, "height": X_BIG_H, "chars": [X_BIG_CHAR]})
@@ -1763,7 +1768,7 @@ def main():
         "panel_adv": panel_adv,
         "card_adv": card_adv,
         "star_adv": glyph_advance(rendered["star"], STAR_BIG_H),
-        "tokens_big_adv": glyph_advance(rendered["tokens"], STAR_BIG_H),
+        "tokens_big_adv": glyph_advance(tokens_big_rows, STAR_BIG_H),
         "x_adv": glyph_advance(rendered["badge_close"], X_BIG_H),
         "btn_end_adv": btn_end_adv,
         "btn_mid_adv": btn_mid_adv,
