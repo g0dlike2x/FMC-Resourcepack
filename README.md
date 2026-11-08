@@ -156,6 +156,33 @@ kopieren und die Inhalte auszutauschen.
   erzeugt: `generate_icons.py` für die Icons, `python tools/gen_font_widths.py <client.jar>` für die Schrift (nur
   nach einem Minecraft-Update mit geänderter Schrift nötig).
 - Aussehen von Rahmen, Karte und Stern: `make_panel_tile()` und `make_card_tile()` in `generate_icons.py`.
+## Amethyst-Theme (lila Panel, z. B. /lager)
+
+Neben dem klassischen Stil (rote Linie) gibt es `PanelTheme.AMETHYST`: Rahmen mit lila Glow, Kristalle an den Seiten und
+in den unteren Ecken, Banner mit Truhe und Titelbild, Karte mit Itembox und dunkle Buttons mit lila Hervorhebung.
+Alles wird in `tools/amethyst_theme.py` gezeichnet (von `generate_icons.py` mit aufgerufen, Dateien `am_*.png`).
+
+```java
+PanelMenu.create(plugin)
+    .title(...)
+    .banner(UiIcon.AM_TITLE_LAGER, UiIcon.AM_TITLE_LAGER_ADVANCE, "DEIN PERSÖNLICHES LAGER")  // schaltet das Theme ein
+    .cardGlyph(UiIcon.AM_CARD_CHEST, UiIcon.AM_CARD_CHEST_ADVANCE)   // Symbol in der Itembox
+    .card(zeile1, zeile2, zeile3)        // Textzeilen mit UiLine.create().to(UiIcon.AM_NAME_X) beginnen
+    .button(...)
+    .emphasizeLast()                     // letzter Button mit lila Rand
+    .open(player);
+```
+
+- Ohne `.banner(...)` geht das Theme auch mit `.theme(PanelTheme.AMETHYST)`; dann gibt es Kristalle, aber keine Truhe.
+- Neues Titelbild: Text in `TITLES` (`amethyst_theme.py`) eintragen, `generate_icons.py` ausführen, danach gibt es
+  `UiIcon.AM_TITLE_<TEXT>` und `AM_TITLE_<TEXT>_ADVANCE`. Die Pixelschrift (`FONT5X7`) kennt A bis Z, Ziffern und `/ % - .`.
+- Die unteren Kristalle sind pro Panelhöhe ein eigenes Zeichen (U+F200 bis U+F40D). Die letzte Button-Reihe sollte
+  nicht bis in die unteren Ecken reichen (links/rechts je ca. 25 Pixel frei), sonst überlappen sich Kristall und Button.
+- Das Theme braucht oben zwei Leerzeilen (Truhe ragt aus dem Rahmen) und vier Kopfzeilen. Sitzt das Panel im Spiel nicht
+  mittig: `AM_CENTER_PAD_LINES` in `amethyst_theme.py` ändern.
+- Offen/ungeprüft im Spiel: Position der Zeichen untereinander (Ornament, Titel, Untertitel, Kristalle), Überlagerung der
+  Zeichen innerhalb einer Zeile und der Abstand der Karte zu den Buttons.
+
 ## Kisten-GUIs (ChestGui)
 
 Inventar-Menüs (Kisten) bekommen ihr Design über den Titel: ein Zeichen der Font `fmc:icons` legt ein Hintergrundbild

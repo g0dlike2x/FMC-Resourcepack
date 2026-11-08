@@ -28,8 +28,10 @@ import math
 import multiprocessing
 import os
 import struct
+import sys
 import zlib
 
+import amethyst_theme
 import chest_textures
 import ui_textures
 
@@ -1322,6 +1324,35 @@ def icon_chevron():
     return ic
 
 
+# ── Batch 4: Lager (Amethyst-Theme) ─────────────────────────────────────────
+
+def icon_arrow_up():
+    ic = Icon()
+    head = sd_poly([(16.0, 3.5), (28.0, 16.5), (4.0, 16.5)])
+    tail = sd_box(11.5, 14.0, 20.5, 28.5, 1.0)
+    ic.shape(rnd(union(head, tail), 1.0), GREEN, 3.0, 29.0)
+    return ic
+
+
+def _double_chevron(down):
+    ic = Icon()
+    lo, hi = 7.0, 25.0
+    segs = []
+    for y in (7.5, 16.5):
+        a, b, c = ((6.5, y), (16.0, y + 9.0), (25.5, y)) if down else ((6.5, y + 9.0), (16.0, y), (25.5, y + 9.0))
+        segs += [sd_seg(a, b, 4.4), sd_seg(b, c, 4.4)]
+    ic.shape(union(*segs), (hexc("#8FE3FF"), hexc("#1E88E5")), lo - 4, hi + 6, outline=hexc("#0B3A75"), out=1.0)
+    return ic
+
+
+def icon_double_up():
+    return _double_chevron(False)
+
+
+def icon_double_down():
+    return _double_chevron(True)
+
+
 # name -> (Zeichen, Funktion); die Zeichen werden der Reihenfolge nach ab U+E000 vergeben,
 # neue Icons also nur HINTEN anhaengen, sonst aendern sich bestehende Zeichen.
 _ICON_LIST = [
@@ -1350,6 +1381,8 @@ _ICON_LIST = [
     ("calendar", icon_calendar), ("cookie", icon_cookie),
     # Batch 3
     ("badge_star", icon_badge_star), ("badge_close", icon_badge_close), ("chevron", icon_chevron),
+    # Batch 4 (Lager)
+    ("arrow_up", icon_arrow_up), ("double_up", icon_double_up), ("double_down", icon_double_down),
 ]
 
 # Abstandszeichen (Font-Provider "space") und Balkensegment liegen im oberen Private-Use-Bereich,
@@ -1615,6 +1648,8 @@ def write_java_enum(icon_adv, big_adv, info):
     lines += const("CHEST_TITLE_X", chest_textures.CHEST_TITLE_X, "Der Inventartitel beginnt so viele Pixel vom linken Rand.")
     lines += const("CHEST_WIDTH", chest_textures.W, "Breite des Kisten-GUIs in Pixeln.")
 
+    lines += amethyst_theme.java_lines(info["am"])
+
     lines += ["", "    // ── Abstandszeichen: Vorschub in Pixeln, positiv (nach rechts) und negativ (zurueck) ──"]
     for w in sorted(SPACE_POS):
         lines.append("    public static final String SPACE_PLUS_%d = %s;" % (w, lit(SPACE_POS[w])))
@@ -1760,6 +1795,7 @@ def main():
     btn_mid_adv = single_advance([btn_rows["mid"]], BTN_H, "Button-Mitte")
 
     ui_textures.write_all(PACK, write_png)
+    am_info = amethyst_theme.write_all(sys.modules[__name__], PACK, write_png, providers, rendered["chest"])
     chest_providers, chest_chars, chest_adv = chest_textures.write_all(PACK, write_png)
     providers.extend(chest_providers)
     icon_adv = {name: glyph_advance(rendered[name], GLYPH_HEIGHT) for name in ICONS}
@@ -1775,6 +1811,7 @@ def main():
         "bar_adv": 5,
         "chest": chest_chars,
         "chest_adv": chest_adv,
+        "am": am_info,
     })
     os.makedirs(os.path.dirname(FONT_JSON), exist_ok=True)
     with open(FONT_JSON, "w", encoding="utf-8", newline="\n") as f:
