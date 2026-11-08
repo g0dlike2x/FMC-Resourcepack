@@ -13898,6 +13898,366 @@
     },
     {
       "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_165_0_0.png",
+      "ascent": 38,
+      "height": 85,
+      "chars": [
+        "\uf600"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_165_0_1.png",
+      "ascent": 38,
+      "height": 85,
+      "chars": [
+        "\uf601"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_165_0_2.png",
+      "ascent": 38,
+      "height": 85,
+      "chars": [
+        "\uf602"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_165_0_3.png",
+      "ascent": 38,
+      "height": 85,
+      "chars": [
+        "\uf603"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_165_1_0.png",
+      "ascent": -47,
+      "height": 85,
+      "chars": [
+        "\uf604"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_165_1_1.png",
+      "ascent": -47,
+      "height": 85,
+      "chars": [
+        "\uf605"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_165_1_2.png",
+      "ascent": -47,
+      "height": 85,
+      "chars": [
+        "\uf606"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_165_1_3.png",
+      "ascent": -47,
+      "height": 85,
+      "chars": [
+        "\uf607"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_165_2_0.png",
+      "ascent": -132,
+      "height": 85,
+      "chars": [
+        "\uf608"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_165_2_1.png",
+      "ascent": -132,
+      "height": 85,
+      "chars": [
+        "\uf609"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_165_2_2.png",
+      "ascent": -132,
+      "height": 85,
+      "chars": [
+        "\uf60a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_165_2_3.png",
+      "ascent": -132,
+      "height": 85,
+      "chars": [
+        "\uf60b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_192_0_0.png",
+      "ascent": 38,
+      "height": 85,
+      "chars": [
+        "\uf620"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_192_0_1.png",
+      "ascent": 38,
+      "height": 85,
+      "chars": [
+        "\uf621"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_192_0_2.png",
+      "ascent": 38,
+      "height": 85,
+      "chars": [
+        "\uf622"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_192_0_3.png",
+      "ascent": 38,
+      "height": 85,
+      "chars": [
+        "\uf623"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_192_1_0.png",
+      "ascent": -47,
+      "height": 85,
+      "chars": [
+        "\uf624"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_192_1_1.png",
+      "ascent": -47,
+      "height": 85,
+      "chars": [
+        "\uf625"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_192_1_2.png",
+      "ascent": -47,
+      "height": 85,
+      "chars": [
+        "\uf626"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_192_1_3.png",
+      "ascent": -47,
+      "height": 85,
+      "chars": [
+        "\uf627"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_192_2_0.png",
+      "ascent": -132,
+      "height": 85,
+      "chars": [
+        "\uf628"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_192_2_1.png",
+      "ascent": -132,
+      "height": 85,
+      "chars": [
+        "\uf629"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_192_2_2.png",
+      "ascent": -132,
+      "height": 85,
+      "chars": [
+        "\uf62a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_192_2_3.png",
+      "ascent": -132,
+      "height": 85,
+      "chars": [
+        "\uf62b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_219_0_0.png",
+      "ascent": 38,
+      "height": 85,
+      "chars": [
+        "\uf640"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_219_0_1.png",
+      "ascent": 38,
+      "height": 85,
+      "chars": [
+        "\uf641"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_219_0_2.png",
+      "ascent": 38,
+      "height": 85,
+      "chars": [
+        "\uf642"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_219_0_3.png",
+      "ascent": 38,
+      "height": 85,
+      "chars": [
+        "\uf643"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_219_1_0.png",
+      "ascent": -47,
+      "height": 85,
+      "chars": [
+        "\uf644"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_219_1_1.png",
+      "ascent": -47,
+      "height": 85,
+      "chars": [
+        "\uf645"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_219_1_2.png",
+      "ascent": -47,
+      "height": 85,
+      "chars": [
+        "\uf646"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_219_1_3.png",
+      "ascent": -47,
+      "height": 85,
+      "chars": [
+        "\uf647"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_219_2_0.png",
+      "ascent": -132,
+      "height": 85,
+      "chars": [
+        "\uf648"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_219_2_1.png",
+      "ascent": -132,
+      "height": 85,
+      "chars": [
+        "\uf649"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_219_2_2.png",
+      "ascent": -132,
+      "height": 85,
+      "chars": [
+        "\uf64a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_219_2_3.png",
+      "ascent": -132,
+      "height": 85,
+      "chars": [
+        "\uf64b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_219_3_0.png",
+      "ascent": -217,
+      "height": 85,
+      "chars": [
+        "\uf64c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_219_3_1.png",
+      "ascent": -217,
+      "height": 85,
+      "chars": [
+        "\uf64d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_219_3_2.png",
+      "ascent": -217,
+      "height": 85,
+      "chars": [
+        "\uf64e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/wp_bg_219_3_3.png",
+      "ascent": -217,
+      "height": 85,
+      "chars": [
+        "\uf64f"
+      ]
+    },
+    {
+      "type": "bitmap",
       "file": "fmc:font/ui/wp_ornament.png",
       "ascent": 25,
       "height": 32,

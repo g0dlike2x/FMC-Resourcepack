@@ -13898,6 +13898,114 @@
     },
     {
       "type": "bitmap",
+      "file": "fmc:font/ui/fw_bg_138_0_0.png",
+      "ascent": 38,
+      "height": 85,
+      "chars": [
+        "\uf600"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/fw_bg_138_0_1.png",
+      "ascent": 38,
+      "height": 85,
+      "chars": [
+        "\uf601"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/fw_bg_138_0_2.png",
+      "ascent": 38,
+      "height": 85,
+      "chars": [
+        "\uf602"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/fw_bg_138_0_3.png",
+      "ascent": 38,
+      "height": 85,
+      "chars": [
+        "\uf603"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/fw_bg_138_1_0.png",
+      "ascent": -47,
+      "height": 85,
+      "chars": [
+        "\uf604"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/fw_bg_138_1_1.png",
+      "ascent": -47,
+      "height": 85,
+      "chars": [
+        "\uf605"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/fw_bg_138_1_2.png",
+      "ascent": -47,
+      "height": 85,
+      "chars": [
+        "\uf606"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/fw_bg_138_1_3.png",
+      "ascent": -47,
+      "height": 85,
+      "chars": [
+        "\uf607"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/fw_bg_138_2_0.png",
+      "ascent": -132,
+      "height": 85,
+      "chars": [
+        "\uf608"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/fw_bg_138_2_1.png",
+      "ascent": -132,
+      "height": 85,
+      "chars": [
+        "\uf609"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/fw_bg_138_2_2.png",
+      "ascent": -132,
+      "height": 85,
+      "chars": [
+        "\uf60a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/ui/fw_bg_138_2_3.png",
+      "ascent": -132,
+      "height": 85,
+      "chars": [
+        "\uf60b"
+      ]
+    },
+    {
+      "type": "bitmap",
       "file": "fmc:font/ui/fw_ornament.png",
       "ascent": 25,
       "height": 32,

@@ -206,6 +206,8 @@ PanelMenu.create(plugin)
   `python tools/ai_art.py theme warp` (bzw. `farmwelt`), oder einzeln `python tools/ai_art.py gen <name>` (Rohbild nach
   `art/raw/`, nicht im Repo) und `python tools/ai_art.py prep <name>` (zuschneiden und verkleinern nach `art/<name>.png`,
   Breite aus `prep_width`). Danach `python tools/generate_icons.py` und die Vorschau prüfen.
+  Achtung bei Titeln: Weiße Buchstabenflächen kommen von der API oft durchsichtig zurück (der Titel ist dann im Spiel
+  kaum lesbar). Deshalb im Prompt eine farbige, deckende Füllung verlangen (siehe `warps_title`).
 - **Ohne KI-Bild:** Beim Warp- und Farmwelt-Theme zeichnet `tools/theme_art.py` einen Ersatz (Blöcke, Enderperle,
   Enderauge, Baum, Blumen); ohne Rahmenbild gibt es den Kachelrahmen. Ist ein Rahmenbild unbrauchbar (Öffnung nicht
   geschlossen), gibt es eine Warnung und ebenfalls den Kachelrahmen. Ohne Titelbild (`art/<text>_title.png`) wird der Titel

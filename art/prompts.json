@@ -49,7 +49,7 @@
     "size": "1536x1024",
     "quality": "high",
     "prep_width": 640,
-    "prompt": "Game UI title lettering: the single word \"WARPS\" in uppercase, chunky blocky pixel-art 3D letters (Minecraft inspired), bright white to light aqua top gradient with a thick deep-teal extruded side and dark teal outline, soft glowing cyan aura around the letters, a few tiny purple teleport particles, perfectly centered, exactly five letters W A R P S, correct spelling. Fully transparent background, nothing else, no frame, no subtitle."
+    "prompt": "Game UI title lettering: the single word \"WARPS\" in uppercase, chunky blocky pixel-art 3D letters (Minecraft inspired). The letter faces are SOLID and fully OPAQUE, filled with a vertical gradient from pale mint-cyan at the top to bright turquoise at the bottom (no white, no holes, nothing see-through inside the letters), with a thick deep-teal extruded side, a dark teal outline and a strong soft glowing cyan aura around the letters, a few tiny purple teleport particles, perfectly centered, exactly five letters W A R P S, correct spelling. Fully transparent background around the letters only, nothing else, no frame, no subtitle."
   },
 
   "farmwelt_banner": {
