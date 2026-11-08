@@ -22,6 +22,8 @@ Aufbau des Menues (alles relativ zur Oberkante des Rahmens, 1 Zeile = 9 Pixel):
 import math
 import os
 
+import pngread
+
 # ── Zeichen ─────────────────────────────────────────────────────────────────
 AM_TOP_BASE, AM_MID_BASE, AM_BOT_BASE, AM_BOT_VAR_BASE = 0xED00, 0xED10, 0xED80, 0xEE00
 AM_CRYSTAL_BOT_BASE = 0xF200        # + 2 * (Panelhoehe - AM_CRYSTAL_BOT_MIN) + Seite (0 links, 1 rechts)
@@ -40,18 +42,18 @@ TITLES = ["LAGER"]                              # je Titel ein Bild; Zeichen = A
 # ── Masse (GUI-Pixel) ───────────────────────────────────────────────────────
 AM_PAD_LINES = 2
 AM_HEADER_LINES = 4
-AM_NAME_X = 48                 # Textbeginn in der Karte (rechts neben der Itembox)
-AM_CARD_ICON_CENTER_X = 26     # Mitte der Itembox
+AM_NAME_X = 44                 # Textbeginn in der Karte (rechts neben der Itembox)
+AM_CARD_ICON_CENTER_X = 24     # Mitte der Itembox im Panel (Karte beginnt bei x = 8, Box also bei 12 bis 36)
 AM_BTN_TOP, AM_BTN_BOTTOM = 3.0, 24.0           # sichtbarer Teil des Buttons in der 27 Pixel hohen Kachel
 AM_BTN_BELOW_LABEL = 15        # Unterkante des Buttons unter der Oberkante der Textzeile (24 - 9)
 AM_CENTER_PAD_LINES = 2
 
-ORN_W, ORN_H, ORN_TEX = 84, 40, 3          # Ornament: Breite, Hoehe in GUI-Pixeln, Texturpixel je GUI-Pixel
+ORN_W, ORN_H, ORN_TEX = 96, 32, 2.5          # Ornament: Breite, Hoehe in GUI-Pixeln, Texturpixel je GUI-Pixel
 ORN_ABOVE = 18                             # so weit ragt die Truhe ueber den Rahmen
-CRY_TOP_W, CRY_TOP_H, CRY_TOP_Y = 14, 26, 14
-CRY_BOT_W, CRY_BOT_H, CRY_BOT_OVER = 24, 26, 2
+CRY_TOP_W, CRY_TOP_H, CRY_TOP_Y = 11, 16, 14
+CRY_BOT_W, CRY_BOT_H, CRY_BOT_OVER = 20, 28, 2
 CRY_TEX = 4
-TITLE_H, TITLE_TOP = 26, 4                 # Titelbild: Hoehe, Oberkante im Rahmen
+TITLE_H, TITLE_TOP = 22, 11                # Titelbild: Hoehe, Oberkante im Rahmen
 CLOSE_SIZE = 14
 
 # ── Farben ──────────────────────────────────────────────────────────────────
@@ -153,125 +155,41 @@ def frame_tile(gi, kind, col, v=None):
 
 # ── Kristalle ───────────────────────────────────────────────────────────────
 
-def draw_crystal(gi, ic, bx, by, w, h, lean=0.0):
-    """Ein Kristall: Fuss bei (bx, by), Breite w, Hoehe h, Spitze um lean seitlich versetzt."""
-    bl, br = (bx - w / 2, by), (bx + w / 2, by)
-    ls = (bx - w / 2 + lean * 0.35, by - h * 0.70)
-    rs = (bx + w / 2 + lean * 0.35, by - h * 0.70)
-    tip = (bx + lean, by - h)
-    ridge = (bx, by)
-    box = _bbox_poly([bl, br, ls, rs, tip], 2.5)
-    ic.paint(gi.sd_poly([bl, ls, tip, rs, br]), gi.hexc("#1E0B4A"), grow=0.9, box=box)
-    ic.paint(gi.sd_poly([bl, ls, tip, ridge]), gi.vgrad(by - h, by, gi.hexc("#E6CCFF"), gi.hexc("#9A62F5")), box=box)
-    ic.paint(gi.sd_poly([ridge, tip, rs, br]), gi.vgrad(by - h, by, gi.hexc("#A877FF"), gi.hexc("#4F27B0")), box=box)
-    ic.paint(gi.sd_seg(tip, ridge, 0.6), gi.hexc("#F4E8FF", 0.75), box=box)
-    ic.paint(gi.sd_seg(ls, tip, 0.5), gi.hexc("#FFFFFF", 0.55), box=box)
+def load_art(gi, name, required=True):
+    """Aufbereitetes Bild aus art/<name>.png (zugeschnitten, transparenter Hintergrund)."""
+    path = os.path.join(gi.ROOT, "art", name + ".png")
+    if not os.path.exists(path):
+        if required:
+            raise SystemExit("Bild fehlt: %s (erzeugen mit: python tools/ai_art.py gen %s, dann prep)" % (path, name))
+        return None
+    with open(path, "rb") as f:
+        return pngread.png_read(f.read())
+
+
+def fit(gi, rows, tw, th, align="center"):
+    """Passt das Bild unter Beibehaltung des Seitenverhaeltnisses in tw x th Pixel ein (align: center / bottom)."""
+    h, w = len(rows), len(rows[0])
+    k = min(tw / w, th / h)
+    nw, nh = max(1, round(w * k)), max(1, round(h * k))
+    small = resize(rows, nw, nh)
+    out = gi.blank(tw, th)
+    gi.blend(out, small, (tw - nw) // 2, th - nh if align == "bottom" else (th - nh) // 2)
+    return out
 
 
 def make_crystal_top(gi):
-    ic = gi.Icon(CRY_TOP_W, CRY_TOP_H, scale=CRY_TEX, ss=3)
-    draw_crystal(gi, ic, 4.0, 25.0, 5.0, 10.0, -1.5)
-    draw_crystal(gi, ic, 8.5, 25.0, 8.0, 23.0, 0.8)
-    return ic.render()
+    return fit(gi, load_art(gi, "lager_crystals"), CRY_TOP_W * CRY_TEX, CRY_TOP_H * CRY_TEX, "bottom")
 
 
 def make_crystal_bottom(gi):
-    ic = gi.Icon(CRY_BOT_W, CRY_BOT_H, scale=CRY_TEX, ss=3)
-    draw_crystal(gi, ic, 4.5, 25.0, 6.0, 11.0, -2.5)
-    draw_crystal(gi, ic, 19.0, 25.0, 6.0, 14.0, 1.5)
-    draw_crystal(gi, ic, 11.5, 25.0, 9.0, 23.0, -1.0)
-    return ic.render()
+    return fit(gi, load_art(gi, "lager_crystals"), CRY_BOT_W * CRY_TEX, CRY_BOT_H * CRY_TEX, "bottom")
 
-
-# ── Ornament (Truhe mit Steinen und Ranken) ─────────────────────────────────
 
 def make_ornament(gi):
-    ic = gi.Icon(ORN_W, ORN_H, scale=ORN_TEX, ss=3)
-    cx = ORN_W / 2.0
-    hexc = gi.hexc
-
-    # Lila Schein hinter der Truhe
-    glow = hexc("#9B5CFF")
-    ic.paint(gi.sd_circle(cx, 17, 27),
-             lambda x, y: (glow[0], glow[1], glow[2],
-                           0.30 * max(0.0, 1.0 - math.hypot(x - cx, (y - 17) * 1.3) / 27.0) ** 2),
-             box=(cx - 28, 0, cx + 28, ORN_H))
-
-    stone = (hexc("#9C97AE"), hexc("#5E5A70"))
-    seam = hexc("#2A2736", 0.6)
-
-    def block(x0, y0, x1, y1):
-        fancy(gi, ic, gi.sd_box(x0, y0, x1, y1, 1.2), stone, (x0, y0, x1, y1), outline=hexc("#24212F"), out=0.9)
-        ym = (y0 + y1) / 2
-        ic.paint(gi.sd_seg((x0 + 0.8, ym), (x1 - 0.8, ym), 0.7), seam, box=(x0, ym - 1, x1, ym + 1))
-        ic.paint(gi.sd_seg((x0 + (x1 - x0) * 0.4, y0 + 0.8), (x0 + (x1 - x0) * 0.4, ym), 0.7), seam,
-                 box=(x0, y0, x1, ym))
-        ic.paint(gi.sd_seg((x0 + (x1 - x0) * 0.65, ym), (x0 + (x1 - x0) * 0.65, y1 - 0.8), 0.7), seam,
-                 box=(x0, ym, x1, y1))
-
-    # Steine links und rechts der Truhe (hinterer Block zuerst)
-    block(cx - 31, 8, cx - 20, 29)
-    block(cx - 40, 18, cx - 27, 29)
-    block(cx + 20, 10, cx + 31, 29)
-    block(cx + 27, 19, cx + 40, 29)
-
-    # Truhe
-    wood_body = (hexc("#5E3A22"), hexc("#34200F"))
-    wood_lid = (hexc("#7A4A2C"), hexc("#412615"))
-    gold = (hexc("#FFE08A"), hexc("#C98A1C"))
-    gold_out = hexc("#5A3500")
-    fancy(gi, ic, gi.sd_box(cx - 19, 13, cx + 19, 29, 2.0), wood_body, (cx - 19, 13, cx + 19, 29),
-          outline=hexc("#1A0F08"), out=1.0)
-    fancy(gi, ic, gi.sd_box(cx - 19, 4, cx + 19, 16, 6.0), wood_lid, (cx - 19, 4, cx + 19, 16),
-          outline=hexc("#1A0F08"), out=1.0)
-    # Holzmaserung
-    for yy in (19.0, 23.0, 26.5):
-        ic.paint(gi.sd_seg((cx - 17, yy), (cx + 17, yy), 0.5), hexc("#150A04", 0.35),
-                 box=(cx - 18, yy - 1, cx + 18, yy + 1))
-    # Goldbeschlag: Querband, Seitenstreifen, Lidkante
-    fancy(gi, ic, gi.sd_box(cx - 19.4, 13.2, cx + 19.4, 16.2, 0.8), gold, (cx - 20, 13, cx + 20, 16.5),
-          outline=gold_out, out=0.8, rim=False)
-    for sx in (cx - 14.5, cx + 14.5):
-        fancy(gi, ic, gi.sd_box(sx - 1.7, 5.0, sx + 1.7, 28.6, 0.7), gold, (sx - 2, 4.5, sx + 2, 29),
-              outline=gold_out, out=0.8, rim=False)
-    ic.paint(gi.sd_seg((cx - 14, 5.2), (cx + 14, 5.2), 0.8), hexc("#FFE9A8", 0.8), box=(cx - 15, 4, cx + 15, 7))
-    # Schloss mit leuchtendem Schluesselloch
-    fancy(gi, ic, gi.sd_box(cx - 4.5, 10.5, cx + 4.5, 21.0, 1.6), gold, (cx - 5, 10, cx + 5, 21.5),
-          outline=gold_out, out=0.9)
-    halo = hexc("#FFF3B0")
-    ic.paint(gi.sd_circle(cx, 15.5, 3.2),
-             lambda x, y: (halo[0], halo[1], halo[2], 0.55 * max(0.0, 1 - math.hypot(x - cx, y - 15.5) / 3.2)),
-             box=(cx - 4, 11, cx + 4, 20))
-    ic.paint(gi.sd_circle(cx, 15.2, 1.3), hexc("#3A2200"), box=(cx - 2, 13, cx + 2, 17))
-    ic.paint(gi.sd_box(cx - 0.6, 15.4, cx + 0.6, 18.4, 0.2), hexc("#3A2200"), box=(cx - 2, 15, cx + 2, 19))
-
-    # Ranken und Blaetter
-    leaf = (hexc("#6CC46A"), hexc("#2E7A3A"))
-    leaf_out = hexc("#14391C")
-    vine = hexc("#2A6B32")
-    vines = [
-        [(cx - 33, 7), (cx - 26, 5), (cx - 20, 6), (cx - 12, 3.5)],
-        [(cx + 33, 9), (cx + 26, 7), (cx + 19, 5), (cx + 11, 3)],
-        [(cx - 36, 17), (cx - 38, 22), (cx - 36, 27)],
-        [(cx + 36, 18), (cx + 38, 23), (cx + 35, 28)],
-    ]
-    for line in vines:
-        for a, b in zip(line, line[1:]):
-            ic.paint(gi.sd_seg(a, b, 0.9), vine, box=_bbox_poly([a, b], 1.5))
-    leaves = [(-34, 7.5, -35), (-29, 4.5, 25), (-23, 7.5, -20), (-17, 5, 30), (-12, 2.8, -25), (-6.5, 2.2, 15),
-              (-37, 15, 50), (-38.5, 21, -40), (-36, 26, 40), (-26, 22, 65), (-24, 14, -50),
-              (34, 9.5, 30), (28, 6.5, -25), (22, 5, 20), (15, 3.2, -30), (9, 2.2, 20),
-              (37.5, 17, -50), (38.5, 22, 45), (35.5, 27.5, -40), (30, 23, -65), (25, 15, 50)]
-    for dx, y, ang in leaves:
-        lx = cx + dx
-        shape = gi.rot(gi.ellipse(lx, y, 3.4, 1.9), ang, lx, y)
-        fancy(gi, ic, shape, leaf, (lx - 4.5, y - 4.5, lx + 4.5, y + 4.5), outline=leaf_out, out=0.7)
-        ic.paint(gi.rot(gi.sd_seg((lx - 2.2, y), (lx + 2.2, y), 0.4), ang, lx, y), hexc("#BFF0B0", 0.7),
-                 box=(lx - 4, y - 4, lx + 4, y + 4))
-    return ic.render()
+    return fit(gi, load_art(gi, "lager_banner"), round(ORN_W * ORN_TEX), round(ORN_H * ORN_TEX), "bottom")
 
 
-# ── Titelbild (Pixelschrift mit Glow) ───────────────────────────────────────
+# -- Titelbild: Bild aus art/<text>_title.png, sonst Pixelschrift mit Glow --
 
 FONT5X7 = {
     "A": "01110 10001 10001 11111 10001 10001 10001",
@@ -355,7 +273,13 @@ def _blur_alpha(alpha, radius, passes=2):
 
 
 def make_title(gi, text):
-    """Titelbild: grosse Pixelbuchstaben (weiss ins Lila) mit Schattenkante und Glow."""
+    """Titelbild: art/<text>_title.png (KI-Bild) in TITLE_H Pixeln Hoehe; ohne Bild grosse Pixelbuchstaben
+    (weiss ins Lila) mit Schattenkante und Glow."""
+    art = load_art(gi, text.lower() + "_title", required=False)
+    if art is not None:
+        k = 3                                            # Texturpixel je GUI-Pixel (Bild bleibt unter 256 Pixel)
+        w_gui = min(80, round(TITLE_H * len(art[0]) / len(art)))
+        return fit(gi, art, w_gui * k, TITLE_H * k)
     cell = 1.5
     n = len(text)
     tw = (n * 5 + (n - 1)) * cell
@@ -429,7 +353,8 @@ def make_card_tile(gi, col):
     inner = gi._shift_x(gi.sd_box(1.3, 1.3, w - 1.3, h - 1.3, 2.4), ox)
     ic.paint(gi.sub(card, inner), lambda x, y: gi.mixc(gi.hexc("#C79BFF"), gi.hexc("#8A4DFF"), (x + ox) / w))
     # Itembox links
-    bx0, by0, bx1, by1 = AM_CARD_ICON_CENTER_X - 13, 4, AM_CARD_ICON_CENTER_X + 13, 30
+    cx = AM_CARD_ICON_CENTER_X - gi.CARD_X          # Mitte der Box in Kartenkoordinaten
+    bx0, by0, bx1, by1 = cx - 12, 5, cx + 12, 29
     box = gi._shift_x(gi.sd_box(bx0, by0, bx1, by1, 3.0), ox)
     box_in = gi._shift_x(gi.sd_box(bx0 + 1, by0 + 1, bx1 - 1, by1 - 1, 2.2), ox)
     ic.paint(box, gi.hexc("#7B55D6"))
@@ -527,8 +452,10 @@ def write_all(gi, pack, write_png, providers, chest_rows):
     prov("am_ornament.png", gi.PANEL_ASCENT + ORN_ABOVE, ORN_H, AM_ORNAMENT)
     info["ornament_adv"] = gi.glyph_advance(orn, ORN_H)
     info["titles"] = []
+    title_rows = []
     for i, text in enumerate(TITLES):
         rows = make_title(gi, text)
+        title_rows.append(rows)
         out(f"am_title_{text.lower()}.png", rows)
         prov(f"am_title_{text.lower()}.png", gi.PANEL_ASCENT - TITLE_TOP, TITLE_H, chr(AM_TITLE_BASE + i))
         info["titles"].append((text, chr(AM_TITLE_BASE + i), gi.glyph_advance(rows, TITLE_H)))
@@ -565,7 +492,104 @@ def write_all(gi, pack, write_png, providers, chest_rows):
     info["btn_end_adv"] = gi.single_advance([btn[(p, "left")] for p in (False, True)]
                                             + [btn[(p, "right")] for p in (False, True)], gi.BTN_H, "AM-Button-Enden")
     info["btn_mid_adv"] = gi.single_advance([btn[(p, "mid")] for p in (False, True)], gi.BTN_H, "AM-Button-Mitte")
+
+    write_preview(gi, os.path.join(gi.ROOT, "dist", "preview_amethyst.png"), {
+        "orn": orn, "top_l": top_l, "bot_l": bot_l, "close": close, "rule_l": rule_l, "title": title_rows[0] if title_rows else None,
+        "card": card, "btn": btn})
     return info
+
+
+def write_preview(gi, path, parts):
+    """Zeichnet das Lager-Menue aus den fertigen Bildern (Naeherung: Text in einer einfachen Pixelschrift statt der
+    Minecraft-Schrift, Positionen wie in PanelMenu). Nur zum Anschauen, landet in dist/."""
+    S, W, u = 4, gi.PANEL_W, gi.PANEL_UNIT
+    fh = 201                                   # Panelhoehe des Lager-Menues
+    pad = AM_PAD_LINES * 9
+    sheet = gi.blank(W * S, (pad + fh + 14) * S, (11, 8, 22, 255))
+
+    def put(rows, tex_per_gui, x, y):
+        tw, th = round(len(rows[0]) * S / tex_per_gui), round(len(rows) * S / tex_per_gui)
+        gi.blend(sheet, resize(rows, tw, th), round(x * S), round(y * S))
+
+    def rect(x, y, w, h, color):
+        for yy in range(round(y * S), round((y + h) * S)):
+            for xx in range(round(x * S), round((x + w) * S)):
+                if 0 <= yy < len(sheet) and 0 <= xx < len(sheet[0]):
+                    sheet[yy][xx] = color
+
+    def text(s, x, y, color=(255, 255, 255, 255), spacing=1):
+        for ch in s.upper():
+            pat = FONT5X7.get(ch, FONT5X7[" "]).split()
+            for cy, line in enumerate(pat):
+                for cx, bit in enumerate(line):
+                    if bit == "1":
+                        rect(x + cx, y + cy, 1, 1, color)
+            x += 6 + spacing
+        return x
+
+    def icon(name, x, y, size=14):
+        path_ = os.path.join(gi.ICON_DIR, name + ".png")
+        with open(path_, "rb") as f:
+            put(pngread.png_read(f.read()), 32.0 / size, x, y)
+
+    # Rahmen
+    rows_n, v = (fh - 1) // u + 1, (fh - 1) % u
+    cache = {}
+    for r in range(rows_n):
+        kind = "top" if r == 0 else ("mid" if r < rows_n - 1 else "bot")
+        for c in range(gi.PANEL_COLS):
+            key = (kind, c)
+            if key not in cache:
+                cache[key] = frame_tile(gi, kind, c, v if kind == "bot" and v != u - 1 else None).render()
+            put(cache[key], gi.PANEL_SCALE, c * gi.PANEL_TILE_W, pad + r * u)
+
+    # Karte
+    card_top = pad + AM_HEADER_LINES * 9 + 6
+    for c, rows in enumerate(parts["card"]):
+        put(rows, gi.PANEL_SCALE, gi.CARD_X + c * gi.CARD_TILE_W, card_top)
+    icon("chest", AM_CARD_ICON_CENTER_X - 9, card_top + 8, 18)
+    base = pad + AM_HEADER_LINES * 9 + 9
+    text("Oak Log", AM_NAME_X, base + 1)
+    icon("chest", AM_NAME_X, base + 8, 9)
+    end = text("0", AM_NAME_X + 11, base + 10, (255, 255, 85, 255))
+    text("/ 64", end + 2, base + 10, (170, 170, 170, 255))
+    text("0%", 240 - 14, base + 10)
+    rect(AM_NAME_X, base + 20, 192, 4, (58, 53, 80, 255))
+
+    # Buttons (Raster wie in PanelMenu: 2 Spalten, letzte Reihe mittig)
+    labels = [("minus", "-1"), ("minus", "-64"), ("arrow_up", "Auffuellen"), ("plus", "Einzahlen"),
+              ("double_up", "In SuperInv"), ("double_down", "Aus SuperInv"), ("settings", "Limit setzen")]
+    for i, (ic_name, label) in enumerate(labels):
+        row, col = i // 2, i % 2
+        single = i == len(labels) - 1
+        x = (W - 118) // 2 if single else 9 + col * 120
+        top = pad + (AM_HEADER_LINES + 4 + 3 + 3 * row - 1) * 9
+        primary = single
+        for kind, dx in (("left", 0), ("right", 59)):
+            put(parts["btn"][(primary, kind)], gi.PANEL_SCALE, x + dx, top)
+        icon(ic_name, x + 8, top + 9 - 1)
+        text(label, x + 8 + 18, top + 9 + 1)
+        icon("chevron", x + 118 - 8 - 8, top + 9 + 0, 9)
+
+    # Verzierungen
+    put(parts["top_l"], CRY_TEX, 2, pad + CRY_TOP_Y)
+    put(flip(parts["top_l"]), CRY_TEX, W - 2 - CRY_TOP_W, pad + CRY_TOP_Y)
+    put(parts["bot_l"], CRY_TEX, 1, pad + fh + CRY_BOT_OVER - CRY_BOT_H)
+    put(flip(parts["bot_l"]), CRY_TEX, W - 1 - CRY_BOT_W, pad + fh + CRY_BOT_OVER - CRY_BOT_H)
+    put(parts["orn"], ORN_TEX, (W - ORN_W) / 2, pad - ORN_ABOVE)
+    if parts["title"] is not None:
+        put(parts["title"], len(parts["title"]) / TITLE_H, (W - len(parts["title"][0]) * TITLE_H / len(parts["title"])) / 2,
+            pad + TITLE_TOP)
+    put(parts["close"], 4, 232, pad + 3)
+
+    # Untertitel mit Linien
+    sub = "DEIN PERSOENLICHES LAGER"
+    sw = len(sub) * 7 - 1
+    start = (W - sw) // 2
+    put(parts["rule_l"], 2, start - 46, pad + 27 + 3)
+    put(flip(parts["rule_l"]), 2, start + sw + 6, pad + 27 + 3)
+    text(sub, start, pad + 27 + 1, (169, 139, 232, 255))
+    gi.write_png(path, sheet)
 
 
 def lit(c):

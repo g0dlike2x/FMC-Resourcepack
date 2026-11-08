@@ -1,0 +1,17 @@
+{
+  "lager_banner": {
+    "size": "1536x1024",
+    "quality": "high",
+    "prompt": "Game UI decoration asset for a Minecraft-style dark fantasy storage menu. Front view, perfectly symmetrical, wide horizontal composition: in the center a dark wooden treasure chest with ornate gold trim, gold corner straps and a glowing golden lock with a keyhole; on both sides of the chest stacked weathered gray stone bricks covered with moss; lush green ivy vines with leaves draping over the chest lid and the stones. Soft purple magical glow behind the chest. Glossy hand-painted game icon style with crisp dark outlines and chunky blocky voxel-inspired shapes, rich saturated colors. Fully transparent background, no text, no frame, no floor, no shadow on the ground."
+  },
+  "lager_crystals": {
+    "size": "1024x1024",
+    "quality": "high",
+    "prompt": "Game UI decoration asset: a cluster of three glowing purple amethyst crystals of different heights growing from a small dark rocky base, the tallest in the middle leaning slightly to the left. Faceted, glossy hand-painted game icon style with crisp dark purple outlines, bright violet highlights and soft magical glow, Minecraft amethyst inspired. Fully transparent background, no text, no ground shadow."
+  },
+  "lager_title": {
+    "size": "1536x1024",
+    "quality": "high",
+    "prompt": "Game UI title lettering: the single word \"LAGER\" in uppercase, chunky blocky pixel-art 3D letters (Minecraft inspired), bright white to light lavender top gradient with a thick deep-purple extruded side and dark violet outline, soft glowing violet aura around the letters, perfectly centered, exactly five letters L A G E R, correct spelling. Fully transparent background, nothing else, no frame, no subtitle."
+  }
+}

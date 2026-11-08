@@ -19830,7 +19830,7 @@
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_top_l.png",
       "ascent": -7,
-      "height": 26,
+      "height": 16,
       "chars": [
         "\uf502"
       ]
@@ -19839,7 +19839,7 @@
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_top_r.png",
       "ascent": -7,
-      "height": 26,
+      "height": 16,
       "chars": [
         "\uf503"
       ]
@@ -19847,8 +19847,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": 5,
-      "height": 26,
+      "ascent": 7,
+      "height": 28,
       "chars": [
         "\uf200"
       ]
@@ -19856,8 +19856,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": 5,
-      "height": 26,
+      "ascent": 7,
+      "height": 28,
       "chars": [
         "\uf201"
       ]
@@ -19865,8 +19865,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": 4,
-      "height": 26,
+      "ascent": 6,
+      "height": 28,
       "chars": [
         "\uf202"
       ]
@@ -19874,8 +19874,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": 4,
-      "height": 26,
+      "ascent": 6,
+      "height": 28,
       "chars": [
         "\uf203"
       ]
@@ -19883,8 +19883,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": 3,
-      "height": 26,
+      "ascent": 5,
+      "height": 28,
       "chars": [
         "\uf204"
       ]
@@ -19892,8 +19892,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": 3,
-      "height": 26,
+      "ascent": 5,
+      "height": 28,
       "chars": [
         "\uf205"
       ]
@@ -19901,8 +19901,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": 2,
-      "height": 26,
+      "ascent": 4,
+      "height": 28,
       "chars": [
         "\uf206"
       ]
@@ -19910,8 +19910,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": 2,
-      "height": 26,
+      "ascent": 4,
+      "height": 28,
       "chars": [
         "\uf207"
       ]
@@ -19919,8 +19919,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": 1,
-      "height": 26,
+      "ascent": 3,
+      "height": 28,
       "chars": [
         "\uf208"
       ]
@@ -19928,8 +19928,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": 1,
-      "height": 26,
+      "ascent": 3,
+      "height": 28,
       "chars": [
         "\uf209"
       ]
@@ -19937,8 +19937,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": 0,
-      "height": 26,
+      "ascent": 2,
+      "height": 28,
       "chars": [
         "\uf20a"
       ]
@@ -19946,8 +19946,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": 0,
-      "height": 26,
+      "ascent": 2,
+      "height": 28,
       "chars": [
         "\uf20b"
       ]
@@ -19955,8 +19955,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -1,
-      "height": 26,
+      "ascent": 1,
+      "height": 28,
       "chars": [
         "\uf20c"
       ]
@@ -19964,8 +19964,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -1,
-      "height": 26,
+      "ascent": 1,
+      "height": 28,
       "chars": [
         "\uf20d"
       ]
@@ -19973,8 +19973,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -2,
-      "height": 26,
+      "ascent": 0,
+      "height": 28,
       "chars": [
         "\uf20e"
       ]
@@ -19982,8 +19982,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -2,
-      "height": 26,
+      "ascent": 0,
+      "height": 28,
       "chars": [
         "\uf20f"
       ]
@@ -19991,8 +19991,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -3,
-      "height": 26,
+      "ascent": -1,
+      "height": 28,
       "chars": [
         "\uf210"
       ]
@@ -20000,8 +20000,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -3,
-      "height": 26,
+      "ascent": -1,
+      "height": 28,
       "chars": [
         "\uf211"
       ]
@@ -20009,8 +20009,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -4,
-      "height": 26,
+      "ascent": -2,
+      "height": 28,
       "chars": [
         "\uf212"
       ]
@@ -20018,8 +20018,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -4,
-      "height": 26,
+      "ascent": -2,
+      "height": 28,
       "chars": [
         "\uf213"
       ]
@@ -20027,8 +20027,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -5,
-      "height": 26,
+      "ascent": -3,
+      "height": 28,
       "chars": [
         "\uf214"
       ]
@@ -20036,8 +20036,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -5,
-      "height": 26,
+      "ascent": -3,
+      "height": 28,
       "chars": [
         "\uf215"
       ]
@@ -20045,8 +20045,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -6,
-      "height": 26,
+      "ascent": -4,
+      "height": 28,
       "chars": [
         "\uf216"
       ]
@@ -20054,8 +20054,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -6,
-      "height": 26,
+      "ascent": -4,
+      "height": 28,
       "chars": [
         "\uf217"
       ]
@@ -20063,8 +20063,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -7,
-      "height": 26,
+      "ascent": -5,
+      "height": 28,
       "chars": [
         "\uf218"
       ]
@@ -20072,8 +20072,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -7,
-      "height": 26,
+      "ascent": -5,
+      "height": 28,
       "chars": [
         "\uf219"
       ]
@@ -20081,8 +20081,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -8,
-      "height": 26,
+      "ascent": -6,
+      "height": 28,
       "chars": [
         "\uf21a"
       ]
@@ -20090,8 +20090,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -8,
-      "height": 26,
+      "ascent": -6,
+      "height": 28,
       "chars": [
         "\uf21b"
       ]
@@ -20099,8 +20099,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -9,
-      "height": 26,
+      "ascent": -7,
+      "height": 28,
       "chars": [
         "\uf21c"
       ]
@@ -20108,8 +20108,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -9,
-      "height": 26,
+      "ascent": -7,
+      "height": 28,
       "chars": [
         "\uf21d"
       ]
@@ -20117,8 +20117,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -10,
-      "height": 26,
+      "ascent": -8,
+      "height": 28,
       "chars": [
         "\uf21e"
       ]
@@ -20126,8 +20126,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -10,
-      "height": 26,
+      "ascent": -8,
+      "height": 28,
       "chars": [
         "\uf21f"
       ]
@@ -20135,8 +20135,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -11,
-      "height": 26,
+      "ascent": -9,
+      "height": 28,
       "chars": [
         "\uf220"
       ]
@@ -20144,8 +20144,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -11,
-      "height": 26,
+      "ascent": -9,
+      "height": 28,
       "chars": [
         "\uf221"
       ]
@@ -20153,8 +20153,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -12,
-      "height": 26,
+      "ascent": -10,
+      "height": 28,
       "chars": [
         "\uf222"
       ]
@@ -20162,8 +20162,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -12,
-      "height": 26,
+      "ascent": -10,
+      "height": 28,
       "chars": [
         "\uf223"
       ]
@@ -20171,8 +20171,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -13,
-      "height": 26,
+      "ascent": -11,
+      "height": 28,
       "chars": [
         "\uf224"
       ]
@@ -20180,8 +20180,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -13,
-      "height": 26,
+      "ascent": -11,
+      "height": 28,
       "chars": [
         "\uf225"
       ]
@@ -20189,8 +20189,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -14,
-      "height": 26,
+      "ascent": -12,
+      "height": 28,
       "chars": [
         "\uf226"
       ]
@@ -20198,8 +20198,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -14,
-      "height": 26,
+      "ascent": -12,
+      "height": 28,
       "chars": [
         "\uf227"
       ]
@@ -20207,8 +20207,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -15,
-      "height": 26,
+      "ascent": -13,
+      "height": 28,
       "chars": [
         "\uf228"
       ]
@@ -20216,8 +20216,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -15,
-      "height": 26,
+      "ascent": -13,
+      "height": 28,
       "chars": [
         "\uf229"
       ]
@@ -20225,8 +20225,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -16,
-      "height": 26,
+      "ascent": -14,
+      "height": 28,
       "chars": [
         "\uf22a"
       ]
@@ -20234,8 +20234,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -16,
-      "height": 26,
+      "ascent": -14,
+      "height": 28,
       "chars": [
         "\uf22b"
       ]
@@ -20243,8 +20243,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -17,
-      "height": 26,
+      "ascent": -15,
+      "height": 28,
       "chars": [
         "\uf22c"
       ]
@@ -20252,8 +20252,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -17,
-      "height": 26,
+      "ascent": -15,
+      "height": 28,
       "chars": [
         "\uf22d"
       ]
@@ -20261,8 +20261,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -18,
-      "height": 26,
+      "ascent": -16,
+      "height": 28,
       "chars": [
         "\uf22e"
       ]
@@ -20270,8 +20270,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -18,
-      "height": 26,
+      "ascent": -16,
+      "height": 28,
       "chars": [
         "\uf22f"
       ]
@@ -20279,8 +20279,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -19,
-      "height": 26,
+      "ascent": -17,
+      "height": 28,
       "chars": [
         "\uf230"
       ]
@@ -20288,8 +20288,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -19,
-      "height": 26,
+      "ascent": -17,
+      "height": 28,
       "chars": [
         "\uf231"
       ]
@@ -20297,8 +20297,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -20,
-      "height": 26,
+      "ascent": -18,
+      "height": 28,
       "chars": [
         "\uf232"
       ]
@@ -20306,8 +20306,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -20,
-      "height": 26,
+      "ascent": -18,
+      "height": 28,
       "chars": [
         "\uf233"
       ]
@@ -20315,8 +20315,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -21,
-      "height": 26,
+      "ascent": -19,
+      "height": 28,
       "chars": [
         "\uf234"
       ]
@@ -20324,8 +20324,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -21,
-      "height": 26,
+      "ascent": -19,
+      "height": 28,
       "chars": [
         "\uf235"
       ]
@@ -20333,8 +20333,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -22,
-      "height": 26,
+      "ascent": -20,
+      "height": 28,
       "chars": [
         "\uf236"
       ]
@@ -20342,8 +20342,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -22,
-      "height": 26,
+      "ascent": -20,
+      "height": 28,
       "chars": [
         "\uf237"
       ]
@@ -20351,8 +20351,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -23,
-      "height": 26,
+      "ascent": -21,
+      "height": 28,
       "chars": [
         "\uf238"
       ]
@@ -20360,8 +20360,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -23,
-      "height": 26,
+      "ascent": -21,
+      "height": 28,
       "chars": [
         "\uf239"
       ]
@@ -20369,8 +20369,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -24,
-      "height": 26,
+      "ascent": -22,
+      "height": 28,
       "chars": [
         "\uf23a"
       ]
@@ -20378,8 +20378,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -24,
-      "height": 26,
+      "ascent": -22,
+      "height": 28,
       "chars": [
         "\uf23b"
       ]
@@ -20387,8 +20387,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -25,
-      "height": 26,
+      "ascent": -23,
+      "height": 28,
       "chars": [
         "\uf23c"
       ]
@@ -20396,8 +20396,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -25,
-      "height": 26,
+      "ascent": -23,
+      "height": 28,
       "chars": [
         "\uf23d"
       ]
@@ -20405,8 +20405,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -26,
-      "height": 26,
+      "ascent": -24,
+      "height": 28,
       "chars": [
         "\uf23e"
       ]
@@ -20414,8 +20414,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -26,
-      "height": 26,
+      "ascent": -24,
+      "height": 28,
       "chars": [
         "\uf23f"
       ]
@@ -20423,8 +20423,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -27,
-      "height": 26,
+      "ascent": -25,
+      "height": 28,
       "chars": [
         "\uf240"
       ]
@@ -20432,8 +20432,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -27,
-      "height": 26,
+      "ascent": -25,
+      "height": 28,
       "chars": [
         "\uf241"
       ]
@@ -20441,8 +20441,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -28,
-      "height": 26,
+      "ascent": -26,
+      "height": 28,
       "chars": [
         "\uf242"
       ]
@@ -20450,8 +20450,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -28,
-      "height": 26,
+      "ascent": -26,
+      "height": 28,
       "chars": [
         "\uf243"
       ]
@@ -20459,8 +20459,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -29,
-      "height": 26,
+      "ascent": -27,
+      "height": 28,
       "chars": [
         "\uf244"
       ]
@@ -20468,8 +20468,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -29,
-      "height": 26,
+      "ascent": -27,
+      "height": 28,
       "chars": [
         "\uf245"
       ]
@@ -20477,8 +20477,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -30,
-      "height": 26,
+      "ascent": -28,
+      "height": 28,
       "chars": [
         "\uf246"
       ]
@@ -20486,8 +20486,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -30,
-      "height": 26,
+      "ascent": -28,
+      "height": 28,
       "chars": [
         "\uf247"
       ]
@@ -20495,8 +20495,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -31,
-      "height": 26,
+      "ascent": -29,
+      "height": 28,
       "chars": [
         "\uf248"
       ]
@@ -20504,8 +20504,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -31,
-      "height": 26,
+      "ascent": -29,
+      "height": 28,
       "chars": [
         "\uf249"
       ]
@@ -20513,8 +20513,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -32,
-      "height": 26,
+      "ascent": -30,
+      "height": 28,
       "chars": [
         "\uf24a"
       ]
@@ -20522,8 +20522,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -32,
-      "height": 26,
+      "ascent": -30,
+      "height": 28,
       "chars": [
         "\uf24b"
       ]
@@ -20531,8 +20531,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -33,
-      "height": 26,
+      "ascent": -31,
+      "height": 28,
       "chars": [
         "\uf24c"
       ]
@@ -20540,8 +20540,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -33,
-      "height": 26,
+      "ascent": -31,
+      "height": 28,
       "chars": [
         "\uf24d"
       ]
@@ -20549,8 +20549,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -34,
-      "height": 26,
+      "ascent": -32,
+      "height": 28,
       "chars": [
         "\uf24e"
       ]
@@ -20558,8 +20558,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -34,
-      "height": 26,
+      "ascent": -32,
+      "height": 28,
       "chars": [
         "\uf24f"
       ]
@@ -20567,8 +20567,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -35,
-      "height": 26,
+      "ascent": -33,
+      "height": 28,
       "chars": [
         "\uf250"
       ]
@@ -20576,8 +20576,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -35,
-      "height": 26,
+      "ascent": -33,
+      "height": 28,
       "chars": [
         "\uf251"
       ]
@@ -20585,8 +20585,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -36,
-      "height": 26,
+      "ascent": -34,
+      "height": 28,
       "chars": [
         "\uf252"
       ]
@@ -20594,8 +20594,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -36,
-      "height": 26,
+      "ascent": -34,
+      "height": 28,
       "chars": [
         "\uf253"
       ]
@@ -20603,8 +20603,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -37,
-      "height": 26,
+      "ascent": -35,
+      "height": 28,
       "chars": [
         "\uf254"
       ]
@@ -20612,8 +20612,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -37,
-      "height": 26,
+      "ascent": -35,
+      "height": 28,
       "chars": [
         "\uf255"
       ]
@@ -20621,8 +20621,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -38,
-      "height": 26,
+      "ascent": -36,
+      "height": 28,
       "chars": [
         "\uf256"
       ]
@@ -20630,8 +20630,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -38,
-      "height": 26,
+      "ascent": -36,
+      "height": 28,
       "chars": [
         "\uf257"
       ]
@@ -20639,8 +20639,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -39,
-      "height": 26,
+      "ascent": -37,
+      "height": 28,
       "chars": [
         "\uf258"
       ]
@@ -20648,8 +20648,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -39,
-      "height": 26,
+      "ascent": -37,
+      "height": 28,
       "chars": [
         "\uf259"
       ]
@@ -20657,8 +20657,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -40,
-      "height": 26,
+      "ascent": -38,
+      "height": 28,
       "chars": [
         "\uf25a"
       ]
@@ -20666,8 +20666,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -40,
-      "height": 26,
+      "ascent": -38,
+      "height": 28,
       "chars": [
         "\uf25b"
       ]
@@ -20675,8 +20675,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -41,
-      "height": 26,
+      "ascent": -39,
+      "height": 28,
       "chars": [
         "\uf25c"
       ]
@@ -20684,8 +20684,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -41,
-      "height": 26,
+      "ascent": -39,
+      "height": 28,
       "chars": [
         "\uf25d"
       ]
@@ -20693,8 +20693,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -42,
-      "height": 26,
+      "ascent": -40,
+      "height": 28,
       "chars": [
         "\uf25e"
       ]
@@ -20702,8 +20702,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -42,
-      "height": 26,
+      "ascent": -40,
+      "height": 28,
       "chars": [
         "\uf25f"
       ]
@@ -20711,8 +20711,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -43,
-      "height": 26,
+      "ascent": -41,
+      "height": 28,
       "chars": [
         "\uf260"
       ]
@@ -20720,8 +20720,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -43,
-      "height": 26,
+      "ascent": -41,
+      "height": 28,
       "chars": [
         "\uf261"
       ]
@@ -20729,8 +20729,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -44,
-      "height": 26,
+      "ascent": -42,
+      "height": 28,
       "chars": [
         "\uf262"
       ]
@@ -20738,8 +20738,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -44,
-      "height": 26,
+      "ascent": -42,
+      "height": 28,
       "chars": [
         "\uf263"
       ]
@@ -20747,8 +20747,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -45,
-      "height": 26,
+      "ascent": -43,
+      "height": 28,
       "chars": [
         "\uf264"
       ]
@@ -20756,8 +20756,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -45,
-      "height": 26,
+      "ascent": -43,
+      "height": 28,
       "chars": [
         "\uf265"
       ]
@@ -20765,8 +20765,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -46,
-      "height": 26,
+      "ascent": -44,
+      "height": 28,
       "chars": [
         "\uf266"
       ]
@@ -20774,8 +20774,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -46,
-      "height": 26,
+      "ascent": -44,
+      "height": 28,
       "chars": [
         "\uf267"
       ]
@@ -20783,8 +20783,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -47,
-      "height": 26,
+      "ascent": -45,
+      "height": 28,
       "chars": [
         "\uf268"
       ]
@@ -20792,8 +20792,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -47,
-      "height": 26,
+      "ascent": -45,
+      "height": 28,
       "chars": [
         "\uf269"
       ]
@@ -20801,8 +20801,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -48,
-      "height": 26,
+      "ascent": -46,
+      "height": 28,
       "chars": [
         "\uf26a"
       ]
@@ -20810,8 +20810,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -48,
-      "height": 26,
+      "ascent": -46,
+      "height": 28,
       "chars": [
         "\uf26b"
       ]
@@ -20819,8 +20819,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -49,
-      "height": 26,
+      "ascent": -47,
+      "height": 28,
       "chars": [
         "\uf26c"
       ]
@@ -20828,8 +20828,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -49,
-      "height": 26,
+      "ascent": -47,
+      "height": 28,
       "chars": [
         "\uf26d"
       ]
@@ -20837,8 +20837,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -50,
-      "height": 26,
+      "ascent": -48,
+      "height": 28,
       "chars": [
         "\uf26e"
       ]
@@ -20846,8 +20846,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -50,
-      "height": 26,
+      "ascent": -48,
+      "height": 28,
       "chars": [
         "\uf26f"
       ]
@@ -20855,8 +20855,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -51,
-      "height": 26,
+      "ascent": -49,
+      "height": 28,
       "chars": [
         "\uf270"
       ]
@@ -20864,8 +20864,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -51,
-      "height": 26,
+      "ascent": -49,
+      "height": 28,
       "chars": [
         "\uf271"
       ]
@@ -20873,8 +20873,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -52,
-      "height": 26,
+      "ascent": -50,
+      "height": 28,
       "chars": [
         "\uf272"
       ]
@@ -20882,8 +20882,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -52,
-      "height": 26,
+      "ascent": -50,
+      "height": 28,
       "chars": [
         "\uf273"
       ]
@@ -20891,8 +20891,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -53,
-      "height": 26,
+      "ascent": -51,
+      "height": 28,
       "chars": [
         "\uf274"
       ]
@@ -20900,8 +20900,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -53,
-      "height": 26,
+      "ascent": -51,
+      "height": 28,
       "chars": [
         "\uf275"
       ]
@@ -20909,8 +20909,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -54,
-      "height": 26,
+      "ascent": -52,
+      "height": 28,
       "chars": [
         "\uf276"
       ]
@@ -20918,8 +20918,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -54,
-      "height": 26,
+      "ascent": -52,
+      "height": 28,
       "chars": [
         "\uf277"
       ]
@@ -20927,8 +20927,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -55,
-      "height": 26,
+      "ascent": -53,
+      "height": 28,
       "chars": [
         "\uf278"
       ]
@@ -20936,8 +20936,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -55,
-      "height": 26,
+      "ascent": -53,
+      "height": 28,
       "chars": [
         "\uf279"
       ]
@@ -20945,8 +20945,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -56,
-      "height": 26,
+      "ascent": -54,
+      "height": 28,
       "chars": [
         "\uf27a"
       ]
@@ -20954,8 +20954,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -56,
-      "height": 26,
+      "ascent": -54,
+      "height": 28,
       "chars": [
         "\uf27b"
       ]
@@ -20963,8 +20963,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -57,
-      "height": 26,
+      "ascent": -55,
+      "height": 28,
       "chars": [
         "\uf27c"
       ]
@@ -20972,8 +20972,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -57,
-      "height": 26,
+      "ascent": -55,
+      "height": 28,
       "chars": [
         "\uf27d"
       ]
@@ -20981,8 +20981,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -58,
-      "height": 26,
+      "ascent": -56,
+      "height": 28,
       "chars": [
         "\uf27e"
       ]
@@ -20990,8 +20990,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -58,
-      "height": 26,
+      "ascent": -56,
+      "height": 28,
       "chars": [
         "\uf27f"
       ]
@@ -20999,8 +20999,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -59,
-      "height": 26,
+      "ascent": -57,
+      "height": 28,
       "chars": [
         "\uf280"
       ]
@@ -21008,8 +21008,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -59,
-      "height": 26,
+      "ascent": -57,
+      "height": 28,
       "chars": [
         "\uf281"
       ]
@@ -21017,8 +21017,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -60,
-      "height": 26,
+      "ascent": -58,
+      "height": 28,
       "chars": [
         "\uf282"
       ]
@@ -21026,8 +21026,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -60,
-      "height": 26,
+      "ascent": -58,
+      "height": 28,
       "chars": [
         "\uf283"
       ]
@@ -21035,8 +21035,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -61,
-      "height": 26,
+      "ascent": -59,
+      "height": 28,
       "chars": [
         "\uf284"
       ]
@@ -21044,8 +21044,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -61,
-      "height": 26,
+      "ascent": -59,
+      "height": 28,
       "chars": [
         "\uf285"
       ]
@@ -21053,8 +21053,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -62,
-      "height": 26,
+      "ascent": -60,
+      "height": 28,
       "chars": [
         "\uf286"
       ]
@@ -21062,8 +21062,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -62,
-      "height": 26,
+      "ascent": -60,
+      "height": 28,
       "chars": [
         "\uf287"
       ]
@@ -21071,8 +21071,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -63,
-      "height": 26,
+      "ascent": -61,
+      "height": 28,
       "chars": [
         "\uf288"
       ]
@@ -21080,8 +21080,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -63,
-      "height": 26,
+      "ascent": -61,
+      "height": 28,
       "chars": [
         "\uf289"
       ]
@@ -21089,8 +21089,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -64,
-      "height": 26,
+      "ascent": -62,
+      "height": 28,
       "chars": [
         "\uf28a"
       ]
@@ -21098,8 +21098,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -64,
-      "height": 26,
+      "ascent": -62,
+      "height": 28,
       "chars": [
         "\uf28b"
       ]
@@ -21107,8 +21107,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -65,
-      "height": 26,
+      "ascent": -63,
+      "height": 28,
       "chars": [
         "\uf28c"
       ]
@@ -21116,8 +21116,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -65,
-      "height": 26,
+      "ascent": -63,
+      "height": 28,
       "chars": [
         "\uf28d"
       ]
@@ -21125,8 +21125,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -66,
-      "height": 26,
+      "ascent": -64,
+      "height": 28,
       "chars": [
         "\uf28e"
       ]
@@ -21134,8 +21134,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -66,
-      "height": 26,
+      "ascent": -64,
+      "height": 28,
       "chars": [
         "\uf28f"
       ]
@@ -21143,8 +21143,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -67,
-      "height": 26,
+      "ascent": -65,
+      "height": 28,
       "chars": [
         "\uf290"
       ]
@@ -21152,8 +21152,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -67,
-      "height": 26,
+      "ascent": -65,
+      "height": 28,
       "chars": [
         "\uf291"
       ]
@@ -21161,8 +21161,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -68,
-      "height": 26,
+      "ascent": -66,
+      "height": 28,
       "chars": [
         "\uf292"
       ]
@@ -21170,8 +21170,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -68,
-      "height": 26,
+      "ascent": -66,
+      "height": 28,
       "chars": [
         "\uf293"
       ]
@@ -21179,8 +21179,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -69,
-      "height": 26,
+      "ascent": -67,
+      "height": 28,
       "chars": [
         "\uf294"
       ]
@@ -21188,8 +21188,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -69,
-      "height": 26,
+      "ascent": -67,
+      "height": 28,
       "chars": [
         "\uf295"
       ]
@@ -21197,8 +21197,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -70,
-      "height": 26,
+      "ascent": -68,
+      "height": 28,
       "chars": [
         "\uf296"
       ]
@@ -21206,8 +21206,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -70,
-      "height": 26,
+      "ascent": -68,
+      "height": 28,
       "chars": [
         "\uf297"
       ]
@@ -21215,8 +21215,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -71,
-      "height": 26,
+      "ascent": -69,
+      "height": 28,
       "chars": [
         "\uf298"
       ]
@@ -21224,8 +21224,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -71,
-      "height": 26,
+      "ascent": -69,
+      "height": 28,
       "chars": [
         "\uf299"
       ]
@@ -21233,8 +21233,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -72,
-      "height": 26,
+      "ascent": -70,
+      "height": 28,
       "chars": [
         "\uf29a"
       ]
@@ -21242,8 +21242,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -72,
-      "height": 26,
+      "ascent": -70,
+      "height": 28,
       "chars": [
         "\uf29b"
       ]
@@ -21251,8 +21251,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -73,
-      "height": 26,
+      "ascent": -71,
+      "height": 28,
       "chars": [
         "\uf29c"
       ]
@@ -21260,8 +21260,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -73,
-      "height": 26,
+      "ascent": -71,
+      "height": 28,
       "chars": [
         "\uf29d"
       ]
@@ -21269,8 +21269,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -74,
-      "height": 26,
+      "ascent": -72,
+      "height": 28,
       "chars": [
         "\uf29e"
       ]
@@ -21278,8 +21278,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -74,
-      "height": 26,
+      "ascent": -72,
+      "height": 28,
       "chars": [
         "\uf29f"
       ]
@@ -21287,8 +21287,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -75,
-      "height": 26,
+      "ascent": -73,
+      "height": 28,
       "chars": [
         "\uf2a0"
       ]
@@ -21296,8 +21296,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -75,
-      "height": 26,
+      "ascent": -73,
+      "height": 28,
       "chars": [
         "\uf2a1"
       ]
@@ -21305,8 +21305,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -76,
-      "height": 26,
+      "ascent": -74,
+      "height": 28,
       "chars": [
         "\uf2a2"
       ]
@@ -21314,8 +21314,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -76,
-      "height": 26,
+      "ascent": -74,
+      "height": 28,
       "chars": [
         "\uf2a3"
       ]
@@ -21323,8 +21323,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -77,
-      "height": 26,
+      "ascent": -75,
+      "height": 28,
       "chars": [
         "\uf2a4"
       ]
@@ -21332,8 +21332,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -77,
-      "height": 26,
+      "ascent": -75,
+      "height": 28,
       "chars": [
         "\uf2a5"
       ]
@@ -21341,8 +21341,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -78,
-      "height": 26,
+      "ascent": -76,
+      "height": 28,
       "chars": [
         "\uf2a6"
       ]
@@ -21350,8 +21350,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -78,
-      "height": 26,
+      "ascent": -76,
+      "height": 28,
       "chars": [
         "\uf2a7"
       ]
@@ -21359,8 +21359,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -79,
-      "height": 26,
+      "ascent": -77,
+      "height": 28,
       "chars": [
         "\uf2a8"
       ]
@@ -21368,8 +21368,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -79,
-      "height": 26,
+      "ascent": -77,
+      "height": 28,
       "chars": [
         "\uf2a9"
       ]
@@ -21377,8 +21377,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -80,
-      "height": 26,
+      "ascent": -78,
+      "height": 28,
       "chars": [
         "\uf2aa"
       ]
@@ -21386,8 +21386,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -80,
-      "height": 26,
+      "ascent": -78,
+      "height": 28,
       "chars": [
         "\uf2ab"
       ]
@@ -21395,8 +21395,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -81,
-      "height": 26,
+      "ascent": -79,
+      "height": 28,
       "chars": [
         "\uf2ac"
       ]
@@ -21404,8 +21404,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -81,
-      "height": 26,
+      "ascent": -79,
+      "height": 28,
       "chars": [
         "\uf2ad"
       ]
@@ -21413,8 +21413,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -82,
-      "height": 26,
+      "ascent": -80,
+      "height": 28,
       "chars": [
         "\uf2ae"
       ]
@@ -21422,8 +21422,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -82,
-      "height": 26,
+      "ascent": -80,
+      "height": 28,
       "chars": [
         "\uf2af"
       ]
@@ -21431,8 +21431,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -83,
-      "height": 26,
+      "ascent": -81,
+      "height": 28,
       "chars": [
         "\uf2b0"
       ]
@@ -21440,8 +21440,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -83,
-      "height": 26,
+      "ascent": -81,
+      "height": 28,
       "chars": [
         "\uf2b1"
       ]
@@ -21449,8 +21449,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -84,
-      "height": 26,
+      "ascent": -82,
+      "height": 28,
       "chars": [
         "\uf2b2"
       ]
@@ -21458,8 +21458,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -84,
-      "height": 26,
+      "ascent": -82,
+      "height": 28,
       "chars": [
         "\uf2b3"
       ]
@@ -21467,8 +21467,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -85,
-      "height": 26,
+      "ascent": -83,
+      "height": 28,
       "chars": [
         "\uf2b4"
       ]
@@ -21476,8 +21476,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -85,
-      "height": 26,
+      "ascent": -83,
+      "height": 28,
       "chars": [
         "\uf2b5"
       ]
@@ -21485,8 +21485,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -86,
-      "height": 26,
+      "ascent": -84,
+      "height": 28,
       "chars": [
         "\uf2b6"
       ]
@@ -21494,8 +21494,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -86,
-      "height": 26,
+      "ascent": -84,
+      "height": 28,
       "chars": [
         "\uf2b7"
       ]
@@ -21503,8 +21503,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -87,
-      "height": 26,
+      "ascent": -85,
+      "height": 28,
       "chars": [
         "\uf2b8"
       ]
@@ -21512,8 +21512,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -87,
-      "height": 26,
+      "ascent": -85,
+      "height": 28,
       "chars": [
         "\uf2b9"
       ]
@@ -21521,8 +21521,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -88,
-      "height": 26,
+      "ascent": -86,
+      "height": 28,
       "chars": [
         "\uf2ba"
       ]
@@ -21530,8 +21530,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -88,
-      "height": 26,
+      "ascent": -86,
+      "height": 28,
       "chars": [
         "\uf2bb"
       ]
@@ -21539,8 +21539,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -89,
-      "height": 26,
+      "ascent": -87,
+      "height": 28,
       "chars": [
         "\uf2bc"
       ]
@@ -21548,8 +21548,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -89,
-      "height": 26,
+      "ascent": -87,
+      "height": 28,
       "chars": [
         "\uf2bd"
       ]
@@ -21557,8 +21557,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -90,
-      "height": 26,
+      "ascent": -88,
+      "height": 28,
       "chars": [
         "\uf2be"
       ]
@@ -21566,8 +21566,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -90,
-      "height": 26,
+      "ascent": -88,
+      "height": 28,
       "chars": [
         "\uf2bf"
       ]
@@ -21575,8 +21575,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -91,
-      "height": 26,
+      "ascent": -89,
+      "height": 28,
       "chars": [
         "\uf2c0"
       ]
@@ -21584,8 +21584,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -91,
-      "height": 26,
+      "ascent": -89,
+      "height": 28,
       "chars": [
         "\uf2c1"
       ]
@@ -21593,8 +21593,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -92,
-      "height": 26,
+      "ascent": -90,
+      "height": 28,
       "chars": [
         "\uf2c2"
       ]
@@ -21602,8 +21602,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -92,
-      "height": 26,
+      "ascent": -90,
+      "height": 28,
       "chars": [
         "\uf2c3"
       ]
@@ -21611,8 +21611,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -93,
-      "height": 26,
+      "ascent": -91,
+      "height": 28,
       "chars": [
         "\uf2c4"
       ]
@@ -21620,8 +21620,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -93,
-      "height": 26,
+      "ascent": -91,
+      "height": 28,
       "chars": [
         "\uf2c5"
       ]
@@ -21629,8 +21629,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -94,
-      "height": 26,
+      "ascent": -92,
+      "height": 28,
       "chars": [
         "\uf2c6"
       ]
@@ -21638,8 +21638,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -94,
-      "height": 26,
+      "ascent": -92,
+      "height": 28,
       "chars": [
         "\uf2c7"
       ]
@@ -21647,8 +21647,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -95,
-      "height": 26,
+      "ascent": -93,
+      "height": 28,
       "chars": [
         "\uf2c8"
       ]
@@ -21656,8 +21656,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -95,
-      "height": 26,
+      "ascent": -93,
+      "height": 28,
       "chars": [
         "\uf2c9"
       ]
@@ -21665,8 +21665,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -96,
-      "height": 26,
+      "ascent": -94,
+      "height": 28,
       "chars": [
         "\uf2ca"
       ]
@@ -21674,8 +21674,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -96,
-      "height": 26,
+      "ascent": -94,
+      "height": 28,
       "chars": [
         "\uf2cb"
       ]
@@ -21683,8 +21683,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -97,
-      "height": 26,
+      "ascent": -95,
+      "height": 28,
       "chars": [
         "\uf2cc"
       ]
@@ -21692,8 +21692,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -97,
-      "height": 26,
+      "ascent": -95,
+      "height": 28,
       "chars": [
         "\uf2cd"
       ]
@@ -21701,8 +21701,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -98,
-      "height": 26,
+      "ascent": -96,
+      "height": 28,
       "chars": [
         "\uf2ce"
       ]
@@ -21710,8 +21710,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -98,
-      "height": 26,
+      "ascent": -96,
+      "height": 28,
       "chars": [
         "\uf2cf"
       ]
@@ -21719,8 +21719,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -99,
-      "height": 26,
+      "ascent": -97,
+      "height": 28,
       "chars": [
         "\uf2d0"
       ]
@@ -21728,8 +21728,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -99,
-      "height": 26,
+      "ascent": -97,
+      "height": 28,
       "chars": [
         "\uf2d1"
       ]
@@ -21737,8 +21737,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -100,
-      "height": 26,
+      "ascent": -98,
+      "height": 28,
       "chars": [
         "\uf2d2"
       ]
@@ -21746,8 +21746,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -100,
-      "height": 26,
+      "ascent": -98,
+      "height": 28,
       "chars": [
         "\uf2d3"
       ]
@@ -21755,8 +21755,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -101,
-      "height": 26,
+      "ascent": -99,
+      "height": 28,
       "chars": [
         "\uf2d4"
       ]
@@ -21764,8 +21764,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -101,
-      "height": 26,
+      "ascent": -99,
+      "height": 28,
       "chars": [
         "\uf2d5"
       ]
@@ -21773,8 +21773,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -102,
-      "height": 26,
+      "ascent": -100,
+      "height": 28,
       "chars": [
         "\uf2d6"
       ]
@@ -21782,8 +21782,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -102,
-      "height": 26,
+      "ascent": -100,
+      "height": 28,
       "chars": [
         "\uf2d7"
       ]
@@ -21791,8 +21791,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -103,
-      "height": 26,
+      "ascent": -101,
+      "height": 28,
       "chars": [
         "\uf2d8"
       ]
@@ -21800,8 +21800,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -103,
-      "height": 26,
+      "ascent": -101,
+      "height": 28,
       "chars": [
         "\uf2d9"
       ]
@@ -21809,8 +21809,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -104,
-      "height": 26,
+      "ascent": -102,
+      "height": 28,
       "chars": [
         "\uf2da"
       ]
@@ -21818,8 +21818,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -104,
-      "height": 26,
+      "ascent": -102,
+      "height": 28,
       "chars": [
         "\uf2db"
       ]
@@ -21827,8 +21827,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -105,
-      "height": 26,
+      "ascent": -103,
+      "height": 28,
       "chars": [
         "\uf2dc"
       ]
@@ -21836,8 +21836,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -105,
-      "height": 26,
+      "ascent": -103,
+      "height": 28,
       "chars": [
         "\uf2dd"
       ]
@@ -21845,8 +21845,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -106,
-      "height": 26,
+      "ascent": -104,
+      "height": 28,
       "chars": [
         "\uf2de"
       ]
@@ -21854,8 +21854,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -106,
-      "height": 26,
+      "ascent": -104,
+      "height": 28,
       "chars": [
         "\uf2df"
       ]
@@ -21863,8 +21863,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -107,
-      "height": 26,
+      "ascent": -105,
+      "height": 28,
       "chars": [
         "\uf2e0"
       ]
@@ -21872,8 +21872,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -107,
-      "height": 26,
+      "ascent": -105,
+      "height": 28,
       "chars": [
         "\uf2e1"
       ]
@@ -21881,8 +21881,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -108,
-      "height": 26,
+      "ascent": -106,
+      "height": 28,
       "chars": [
         "\uf2e2"
       ]
@@ -21890,8 +21890,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -108,
-      "height": 26,
+      "ascent": -106,
+      "height": 28,
       "chars": [
         "\uf2e3"
       ]
@@ -21899,8 +21899,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -109,
-      "height": 26,
+      "ascent": -107,
+      "height": 28,
       "chars": [
         "\uf2e4"
       ]
@@ -21908,8 +21908,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -109,
-      "height": 26,
+      "ascent": -107,
+      "height": 28,
       "chars": [
         "\uf2e5"
       ]
@@ -21917,8 +21917,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -110,
-      "height": 26,
+      "ascent": -108,
+      "height": 28,
       "chars": [
         "\uf2e6"
       ]
@@ -21926,8 +21926,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -110,
-      "height": 26,
+      "ascent": -108,
+      "height": 28,
       "chars": [
         "\uf2e7"
       ]
@@ -21935,8 +21935,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -111,
-      "height": 26,
+      "ascent": -109,
+      "height": 28,
       "chars": [
         "\uf2e8"
       ]
@@ -21944,8 +21944,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -111,
-      "height": 26,
+      "ascent": -109,
+      "height": 28,
       "chars": [
         "\uf2e9"
       ]
@@ -21953,8 +21953,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -112,
-      "height": 26,
+      "ascent": -110,
+      "height": 28,
       "chars": [
         "\uf2ea"
       ]
@@ -21962,8 +21962,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -112,
-      "height": 26,
+      "ascent": -110,
+      "height": 28,
       "chars": [
         "\uf2eb"
       ]
@@ -21971,8 +21971,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -113,
-      "height": 26,
+      "ascent": -111,
+      "height": 28,
       "chars": [
         "\uf2ec"
       ]
@@ -21980,8 +21980,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -113,
-      "height": 26,
+      "ascent": -111,
+      "height": 28,
       "chars": [
         "\uf2ed"
       ]
@@ -21989,8 +21989,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -114,
-      "height": 26,
+      "ascent": -112,
+      "height": 28,
       "chars": [
         "\uf2ee"
       ]
@@ -21998,8 +21998,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -114,
-      "height": 26,
+      "ascent": -112,
+      "height": 28,
       "chars": [
         "\uf2ef"
       ]
@@ -22007,8 +22007,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -115,
-      "height": 26,
+      "ascent": -113,
+      "height": 28,
       "chars": [
         "\uf2f0"
       ]
@@ -22016,8 +22016,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -115,
-      "height": 26,
+      "ascent": -113,
+      "height": 28,
       "chars": [
         "\uf2f1"
       ]
@@ -22025,8 +22025,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -116,
-      "height": 26,
+      "ascent": -114,
+      "height": 28,
       "chars": [
         "\uf2f2"
       ]
@@ -22034,8 +22034,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -116,
-      "height": 26,
+      "ascent": -114,
+      "height": 28,
       "chars": [
         "\uf2f3"
       ]
@@ -22043,8 +22043,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -117,
-      "height": 26,
+      "ascent": -115,
+      "height": 28,
       "chars": [
         "\uf2f4"
       ]
@@ -22052,8 +22052,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -117,
-      "height": 26,
+      "ascent": -115,
+      "height": 28,
       "chars": [
         "\uf2f5"
       ]
@@ -22061,8 +22061,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -118,
-      "height": 26,
+      "ascent": -116,
+      "height": 28,
       "chars": [
         "\uf2f6"
       ]
@@ -22070,8 +22070,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -118,
-      "height": 26,
+      "ascent": -116,
+      "height": 28,
       "chars": [
         "\uf2f7"
       ]
@@ -22079,8 +22079,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -119,
-      "height": 26,
+      "ascent": -117,
+      "height": 28,
       "chars": [
         "\uf2f8"
       ]
@@ -22088,8 +22088,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -119,
-      "height": 26,
+      "ascent": -117,
+      "height": 28,
       "chars": [
         "\uf2f9"
       ]
@@ -22097,8 +22097,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -120,
-      "height": 26,
+      "ascent": -118,
+      "height": 28,
       "chars": [
         "\uf2fa"
       ]
@@ -22106,8 +22106,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -120,
-      "height": 26,
+      "ascent": -118,
+      "height": 28,
       "chars": [
         "\uf2fb"
       ]
@@ -22115,8 +22115,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -121,
-      "height": 26,
+      "ascent": -119,
+      "height": 28,
       "chars": [
         "\uf2fc"
       ]
@@ -22124,8 +22124,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -121,
-      "height": 26,
+      "ascent": -119,
+      "height": 28,
       "chars": [
         "\uf2fd"
       ]
@@ -22133,8 +22133,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -122,
-      "height": 26,
+      "ascent": -120,
+      "height": 28,
       "chars": [
         "\uf2fe"
       ]
@@ -22142,8 +22142,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -122,
-      "height": 26,
+      "ascent": -120,
+      "height": 28,
       "chars": [
         "\uf2ff"
       ]
@@ -22151,8 +22151,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -123,
-      "height": 26,
+      "ascent": -121,
+      "height": 28,
       "chars": [
         "\uf300"
       ]
@@ -22160,8 +22160,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -123,
-      "height": 26,
+      "ascent": -121,
+      "height": 28,
       "chars": [
         "\uf301"
       ]
@@ -22169,8 +22169,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -124,
-      "height": 26,
+      "ascent": -122,
+      "height": 28,
       "chars": [
         "\uf302"
       ]
@@ -22178,8 +22178,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -124,
-      "height": 26,
+      "ascent": -122,
+      "height": 28,
       "chars": [
         "\uf303"
       ]
@@ -22187,8 +22187,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -125,
-      "height": 26,
+      "ascent": -123,
+      "height": 28,
       "chars": [
         "\uf304"
       ]
@@ -22196,8 +22196,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -125,
-      "height": 26,
+      "ascent": -123,
+      "height": 28,
       "chars": [
         "\uf305"
       ]
@@ -22205,8 +22205,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -126,
-      "height": 26,
+      "ascent": -124,
+      "height": 28,
       "chars": [
         "\uf306"
       ]
@@ -22214,8 +22214,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -126,
-      "height": 26,
+      "ascent": -124,
+      "height": 28,
       "chars": [
         "\uf307"
       ]
@@ -22223,8 +22223,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -127,
-      "height": 26,
+      "ascent": -125,
+      "height": 28,
       "chars": [
         "\uf308"
       ]
@@ -22232,8 +22232,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -127,
-      "height": 26,
+      "ascent": -125,
+      "height": 28,
       "chars": [
         "\uf309"
       ]
@@ -22241,8 +22241,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -128,
-      "height": 26,
+      "ascent": -126,
+      "height": 28,
       "chars": [
         "\uf30a"
       ]
@@ -22250,8 +22250,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -128,
-      "height": 26,
+      "ascent": -126,
+      "height": 28,
       "chars": [
         "\uf30b"
       ]
@@ -22259,8 +22259,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -129,
-      "height": 26,
+      "ascent": -127,
+      "height": 28,
       "chars": [
         "\uf30c"
       ]
@@ -22268,8 +22268,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -129,
-      "height": 26,
+      "ascent": -127,
+      "height": 28,
       "chars": [
         "\uf30d"
       ]
@@ -22277,8 +22277,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -130,
-      "height": 26,
+      "ascent": -128,
+      "height": 28,
       "chars": [
         "\uf30e"
       ]
@@ -22286,8 +22286,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -130,
-      "height": 26,
+      "ascent": -128,
+      "height": 28,
       "chars": [
         "\uf30f"
       ]
@@ -22295,8 +22295,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -131,
-      "height": 26,
+      "ascent": -129,
+      "height": 28,
       "chars": [
         "\uf310"
       ]
@@ -22304,8 +22304,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -131,
-      "height": 26,
+      "ascent": -129,
+      "height": 28,
       "chars": [
         "\uf311"
       ]
@@ -22313,8 +22313,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -132,
-      "height": 26,
+      "ascent": -130,
+      "height": 28,
       "chars": [
         "\uf312"
       ]
@@ -22322,8 +22322,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -132,
-      "height": 26,
+      "ascent": -130,
+      "height": 28,
       "chars": [
         "\uf313"
       ]
@@ -22331,8 +22331,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -133,
-      "height": 26,
+      "ascent": -131,
+      "height": 28,
       "chars": [
         "\uf314"
       ]
@@ -22340,8 +22340,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -133,
-      "height": 26,
+      "ascent": -131,
+      "height": 28,
       "chars": [
         "\uf315"
       ]
@@ -22349,8 +22349,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -134,
-      "height": 26,
+      "ascent": -132,
+      "height": 28,
       "chars": [
         "\uf316"
       ]
@@ -22358,8 +22358,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -134,
-      "height": 26,
+      "ascent": -132,
+      "height": 28,
       "chars": [
         "\uf317"
       ]
@@ -22367,8 +22367,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -135,
-      "height": 26,
+      "ascent": -133,
+      "height": 28,
       "chars": [
         "\uf318"
       ]
@@ -22376,8 +22376,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -135,
-      "height": 26,
+      "ascent": -133,
+      "height": 28,
       "chars": [
         "\uf319"
       ]
@@ -22385,8 +22385,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -136,
-      "height": 26,
+      "ascent": -134,
+      "height": 28,
       "chars": [
         "\uf31a"
       ]
@@ -22394,8 +22394,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -136,
-      "height": 26,
+      "ascent": -134,
+      "height": 28,
       "chars": [
         "\uf31b"
       ]
@@ -22403,8 +22403,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -137,
-      "height": 26,
+      "ascent": -135,
+      "height": 28,
       "chars": [
         "\uf31c"
       ]
@@ -22412,8 +22412,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -137,
-      "height": 26,
+      "ascent": -135,
+      "height": 28,
       "chars": [
         "\uf31d"
       ]
@@ -22421,8 +22421,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -138,
-      "height": 26,
+      "ascent": -136,
+      "height": 28,
       "chars": [
         "\uf31e"
       ]
@@ -22430,8 +22430,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -138,
-      "height": 26,
+      "ascent": -136,
+      "height": 28,
       "chars": [
         "\uf31f"
       ]
@@ -22439,8 +22439,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -139,
-      "height": 26,
+      "ascent": -137,
+      "height": 28,
       "chars": [
         "\uf320"
       ]
@@ -22448,8 +22448,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -139,
-      "height": 26,
+      "ascent": -137,
+      "height": 28,
       "chars": [
         "\uf321"
       ]
@@ -22457,8 +22457,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -140,
-      "height": 26,
+      "ascent": -138,
+      "height": 28,
       "chars": [
         "\uf322"
       ]
@@ -22466,8 +22466,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -140,
-      "height": 26,
+      "ascent": -138,
+      "height": 28,
       "chars": [
         "\uf323"
       ]
@@ -22475,8 +22475,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -141,
-      "height": 26,
+      "ascent": -139,
+      "height": 28,
       "chars": [
         "\uf324"
       ]
@@ -22484,8 +22484,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -141,
-      "height": 26,
+      "ascent": -139,
+      "height": 28,
       "chars": [
         "\uf325"
       ]
@@ -22493,8 +22493,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -142,
-      "height": 26,
+      "ascent": -140,
+      "height": 28,
       "chars": [
         "\uf326"
       ]
@@ -22502,8 +22502,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -142,
-      "height": 26,
+      "ascent": -140,
+      "height": 28,
       "chars": [
         "\uf327"
       ]
@@ -22511,8 +22511,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -143,
-      "height": 26,
+      "ascent": -141,
+      "height": 28,
       "chars": [
         "\uf328"
       ]
@@ -22520,8 +22520,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -143,
-      "height": 26,
+      "ascent": -141,
+      "height": 28,
       "chars": [
         "\uf329"
       ]
@@ -22529,8 +22529,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -144,
-      "height": 26,
+      "ascent": -142,
+      "height": 28,
       "chars": [
         "\uf32a"
       ]
@@ -22538,8 +22538,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -144,
-      "height": 26,
+      "ascent": -142,
+      "height": 28,
       "chars": [
         "\uf32b"
       ]
@@ -22547,8 +22547,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -145,
-      "height": 26,
+      "ascent": -143,
+      "height": 28,
       "chars": [
         "\uf32c"
       ]
@@ -22556,8 +22556,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -145,
-      "height": 26,
+      "ascent": -143,
+      "height": 28,
       "chars": [
         "\uf32d"
       ]
@@ -22565,8 +22565,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -146,
-      "height": 26,
+      "ascent": -144,
+      "height": 28,
       "chars": [
         "\uf32e"
       ]
@@ -22574,8 +22574,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -146,
-      "height": 26,
+      "ascent": -144,
+      "height": 28,
       "chars": [
         "\uf32f"
       ]
@@ -22583,8 +22583,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -147,
-      "height": 26,
+      "ascent": -145,
+      "height": 28,
       "chars": [
         "\uf330"
       ]
@@ -22592,8 +22592,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -147,
-      "height": 26,
+      "ascent": -145,
+      "height": 28,
       "chars": [
         "\uf331"
       ]
@@ -22601,8 +22601,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -148,
-      "height": 26,
+      "ascent": -146,
+      "height": 28,
       "chars": [
         "\uf332"
       ]
@@ -22610,8 +22610,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -148,
-      "height": 26,
+      "ascent": -146,
+      "height": 28,
       "chars": [
         "\uf333"
       ]
@@ -22619,8 +22619,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -149,
-      "height": 26,
+      "ascent": -147,
+      "height": 28,
       "chars": [
         "\uf334"
       ]
@@ -22628,8 +22628,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -149,
-      "height": 26,
+      "ascent": -147,
+      "height": 28,
       "chars": [
         "\uf335"
       ]
@@ -22637,8 +22637,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -150,
-      "height": 26,
+      "ascent": -148,
+      "height": 28,
       "chars": [
         "\uf336"
       ]
@@ -22646,8 +22646,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -150,
-      "height": 26,
+      "ascent": -148,
+      "height": 28,
       "chars": [
         "\uf337"
       ]
@@ -22655,8 +22655,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -151,
-      "height": 26,
+      "ascent": -149,
+      "height": 28,
       "chars": [
         "\uf338"
       ]
@@ -22664,8 +22664,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -151,
-      "height": 26,
+      "ascent": -149,
+      "height": 28,
       "chars": [
         "\uf339"
       ]
@@ -22673,8 +22673,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -152,
-      "height": 26,
+      "ascent": -150,
+      "height": 28,
       "chars": [
         "\uf33a"
       ]
@@ -22682,8 +22682,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -152,
-      "height": 26,
+      "ascent": -150,
+      "height": 28,
       "chars": [
         "\uf33b"
       ]
@@ -22691,8 +22691,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -153,
-      "height": 26,
+      "ascent": -151,
+      "height": 28,
       "chars": [
         "\uf33c"
       ]
@@ -22700,8 +22700,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -153,
-      "height": 26,
+      "ascent": -151,
+      "height": 28,
       "chars": [
         "\uf33d"
       ]
@@ -22709,8 +22709,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -154,
-      "height": 26,
+      "ascent": -152,
+      "height": 28,
       "chars": [
         "\uf33e"
       ]
@@ -22718,8 +22718,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -154,
-      "height": 26,
+      "ascent": -152,
+      "height": 28,
       "chars": [
         "\uf33f"
       ]
@@ -22727,8 +22727,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -155,
-      "height": 26,
+      "ascent": -153,
+      "height": 28,
       "chars": [
         "\uf340"
       ]
@@ -22736,8 +22736,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -155,
-      "height": 26,
+      "ascent": -153,
+      "height": 28,
       "chars": [
         "\uf341"
       ]
@@ -22745,8 +22745,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -156,
-      "height": 26,
+      "ascent": -154,
+      "height": 28,
       "chars": [
         "\uf342"
       ]
@@ -22754,8 +22754,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -156,
-      "height": 26,
+      "ascent": -154,
+      "height": 28,
       "chars": [
         "\uf343"
       ]
@@ -22763,8 +22763,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -157,
-      "height": 26,
+      "ascent": -155,
+      "height": 28,
       "chars": [
         "\uf344"
       ]
@@ -22772,8 +22772,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -157,
-      "height": 26,
+      "ascent": -155,
+      "height": 28,
       "chars": [
         "\uf345"
       ]
@@ -22781,8 +22781,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -158,
-      "height": 26,
+      "ascent": -156,
+      "height": 28,
       "chars": [
         "\uf346"
       ]
@@ -22790,8 +22790,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -158,
-      "height": 26,
+      "ascent": -156,
+      "height": 28,
       "chars": [
         "\uf347"
       ]
@@ -22799,8 +22799,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -159,
-      "height": 26,
+      "ascent": -157,
+      "height": 28,
       "chars": [
         "\uf348"
       ]
@@ -22808,8 +22808,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -159,
-      "height": 26,
+      "ascent": -157,
+      "height": 28,
       "chars": [
         "\uf349"
       ]
@@ -22817,8 +22817,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -160,
-      "height": 26,
+      "ascent": -158,
+      "height": 28,
       "chars": [
         "\uf34a"
       ]
@@ -22826,8 +22826,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -160,
-      "height": 26,
+      "ascent": -158,
+      "height": 28,
       "chars": [
         "\uf34b"
       ]
@@ -22835,8 +22835,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -161,
-      "height": 26,
+      "ascent": -159,
+      "height": 28,
       "chars": [
         "\uf34c"
       ]
@@ -22844,8 +22844,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -161,
-      "height": 26,
+      "ascent": -159,
+      "height": 28,
       "chars": [
         "\uf34d"
       ]
@@ -22853,8 +22853,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -162,
-      "height": 26,
+      "ascent": -160,
+      "height": 28,
       "chars": [
         "\uf34e"
       ]
@@ -22862,8 +22862,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -162,
-      "height": 26,
+      "ascent": -160,
+      "height": 28,
       "chars": [
         "\uf34f"
       ]
@@ -22871,8 +22871,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -163,
-      "height": 26,
+      "ascent": -161,
+      "height": 28,
       "chars": [
         "\uf350"
       ]
@@ -22880,8 +22880,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -163,
-      "height": 26,
+      "ascent": -161,
+      "height": 28,
       "chars": [
         "\uf351"
       ]
@@ -22889,8 +22889,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -164,
-      "height": 26,
+      "ascent": -162,
+      "height": 28,
       "chars": [
         "\uf352"
       ]
@@ -22898,8 +22898,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -164,
-      "height": 26,
+      "ascent": -162,
+      "height": 28,
       "chars": [
         "\uf353"
       ]
@@ -22907,8 +22907,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -165,
-      "height": 26,
+      "ascent": -163,
+      "height": 28,
       "chars": [
         "\uf354"
       ]
@@ -22916,8 +22916,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -165,
-      "height": 26,
+      "ascent": -163,
+      "height": 28,
       "chars": [
         "\uf355"
       ]
@@ -22925,8 +22925,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -166,
-      "height": 26,
+      "ascent": -164,
+      "height": 28,
       "chars": [
         "\uf356"
       ]
@@ -22934,8 +22934,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -166,
-      "height": 26,
+      "ascent": -164,
+      "height": 28,
       "chars": [
         "\uf357"
       ]
@@ -22943,8 +22943,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -167,
-      "height": 26,
+      "ascent": -165,
+      "height": 28,
       "chars": [
         "\uf358"
       ]
@@ -22952,8 +22952,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -167,
-      "height": 26,
+      "ascent": -165,
+      "height": 28,
       "chars": [
         "\uf359"
       ]
@@ -22961,8 +22961,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -168,
-      "height": 26,
+      "ascent": -166,
+      "height": 28,
       "chars": [
         "\uf35a"
       ]
@@ -22970,8 +22970,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -168,
-      "height": 26,
+      "ascent": -166,
+      "height": 28,
       "chars": [
         "\uf35b"
       ]
@@ -22979,8 +22979,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -169,
-      "height": 26,
+      "ascent": -167,
+      "height": 28,
       "chars": [
         "\uf35c"
       ]
@@ -22988,8 +22988,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -169,
-      "height": 26,
+      "ascent": -167,
+      "height": 28,
       "chars": [
         "\uf35d"
       ]
@@ -22997,8 +22997,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -170,
-      "height": 26,
+      "ascent": -168,
+      "height": 28,
       "chars": [
         "\uf35e"
       ]
@@ -23006,8 +23006,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -170,
-      "height": 26,
+      "ascent": -168,
+      "height": 28,
       "chars": [
         "\uf35f"
       ]
@@ -23015,8 +23015,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -171,
-      "height": 26,
+      "ascent": -169,
+      "height": 28,
       "chars": [
         "\uf360"
       ]
@@ -23024,8 +23024,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -171,
-      "height": 26,
+      "ascent": -169,
+      "height": 28,
       "chars": [
         "\uf361"
       ]
@@ -23033,8 +23033,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -172,
-      "height": 26,
+      "ascent": -170,
+      "height": 28,
       "chars": [
         "\uf362"
       ]
@@ -23042,8 +23042,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -172,
-      "height": 26,
+      "ascent": -170,
+      "height": 28,
       "chars": [
         "\uf363"
       ]
@@ -23051,8 +23051,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -173,
-      "height": 26,
+      "ascent": -171,
+      "height": 28,
       "chars": [
         "\uf364"
       ]
@@ -23060,8 +23060,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -173,
-      "height": 26,
+      "ascent": -171,
+      "height": 28,
       "chars": [
         "\uf365"
       ]
@@ -23069,8 +23069,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -174,
-      "height": 26,
+      "ascent": -172,
+      "height": 28,
       "chars": [
         "\uf366"
       ]
@@ -23078,8 +23078,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -174,
-      "height": 26,
+      "ascent": -172,
+      "height": 28,
       "chars": [
         "\uf367"
       ]
@@ -23087,8 +23087,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -175,
-      "height": 26,
+      "ascent": -173,
+      "height": 28,
       "chars": [
         "\uf368"
       ]
@@ -23096,8 +23096,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -175,
-      "height": 26,
+      "ascent": -173,
+      "height": 28,
       "chars": [
         "\uf369"
       ]
@@ -23105,8 +23105,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -176,
-      "height": 26,
+      "ascent": -174,
+      "height": 28,
       "chars": [
         "\uf36a"
       ]
@@ -23114,8 +23114,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -176,
-      "height": 26,
+      "ascent": -174,
+      "height": 28,
       "chars": [
         "\uf36b"
       ]
@@ -23123,8 +23123,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -177,
-      "height": 26,
+      "ascent": -175,
+      "height": 28,
       "chars": [
         "\uf36c"
       ]
@@ -23132,8 +23132,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -177,
-      "height": 26,
+      "ascent": -175,
+      "height": 28,
       "chars": [
         "\uf36d"
       ]
@@ -23141,8 +23141,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -178,
-      "height": 26,
+      "ascent": -176,
+      "height": 28,
       "chars": [
         "\uf36e"
       ]
@@ -23150,8 +23150,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -178,
-      "height": 26,
+      "ascent": -176,
+      "height": 28,
       "chars": [
         "\uf36f"
       ]
@@ -23159,8 +23159,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -179,
-      "height": 26,
+      "ascent": -177,
+      "height": 28,
       "chars": [
         "\uf370"
       ]
@@ -23168,8 +23168,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -179,
-      "height": 26,
+      "ascent": -177,
+      "height": 28,
       "chars": [
         "\uf371"
       ]
@@ -23177,8 +23177,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -180,
-      "height": 26,
+      "ascent": -178,
+      "height": 28,
       "chars": [
         "\uf372"
       ]
@@ -23186,8 +23186,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -180,
-      "height": 26,
+      "ascent": -178,
+      "height": 28,
       "chars": [
         "\uf373"
       ]
@@ -23195,8 +23195,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -181,
-      "height": 26,
+      "ascent": -179,
+      "height": 28,
       "chars": [
         "\uf374"
       ]
@@ -23204,8 +23204,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -181,
-      "height": 26,
+      "ascent": -179,
+      "height": 28,
       "chars": [
         "\uf375"
       ]
@@ -23213,8 +23213,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -182,
-      "height": 26,
+      "ascent": -180,
+      "height": 28,
       "chars": [
         "\uf376"
       ]
@@ -23222,8 +23222,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -182,
-      "height": 26,
+      "ascent": -180,
+      "height": 28,
       "chars": [
         "\uf377"
       ]
@@ -23231,8 +23231,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -183,
-      "height": 26,
+      "ascent": -181,
+      "height": 28,
       "chars": [
         "\uf378"
       ]
@@ -23240,8 +23240,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -183,
-      "height": 26,
+      "ascent": -181,
+      "height": 28,
       "chars": [
         "\uf379"
       ]
@@ -23249,8 +23249,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -184,
-      "height": 26,
+      "ascent": -182,
+      "height": 28,
       "chars": [
         "\uf37a"
       ]
@@ -23258,8 +23258,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -184,
-      "height": 26,
+      "ascent": -182,
+      "height": 28,
       "chars": [
         "\uf37b"
       ]
@@ -23267,8 +23267,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -185,
-      "height": 26,
+      "ascent": -183,
+      "height": 28,
       "chars": [
         "\uf37c"
       ]
@@ -23276,8 +23276,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -185,
-      "height": 26,
+      "ascent": -183,
+      "height": 28,
       "chars": [
         "\uf37d"
       ]
@@ -23285,8 +23285,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -186,
-      "height": 26,
+      "ascent": -184,
+      "height": 28,
       "chars": [
         "\uf37e"
       ]
@@ -23294,8 +23294,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -186,
-      "height": 26,
+      "ascent": -184,
+      "height": 28,
       "chars": [
         "\uf37f"
       ]
@@ -23303,8 +23303,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -187,
-      "height": 26,
+      "ascent": -185,
+      "height": 28,
       "chars": [
         "\uf380"
       ]
@@ -23312,8 +23312,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -187,
-      "height": 26,
+      "ascent": -185,
+      "height": 28,
       "chars": [
         "\uf381"
       ]
@@ -23321,8 +23321,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -188,
-      "height": 26,
+      "ascent": -186,
+      "height": 28,
       "chars": [
         "\uf382"
       ]
@@ -23330,8 +23330,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -188,
-      "height": 26,
+      "ascent": -186,
+      "height": 28,
       "chars": [
         "\uf383"
       ]
@@ -23339,8 +23339,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -189,
-      "height": 26,
+      "ascent": -187,
+      "height": 28,
       "chars": [
         "\uf384"
       ]
@@ -23348,8 +23348,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -189,
-      "height": 26,
+      "ascent": -187,
+      "height": 28,
       "chars": [
         "\uf385"
       ]
@@ -23357,8 +23357,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -190,
-      "height": 26,
+      "ascent": -188,
+      "height": 28,
       "chars": [
         "\uf386"
       ]
@@ -23366,8 +23366,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -190,
-      "height": 26,
+      "ascent": -188,
+      "height": 28,
       "chars": [
         "\uf387"
       ]
@@ -23375,8 +23375,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -191,
-      "height": 26,
+      "ascent": -189,
+      "height": 28,
       "chars": [
         "\uf388"
       ]
@@ -23384,8 +23384,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -191,
-      "height": 26,
+      "ascent": -189,
+      "height": 28,
       "chars": [
         "\uf389"
       ]
@@ -23393,8 +23393,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -192,
-      "height": 26,
+      "ascent": -190,
+      "height": 28,
       "chars": [
         "\uf38a"
       ]
@@ -23402,8 +23402,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -192,
-      "height": 26,
+      "ascent": -190,
+      "height": 28,
       "chars": [
         "\uf38b"
       ]
@@ -23411,8 +23411,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -193,
-      "height": 26,
+      "ascent": -191,
+      "height": 28,
       "chars": [
         "\uf38c"
       ]
@@ -23420,8 +23420,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -193,
-      "height": 26,
+      "ascent": -191,
+      "height": 28,
       "chars": [
         "\uf38d"
       ]
@@ -23429,8 +23429,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -194,
-      "height": 26,
+      "ascent": -192,
+      "height": 28,
       "chars": [
         "\uf38e"
       ]
@@ -23438,8 +23438,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -194,
-      "height": 26,
+      "ascent": -192,
+      "height": 28,
       "chars": [
         "\uf38f"
       ]
@@ -23447,8 +23447,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -195,
-      "height": 26,
+      "ascent": -193,
+      "height": 28,
       "chars": [
         "\uf390"
       ]
@@ -23456,8 +23456,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -195,
-      "height": 26,
+      "ascent": -193,
+      "height": 28,
       "chars": [
         "\uf391"
       ]
@@ -23465,8 +23465,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -196,
-      "height": 26,
+      "ascent": -194,
+      "height": 28,
       "chars": [
         "\uf392"
       ]
@@ -23474,8 +23474,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -196,
-      "height": 26,
+      "ascent": -194,
+      "height": 28,
       "chars": [
         "\uf393"
       ]
@@ -23483,8 +23483,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -197,
-      "height": 26,
+      "ascent": -195,
+      "height": 28,
       "chars": [
         "\uf394"
       ]
@@ -23492,8 +23492,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -197,
-      "height": 26,
+      "ascent": -195,
+      "height": 28,
       "chars": [
         "\uf395"
       ]
@@ -23501,8 +23501,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -198,
-      "height": 26,
+      "ascent": -196,
+      "height": 28,
       "chars": [
         "\uf396"
       ]
@@ -23510,8 +23510,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -198,
-      "height": 26,
+      "ascent": -196,
+      "height": 28,
       "chars": [
         "\uf397"
       ]
@@ -23519,8 +23519,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -199,
-      "height": 26,
+      "ascent": -197,
+      "height": 28,
       "chars": [
         "\uf398"
       ]
@@ -23528,8 +23528,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -199,
-      "height": 26,
+      "ascent": -197,
+      "height": 28,
       "chars": [
         "\uf399"
       ]
@@ -23537,8 +23537,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -200,
-      "height": 26,
+      "ascent": -198,
+      "height": 28,
       "chars": [
         "\uf39a"
       ]
@@ -23546,8 +23546,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -200,
-      "height": 26,
+      "ascent": -198,
+      "height": 28,
       "chars": [
         "\uf39b"
       ]
@@ -23555,8 +23555,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -201,
-      "height": 26,
+      "ascent": -199,
+      "height": 28,
       "chars": [
         "\uf39c"
       ]
@@ -23564,8 +23564,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -201,
-      "height": 26,
+      "ascent": -199,
+      "height": 28,
       "chars": [
         "\uf39d"
       ]
@@ -23573,8 +23573,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -202,
-      "height": 26,
+      "ascent": -200,
+      "height": 28,
       "chars": [
         "\uf39e"
       ]
@@ -23582,8 +23582,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -202,
-      "height": 26,
+      "ascent": -200,
+      "height": 28,
       "chars": [
         "\uf39f"
       ]
@@ -23591,8 +23591,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -203,
-      "height": 26,
+      "ascent": -201,
+      "height": 28,
       "chars": [
         "\uf3a0"
       ]
@@ -23600,8 +23600,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -203,
-      "height": 26,
+      "ascent": -201,
+      "height": 28,
       "chars": [
         "\uf3a1"
       ]
@@ -23609,8 +23609,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -204,
-      "height": 26,
+      "ascent": -202,
+      "height": 28,
       "chars": [
         "\uf3a2"
       ]
@@ -23618,8 +23618,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -204,
-      "height": 26,
+      "ascent": -202,
+      "height": 28,
       "chars": [
         "\uf3a3"
       ]
@@ -23627,8 +23627,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -205,
-      "height": 26,
+      "ascent": -203,
+      "height": 28,
       "chars": [
         "\uf3a4"
       ]
@@ -23636,8 +23636,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -205,
-      "height": 26,
+      "ascent": -203,
+      "height": 28,
       "chars": [
         "\uf3a5"
       ]
@@ -23645,8 +23645,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -206,
-      "height": 26,
+      "ascent": -204,
+      "height": 28,
       "chars": [
         "\uf3a6"
       ]
@@ -23654,8 +23654,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -206,
-      "height": 26,
+      "ascent": -204,
+      "height": 28,
       "chars": [
         "\uf3a7"
       ]
@@ -23663,8 +23663,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -207,
-      "height": 26,
+      "ascent": -205,
+      "height": 28,
       "chars": [
         "\uf3a8"
       ]
@@ -23672,8 +23672,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -207,
-      "height": 26,
+      "ascent": -205,
+      "height": 28,
       "chars": [
         "\uf3a9"
       ]
@@ -23681,8 +23681,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -208,
-      "height": 26,
+      "ascent": -206,
+      "height": 28,
       "chars": [
         "\uf3aa"
       ]
@@ -23690,8 +23690,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -208,
-      "height": 26,
+      "ascent": -206,
+      "height": 28,
       "chars": [
         "\uf3ab"
       ]
@@ -23699,8 +23699,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -209,
-      "height": 26,
+      "ascent": -207,
+      "height": 28,
       "chars": [
         "\uf3ac"
       ]
@@ -23708,8 +23708,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -209,
-      "height": 26,
+      "ascent": -207,
+      "height": 28,
       "chars": [
         "\uf3ad"
       ]
@@ -23717,8 +23717,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -210,
-      "height": 26,
+      "ascent": -208,
+      "height": 28,
       "chars": [
         "\uf3ae"
       ]
@@ -23726,8 +23726,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -210,
-      "height": 26,
+      "ascent": -208,
+      "height": 28,
       "chars": [
         "\uf3af"
       ]
@@ -23735,8 +23735,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -211,
-      "height": 26,
+      "ascent": -209,
+      "height": 28,
       "chars": [
         "\uf3b0"
       ]
@@ -23744,8 +23744,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -211,
-      "height": 26,
+      "ascent": -209,
+      "height": 28,
       "chars": [
         "\uf3b1"
       ]
@@ -23753,8 +23753,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -212,
-      "height": 26,
+      "ascent": -210,
+      "height": 28,
       "chars": [
         "\uf3b2"
       ]
@@ -23762,8 +23762,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -212,
-      "height": 26,
+      "ascent": -210,
+      "height": 28,
       "chars": [
         "\uf3b3"
       ]
@@ -23771,8 +23771,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -213,
-      "height": 26,
+      "ascent": -211,
+      "height": 28,
       "chars": [
         "\uf3b4"
       ]
@@ -23780,8 +23780,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -213,
-      "height": 26,
+      "ascent": -211,
+      "height": 28,
       "chars": [
         "\uf3b5"
       ]
@@ -23789,8 +23789,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -214,
-      "height": 26,
+      "ascent": -212,
+      "height": 28,
       "chars": [
         "\uf3b6"
       ]
@@ -23798,8 +23798,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -214,
-      "height": 26,
+      "ascent": -212,
+      "height": 28,
       "chars": [
         "\uf3b7"
       ]
@@ -23807,8 +23807,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -215,
-      "height": 26,
+      "ascent": -213,
+      "height": 28,
       "chars": [
         "\uf3b8"
       ]
@@ -23816,8 +23816,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -215,
-      "height": 26,
+      "ascent": -213,
+      "height": 28,
       "chars": [
         "\uf3b9"
       ]
@@ -23825,8 +23825,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -216,
-      "height": 26,
+      "ascent": -214,
+      "height": 28,
       "chars": [
         "\uf3ba"
       ]
@@ -23834,8 +23834,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -216,
-      "height": 26,
+      "ascent": -214,
+      "height": 28,
       "chars": [
         "\uf3bb"
       ]
@@ -23843,8 +23843,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -217,
-      "height": 26,
+      "ascent": -215,
+      "height": 28,
       "chars": [
         "\uf3bc"
       ]
@@ -23852,8 +23852,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -217,
-      "height": 26,
+      "ascent": -215,
+      "height": 28,
       "chars": [
         "\uf3bd"
       ]
@@ -23861,8 +23861,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -218,
-      "height": 26,
+      "ascent": -216,
+      "height": 28,
       "chars": [
         "\uf3be"
       ]
@@ -23870,8 +23870,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -218,
-      "height": 26,
+      "ascent": -216,
+      "height": 28,
       "chars": [
         "\uf3bf"
       ]
@@ -23879,8 +23879,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -219,
-      "height": 26,
+      "ascent": -217,
+      "height": 28,
       "chars": [
         "\uf3c0"
       ]
@@ -23888,8 +23888,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -219,
-      "height": 26,
+      "ascent": -217,
+      "height": 28,
       "chars": [
         "\uf3c1"
       ]
@@ -23897,8 +23897,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -220,
-      "height": 26,
+      "ascent": -218,
+      "height": 28,
       "chars": [
         "\uf3c2"
       ]
@@ -23906,8 +23906,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -220,
-      "height": 26,
+      "ascent": -218,
+      "height": 28,
       "chars": [
         "\uf3c3"
       ]
@@ -23915,8 +23915,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -221,
-      "height": 26,
+      "ascent": -219,
+      "height": 28,
       "chars": [
         "\uf3c4"
       ]
@@ -23924,8 +23924,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -221,
-      "height": 26,
+      "ascent": -219,
+      "height": 28,
       "chars": [
         "\uf3c5"
       ]
@@ -23933,8 +23933,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -222,
-      "height": 26,
+      "ascent": -220,
+      "height": 28,
       "chars": [
         "\uf3c6"
       ]
@@ -23942,8 +23942,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -222,
-      "height": 26,
+      "ascent": -220,
+      "height": 28,
       "chars": [
         "\uf3c7"
       ]
@@ -23951,8 +23951,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -223,
-      "height": 26,
+      "ascent": -221,
+      "height": 28,
       "chars": [
         "\uf3c8"
       ]
@@ -23960,8 +23960,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -223,
-      "height": 26,
+      "ascent": -221,
+      "height": 28,
       "chars": [
         "\uf3c9"
       ]
@@ -23969,8 +23969,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -224,
-      "height": 26,
+      "ascent": -222,
+      "height": 28,
       "chars": [
         "\uf3ca"
       ]
@@ -23978,8 +23978,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -224,
-      "height": 26,
+      "ascent": -222,
+      "height": 28,
       "chars": [
         "\uf3cb"
       ]
@@ -23987,8 +23987,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -225,
-      "height": 26,
+      "ascent": -223,
+      "height": 28,
       "chars": [
         "\uf3cc"
       ]
@@ -23996,8 +23996,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -225,
-      "height": 26,
+      "ascent": -223,
+      "height": 28,
       "chars": [
         "\uf3cd"
       ]
@@ -24005,8 +24005,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -226,
-      "height": 26,
+      "ascent": -224,
+      "height": 28,
       "chars": [
         "\uf3ce"
       ]
@@ -24014,8 +24014,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -226,
-      "height": 26,
+      "ascent": -224,
+      "height": 28,
       "chars": [
         "\uf3cf"
       ]
@@ -24023,8 +24023,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -227,
-      "height": 26,
+      "ascent": -225,
+      "height": 28,
       "chars": [
         "\uf3d0"
       ]
@@ -24032,8 +24032,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -227,
-      "height": 26,
+      "ascent": -225,
+      "height": 28,
       "chars": [
         "\uf3d1"
       ]
@@ -24041,8 +24041,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -228,
-      "height": 26,
+      "ascent": -226,
+      "height": 28,
       "chars": [
         "\uf3d2"
       ]
@@ -24050,8 +24050,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -228,
-      "height": 26,
+      "ascent": -226,
+      "height": 28,
       "chars": [
         "\uf3d3"
       ]
@@ -24059,8 +24059,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -229,
-      "height": 26,
+      "ascent": -227,
+      "height": 28,
       "chars": [
         "\uf3d4"
       ]
@@ -24068,8 +24068,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -229,
-      "height": 26,
+      "ascent": -227,
+      "height": 28,
       "chars": [
         "\uf3d5"
       ]
@@ -24077,8 +24077,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -230,
-      "height": 26,
+      "ascent": -228,
+      "height": 28,
       "chars": [
         "\uf3d6"
       ]
@@ -24086,8 +24086,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -230,
-      "height": 26,
+      "ascent": -228,
+      "height": 28,
       "chars": [
         "\uf3d7"
       ]
@@ -24095,8 +24095,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -231,
-      "height": 26,
+      "ascent": -229,
+      "height": 28,
       "chars": [
         "\uf3d8"
       ]
@@ -24104,8 +24104,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -231,
-      "height": 26,
+      "ascent": -229,
+      "height": 28,
       "chars": [
         "\uf3d9"
       ]
@@ -24113,8 +24113,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -232,
-      "height": 26,
+      "ascent": -230,
+      "height": 28,
       "chars": [
         "\uf3da"
       ]
@@ -24122,8 +24122,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -232,
-      "height": 26,
+      "ascent": -230,
+      "height": 28,
       "chars": [
         "\uf3db"
       ]
@@ -24131,8 +24131,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -233,
-      "height": 26,
+      "ascent": -231,
+      "height": 28,
       "chars": [
         "\uf3dc"
       ]
@@ -24140,8 +24140,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -233,
-      "height": 26,
+      "ascent": -231,
+      "height": 28,
       "chars": [
         "\uf3dd"
       ]
@@ -24149,8 +24149,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -234,
-      "height": 26,
+      "ascent": -232,
+      "height": 28,
       "chars": [
         "\uf3de"
       ]
@@ -24158,8 +24158,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -234,
-      "height": 26,
+      "ascent": -232,
+      "height": 28,
       "chars": [
         "\uf3df"
       ]
@@ -24167,8 +24167,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -235,
-      "height": 26,
+      "ascent": -233,
+      "height": 28,
       "chars": [
         "\uf3e0"
       ]
@@ -24176,8 +24176,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -235,
-      "height": 26,
+      "ascent": -233,
+      "height": 28,
       "chars": [
         "\uf3e1"
       ]
@@ -24185,8 +24185,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -236,
-      "height": 26,
+      "ascent": -234,
+      "height": 28,
       "chars": [
         "\uf3e2"
       ]
@@ -24194,8 +24194,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -236,
-      "height": 26,
+      "ascent": -234,
+      "height": 28,
       "chars": [
         "\uf3e3"
       ]
@@ -24203,8 +24203,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -237,
-      "height": 26,
+      "ascent": -235,
+      "height": 28,
       "chars": [
         "\uf3e4"
       ]
@@ -24212,8 +24212,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -237,
-      "height": 26,
+      "ascent": -235,
+      "height": 28,
       "chars": [
         "\uf3e5"
       ]
@@ -24221,8 +24221,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -238,
-      "height": 26,
+      "ascent": -236,
+      "height": 28,
       "chars": [
         "\uf3e6"
       ]
@@ -24230,8 +24230,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -238,
-      "height": 26,
+      "ascent": -236,
+      "height": 28,
       "chars": [
         "\uf3e7"
       ]
@@ -24239,8 +24239,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -239,
-      "height": 26,
+      "ascent": -237,
+      "height": 28,
       "chars": [
         "\uf3e8"
       ]
@@ -24248,8 +24248,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -239,
-      "height": 26,
+      "ascent": -237,
+      "height": 28,
       "chars": [
         "\uf3e9"
       ]
@@ -24257,8 +24257,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -240,
-      "height": 26,
+      "ascent": -238,
+      "height": 28,
       "chars": [
         "\uf3ea"
       ]
@@ -24266,8 +24266,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -240,
-      "height": 26,
+      "ascent": -238,
+      "height": 28,
       "chars": [
         "\uf3eb"
       ]
@@ -24275,8 +24275,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -241,
-      "height": 26,
+      "ascent": -239,
+      "height": 28,
       "chars": [
         "\uf3ec"
       ]
@@ -24284,8 +24284,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -241,
-      "height": 26,
+      "ascent": -239,
+      "height": 28,
       "chars": [
         "\uf3ed"
       ]
@@ -24293,8 +24293,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -242,
-      "height": 26,
+      "ascent": -240,
+      "height": 28,
       "chars": [
         "\uf3ee"
       ]
@@ -24302,8 +24302,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -242,
-      "height": 26,
+      "ascent": -240,
+      "height": 28,
       "chars": [
         "\uf3ef"
       ]
@@ -24311,8 +24311,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -243,
-      "height": 26,
+      "ascent": -241,
+      "height": 28,
       "chars": [
         "\uf3f0"
       ]
@@ -24320,8 +24320,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -243,
-      "height": 26,
+      "ascent": -241,
+      "height": 28,
       "chars": [
         "\uf3f1"
       ]
@@ -24329,8 +24329,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -244,
-      "height": 26,
+      "ascent": -242,
+      "height": 28,
       "chars": [
         "\uf3f2"
       ]
@@ -24338,8 +24338,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -244,
-      "height": 26,
+      "ascent": -242,
+      "height": 28,
       "chars": [
         "\uf3f3"
       ]
@@ -24347,8 +24347,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -245,
-      "height": 26,
+      "ascent": -243,
+      "height": 28,
       "chars": [
         "\uf3f4"
       ]
@@ -24356,8 +24356,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -245,
-      "height": 26,
+      "ascent": -243,
+      "height": 28,
       "chars": [
         "\uf3f5"
       ]
@@ -24365,8 +24365,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -246,
-      "height": 26,
+      "ascent": -244,
+      "height": 28,
       "chars": [
         "\uf3f6"
       ]
@@ -24374,8 +24374,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -246,
-      "height": 26,
+      "ascent": -244,
+      "height": 28,
       "chars": [
         "\uf3f7"
       ]
@@ -24383,8 +24383,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -247,
-      "height": 26,
+      "ascent": -245,
+      "height": 28,
       "chars": [
         "\uf3f8"
       ]
@@ -24392,8 +24392,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -247,
-      "height": 26,
+      "ascent": -245,
+      "height": 28,
       "chars": [
         "\uf3f9"
       ]
@@ -24401,8 +24401,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -248,
-      "height": 26,
+      "ascent": -246,
+      "height": 28,
       "chars": [
         "\uf3fa"
       ]
@@ -24410,8 +24410,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -248,
-      "height": 26,
+      "ascent": -246,
+      "height": 28,
       "chars": [
         "\uf3fb"
       ]
@@ -24419,8 +24419,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -249,
-      "height": 26,
+      "ascent": -247,
+      "height": 28,
       "chars": [
         "\uf3fc"
       ]
@@ -24428,8 +24428,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -249,
-      "height": 26,
+      "ascent": -247,
+      "height": 28,
       "chars": [
         "\uf3fd"
       ]
@@ -24437,8 +24437,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -250,
-      "height": 26,
+      "ascent": -248,
+      "height": 28,
       "chars": [
         "\uf3fe"
       ]
@@ -24446,8 +24446,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -250,
-      "height": 26,
+      "ascent": -248,
+      "height": 28,
       "chars": [
         "\uf3ff"
       ]
@@ -24455,8 +24455,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -251,
-      "height": 26,
+      "ascent": -249,
+      "height": 28,
       "chars": [
         "\uf400"
       ]
@@ -24464,8 +24464,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -251,
-      "height": 26,
+      "ascent": -249,
+      "height": 28,
       "chars": [
         "\uf401"
       ]
@@ -24473,8 +24473,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -252,
-      "height": 26,
+      "ascent": -250,
+      "height": 28,
       "chars": [
         "\uf402"
       ]
@@ -24482,8 +24482,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -252,
-      "height": 26,
+      "ascent": -250,
+      "height": 28,
       "chars": [
         "\uf403"
       ]
@@ -24491,8 +24491,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -253,
-      "height": 26,
+      "ascent": -251,
+      "height": 28,
       "chars": [
         "\uf404"
       ]
@@ -24500,8 +24500,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -253,
-      "height": 26,
+      "ascent": -251,
+      "height": 28,
       "chars": [
         "\uf405"
       ]
@@ -24509,8 +24509,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -254,
-      "height": 26,
+      "ascent": -252,
+      "height": 28,
       "chars": [
         "\uf406"
       ]
@@ -24518,8 +24518,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -254,
-      "height": 26,
+      "ascent": -252,
+      "height": 28,
       "chars": [
         "\uf407"
       ]
@@ -24527,8 +24527,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -255,
-      "height": 26,
+      "ascent": -253,
+      "height": 28,
       "chars": [
         "\uf408"
       ]
@@ -24536,8 +24536,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -255,
-      "height": 26,
+      "ascent": -253,
+      "height": 28,
       "chars": [
         "\uf409"
       ]
@@ -24545,8 +24545,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -256,
-      "height": 26,
+      "ascent": -254,
+      "height": 28,
       "chars": [
         "\uf40a"
       ]
@@ -24554,8 +24554,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -256,
-      "height": 26,
+      "ascent": -254,
+      "height": 28,
       "chars": [
         "\uf40b"
       ]
@@ -24563,8 +24563,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_l.png",
-      "ascent": -257,
-      "height": 26,
+      "ascent": -255,
+      "height": 28,
       "chars": [
         "\uf40c"
       ]
@@ -24572,8 +24572,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_crystal_bot_r.png",
-      "ascent": -257,
-      "height": 26,
+      "ascent": -255,
+      "height": 28,
       "chars": [
         "\uf40d"
       ]
@@ -24582,7 +24582,7 @@
       "type": "bitmap",
       "file": "fmc:font/ui/am_ornament.png",
       "ascent": 25,
-      "height": 40,
+      "height": 32,
       "chars": [
         "\uf500"
       ]
@@ -24590,8 +24590,8 @@
     {
       "type": "bitmap",
       "file": "fmc:font/ui/am_title_lager.png",
-      "ascent": 3,
-      "height": 26,
+      "ascent": -4,
+      "height": 22,
       "chars": [
         "\uf580"
       ]

@@ -180,6 +180,12 @@ PanelMenu.create(plugin)
   nicht bis in die unteren Ecken reichen (links/rechts je ca. 25 Pixel frei), sonst überlappen sich Kristall und Button.
 - Das Theme braucht oben zwei Leerzeilen (Truhe ragt aus dem Rahmen) und vier Kopfzeilen. Sitzt das Panel im Spiel nicht
   mittig: `AM_CENTER_PAD_LINES` in `amethyst_theme.py` ändern.
+- Banner (Truhe), Kristalle und Titelbild sind mit der OpenAI-Bild-API erzeugte Bilder (`art/*.png`, Prompts in
+  `art/prompts.json`). Neu erzeugen: `OPENAI_API_KEY` als Umgebungsvariable setzen (nie ins Repo!), dann
+  `python tools/ai_art.py gen <name>` (Rohbild nach `art/raw/`, nicht im Repo) und `python tools/ai_art.py prep <name> <breite>`
+  (zuschneiden und verkleinern nach `art/<name>.png`), danach `python tools/generate_icons.py`. Ohne Titelbild
+  (`art/<text>_title.png`) zeichnet `amethyst_theme.py` den Titel selbst in Pixelschrift.
+- `dist/preview_amethyst.png` zeigt eine Vorschau des Lager-Menüs (Näherung mit einfacher Schrift).
 - Offen/ungeprüft im Spiel: Position der Zeichen untereinander (Ornament, Titel, Untertitel, Kristalle), Überlagerung der
   Zeichen innerhalb einer Zeile und der Abstand der Karte zu den Buttons.
 
