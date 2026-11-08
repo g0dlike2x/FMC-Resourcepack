@@ -9,6 +9,16 @@
     "quality": "high",
     "prompt": "Game UI decoration asset: a cluster of three glowing purple amethyst crystals of different heights growing from a small dark rocky base, the tallest in the middle leaning slightly to the left. Faceted, glossy hand-painted game icon style with crisp dark purple outlines, bright violet highlights and soft magical glow, Minecraft amethyst inspired. Fully transparent background, no text, no ground shadow."
   },
+  "lager_panel": {
+    "size": "1024x1024",
+    "quality": "high",
+    "prompt": "Front-facing 2D UI panel background for a Minecraft-style dark fantasy storage menu, flat orthographic view, perfectly symmetrical. A single rectangular dark panel, slightly wider than tall (about 10 to 9), with a thin glowing violet double border line (bright lavender outer line, deep purple inner line, border thickness only about 2 percent of the panel width) and softly chamfered corners. Faceted glossy amethyst crystal clusters grow out of all four corners and overlap the border: smaller ones in the top corners pointing up and outward, larger ones in the bottom corners. At the center of the top edge a dark wooden treasure chest with ornate gold trim and a glowing golden lock sits half above the border, flanked left and right by small stacks of moss-covered gray stone bricks with green ivy vines draping down over the border. The whole inside of the panel is a completely EMPTY smooth dark navy-purple surface (color around #120d27) with only a very subtle purple glow along the inside of the border and a faint vignette. Absolutely no text, no letters, no buttons, no icons, no cards, no progress bars inside the panel. Hand-painted glossy game UI style with crisp dark outlines. Fully transparent background outside the panel."
+  },
+  "lager_panel2": {
+    "size": "1024x1024",
+    "quality": "high",
+    "prompt": "Front-facing 2D UI panel FRAME for a Minecraft-style dark fantasy storage menu, flat orthographic view, perfectly symmetrical, centered with generous empty margin around it. One wide rectangular frame (width to height about 1.15 to 1) with a THIN glowing violet double border (bright lavender outer line plus a deep purple inner line, total border thickness only about 1.5 percent of the frame width) and slightly chamfered corners. The inside of the frame is completely EMPTY and fully transparent. SMALL compact faceted glossy amethyst crystal clusters sit in all four corners, each cluster only about 9 percent of the frame width and 9 percent of its height, hugging the corner and overlapping the border. At the center of the top edge sits a dark wooden treasure chest with ornate gold trim and a glowing golden lock, about 22 percent of the frame width wide, half above the border, flanked by small stacks of moss-covered gray stone bricks with a little green ivy. No text, no letters, no buttons, no icons inside. Hand-painted glossy game UI style with crisp dark outlines, matching Minecraft amethyst colors. Transparent background."
+  },
   "lager_title": {
     "size": "1536x1024",
     "quality": "high",

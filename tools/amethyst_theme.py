@@ -40,20 +40,21 @@ AM_TITLE_BASE = 0xF580
 TITLES = ["LAGER"]                              # je Titel ein Bild; Zeichen = AM_TITLE_BASE + Index
 
 # ── Masse (GUI-Pixel) ───────────────────────────────────────────────────────
-AM_PAD_LINES = 2
+AM_PAD_LINES = 4
 AM_HEADER_LINES = 4
 AM_NAME_X = 44                 # Textbeginn in der Karte (rechts neben der Itembox)
 AM_CARD_ICON_CENTER_X = 24     # Mitte der Itembox im Panel (Karte beginnt bei x = 8, Box also bei 12 bis 36)
 AM_BTN_TOP, AM_BTN_BOTTOM = 3.0, 24.0           # sichtbarer Teil des Buttons in der 27 Pixel hohen Kachel
 AM_BTN_BELOW_LABEL = 15        # Unterkante des Buttons unter der Oberkante der Textzeile (24 - 9)
 AM_CENTER_PAD_LINES = 2
+AM_BTN_LABEL_OFFSET = 2       # Zeilen von der Karte bis zur Beschriftung der ersten Button-Reihe (klassisch 3)
 
 ORN_W, ORN_H, ORN_TEX = 96, 32, 2.5          # Ornament: Breite, Hoehe in GUI-Pixeln, Texturpixel je GUI-Pixel
 ORN_ABOVE = 18                             # so weit ragt die Truhe ueber den Rahmen
 CRY_TOP_W, CRY_TOP_H, CRY_TOP_Y = 11, 16, 14
 CRY_BOT_W, CRY_BOT_H, CRY_BOT_OVER = 20, 28, 2
 CRY_TEX = 4
-TITLE_H, TITLE_TOP = 22, 11                # Titelbild: Hoehe, Oberkante im Rahmen
+TITLE_H, TITLE_TOP = 22, 7                # Titelbild: Hoehe, Oberkante im Rahmen
 CLOSE_SIZE = 14
 
 # ── Farben ──────────────────────────────────────────────────────────────────
@@ -187,6 +188,124 @@ def make_crystal_bottom(gi):
 
 def make_ornament(gi):
     return fit(gi, load_art(gi, "lager_banner"), round(ORN_W * ORN_TEX), round(ORN_H * ORN_TEX), "bottom")
+
+
+# -- Hintergrundbild fuer ein Menue fester Hoehe (Lager): KI-Rahmen aus art/lager_panel.png --
+#
+# Der Rahmen (Truhe oben, Kristalle in den Ecken) ist ein Bild mit transparenter Oeffnung. Es wird so skaliert, dass die
+# Oeffnung genau 256 Pixel breit ist (= Breite der Textzeilen), in der Mitte senkrecht gedehnt (dort sind nur die
+# geraden Seitenlinien), das Innere wird mit Verlauf und Schein gefuellt, und das Ganze in Kacheln geschnitten.
+# Die Kacheln stehen alle in der ersten Zeile (wie die Rahmenkacheln), die Zeichen werden ueber ascent nach unten
+# versetzt. Das Bild ragt links und rechts ueber die 256 Pixel hinaus (der Dialogtext ist 300 Pixel breit).
+
+BG_BASE = 0xF600
+BG_COLS, BG_ROWS, BG_TILE_W, BG_TILE_H = 4, 3, 69, 85      # 4 x 69 = 276 Pixel breit, 3 x 85 = 255 hoch
+BG_LEFT, BG_TOP = -10, -31       # linke / obere Kante des Bildes in Zeilenkoordinaten (Oberkante Rahmen = 0)
+BG_PANEL_H = 192                 # Unterkante der Oeffnung; nur Menues mit dieser Rahmenhoehe nutzen das Bild
+BG_TEX = 3                       # Texturpixel je GUI-Pixel
+BG_INNER = ("#1E1550", "#120C2C")                  # Verlauf der Flaeche (oben, unten)
+BG_GLOW = "#7B3FE4"
+
+
+def _alpha_at(rows, x, y):
+    return rows[y][x][3]
+
+
+def _flood_transparent(rows, sx, sy, thr=8):
+    """Zusammenhaengender durchsichtiger Bereich ab (sx, sy) als bytearray (1 = dazugehoerig)."""
+    h, w = len(rows), len(rows[0])
+    seen = bytearray(w * h)
+    if rows[sy][sx][3] > thr:
+        raise SystemExit("Startpunkt der Fuellung liegt nicht in der Rahmenoeffnung")
+    stack = [(sx, sy)]
+    seen[sy * w + sx] = 1
+    while stack:
+        x, y = stack.pop()
+        for nx, ny in ((x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)):
+            if 0 <= nx < w and 0 <= ny < h and not seen[ny * w + nx] and rows[ny][nx][3] <= thr:
+                seen[ny * w + nx] = 1
+                stack.append((nx, ny))
+    return seen
+
+
+def make_background(gi):
+    """Liefert (Kacheln als Liste [reihe][spalte] von Zeilen, fertiges Gesamtbild)."""
+    src = load_art(gi, "lager_panel")
+    sh, sw = len(src), len(src[0])
+    seen = _flood_transparent(src, sw // 2, sh // 2)
+    xs = [i % sw for i in range(sw * sh) if seen[i]]
+    ys = [i // sw for i in range(sw * sh) if seen[i]]
+    o_l, o_r, o_t, o_b = min(xs), max(xs) + 1, min(ys), max(ys) + 1
+    if o_r - o_l < 0.7 * sw or o_b - o_t < 0.4 * sh:
+        raise SystemExit("Rahmenoeffnung nicht gefunden (Rahmen nicht geschlossen?)")
+    # Aussenkanten des Randes in einer Spalte zwischen Eckkristall und Truhe/Steinen
+    col = o_l + int(0.2 * (o_r - o_l))
+    t_src = o_t
+    while t_src > 0 and _alpha_at(src, col, t_src - 1) > 40:
+        t_src -= 1
+    k = BG_TEX * 256.0 / (o_r - o_l)                    # Texturpixel je Bildpixel
+    cut1 = o_t + int(0.15 * (o_b - o_t))
+    cut2 = o_b - int(0.30 * (o_b - o_t))
+
+    cw, ch = BG_COLS * BG_TILE_W * BG_TEX, BG_ROWS * BG_TILE_H * BG_TEX
+    x0 = -BG_LEFT * BG_TEX - round(o_l * k)
+    y0 = -BG_TOP * BG_TEX - round(t_src * k)
+    new_w = round(sw * k)
+    top = resize([r for r in src[:cut1]], new_w, round(cut1 * k))
+    bot_y = (BG_PANEL_H - BG_TOP) * BG_TEX - round((o_b - cut2) * k)
+    mid_h = bot_y - (y0 + len(top))
+    if mid_h < 10:
+        raise SystemExit("Mittelteil des Hintergrunds zu klein (%d)" % mid_h)
+    mid = resize(src[cut1:cut2], new_w, mid_h)
+    bot = resize(src[cut2:], new_w, round((sh - cut2) * k))
+    frame = gi.blank(cw, ch)
+    for rows, y in ((top, y0), (mid, y0 + len(top)), (bot, bot_y)):
+        gi.blend(frame, rows, x0, y)
+
+    # Inneres fuellen: durchsichtiger Bereich in der Mitte (leicht aufgeweitet, damit der Rand sauber ueberdeckt)
+    fh, fw = len(frame), len(frame[0])
+    inside = _flood_transparent(frame, fw // 2, int((BG_PANEL_H / 2 - BG_TOP) * BG_TEX))
+    grown = bytearray(inside)
+    for _ in range(2):
+        nxt = bytearray(grown)
+        for i in range(fw * fh):
+            if grown[i]:
+                for j in (i - 1, i + 1, i - fw, i + fw):
+                    if 0 <= j < fw * fh:
+                        nxt[j] = 1
+        grown = nxt
+    alpha = [[frame[y][x][3] / 255.0 for x in range(fw)] for y in range(fh)]
+    near = _blur_alpha(alpha, 9, passes=2)
+    top_c, bot_c, glow_c = gi.hexc(BG_INNER[0]), gi.hexc(BG_INNER[1]), gi.hexc(BG_GLOW)
+    y_a, y_b = (-BG_TOP) * BG_TEX, (BG_PANEL_H - BG_TOP) * BG_TEX
+    cx = fw / 2.0
+    for y in range(fh):
+        t = min(1.0, max(0.0, (y - y_a) / float(y_b - y_a)))
+        base = gi.mixc(top_c, bot_c, t)
+        row = frame[y]
+        for x in range(fw):
+            if not grown[y * fw + x]:
+                continue
+            g = min(1.0, near[y][x] * 2.0) * 0.55
+            vig = 0.10 * ((x - cx) / (fw / 2.0)) ** 2
+            r = base[0] * (1 - g - vig) + glow_c[0] * g
+            gr = base[1] * (1 - g - vig) + glow_c[1] * g
+            b = base[2] * (1 - g - vig) + glow_c[2] * g
+            fr, fg, fb, fa = row[x]
+            a = fa / 255.0
+            row[x] = (round(fr * a + r * (1 - a)), round(fg * a + gr * (1 - a)), round(fb * a + b * (1 - a)), 255)
+
+    tiles = []
+    tw, th = BG_TILE_W * BG_TEX, BG_TILE_H * BG_TEX
+    for r in range(BG_ROWS):
+        line = []
+        for c in range(BG_COLS):
+            rows = [frame[r * th + yy][c * tw:(c + 1) * tw] for yy in range(th)]
+            if all(rows[yy][-1][3] == 0 for yy in range(th)):
+                rows[0][-1] = (0, 0, 0, 1)         # unsichtbarer Pixel: damit alle Kacheln gleich breit zaehlen
+            line.append(rows)
+        tiles.append(line)
+    return tiles, frame
 
 
 # -- Titelbild: Bild aus art/<text>_title.png, sonst Pixelschrift mit Glow --
@@ -446,6 +565,15 @@ def write_all(gi, pack, write_png, providers, chest_rows):
         prov("am_crystal_bot_r.png", ascent, CRY_BOT_H, chr(base + 1))
     info["crystal_bot_adv"] = gi.glyph_advance(bot_l, CRY_BOT_H)
 
+    # Hintergrundbild fuer Menues fester Hoehe (Lager)
+    bg_tiles, bg_canvas = make_background(gi)
+    for r in range(BG_ROWS):
+        for c in range(BG_COLS):
+            out(f"am_bg_{r}_{c}.png", bg_tiles[r][c])
+            prov(f"am_bg_{r}_{c}.png", gi.PANEL_ASCENT - (BG_TOP + BG_TILE_H * r), BG_TILE_H,
+                 chr(BG_BASE + r * BG_COLS + c))
+    info["bg_adv"] = gi.single_advance([t for line in bg_tiles for t in line], BG_TILE_H, "Amethyst-Hintergrund")
+
     # Ornament, Titel, X, Linien, Karte, Buttons
     orn = make_ornament(gi)
     out("am_ornament.png", orn)
@@ -495,7 +623,7 @@ def write_all(gi, pack, write_png, providers, chest_rows):
 
     write_preview(gi, os.path.join(gi.ROOT, "dist", "preview_amethyst.png"), {
         "orn": orn, "top_l": top_l, "bot_l": bot_l, "close": close, "rule_l": rule_l, "title": title_rows[0] if title_rows else None,
-        "card": card, "btn": btn})
+        "card": card, "btn": btn, "bg": bg_canvas})
     return info
 
 
@@ -503,17 +631,18 @@ def write_preview(gi, path, parts):
     """Zeichnet das Lager-Menue aus den fertigen Bildern (Naeherung: Text in einer einfachen Pixelschrift statt der
     Minecraft-Schrift, Positionen wie in PanelMenu). Nur zum Anschauen, landet in dist/."""
     S, W, u = 4, gi.PANEL_W, gi.PANEL_UNIT
-    fh = 201                                   # Panelhoehe des Lager-Menues
+    fh = BG_PANEL_H                            # Panelhoehe des Lager-Menues
     pad = AM_PAD_LINES * 9
-    sheet = gi.blank(W * S, (pad + fh + 14) * S, (11, 8, 22, 255))
+    ox = 12                                    # Rand links/rechts: das Hintergrundbild ragt ueber die 256 Pixel hinaus
+    sheet = gi.blank((W + 2 * ox) * S, (pad + fh + 14) * S, (11, 8, 22, 255))
 
     def put(rows, tex_per_gui, x, y):
         tw, th = round(len(rows[0]) * S / tex_per_gui), round(len(rows) * S / tex_per_gui)
-        gi.blend(sheet, resize(rows, tw, th), round(x * S), round(y * S))
+        gi.blend(sheet, resize(rows, tw, th), round((x + ox) * S), round(y * S))
 
     def rect(x, y, w, h, color):
         for yy in range(round(y * S), round((y + h) * S)):
-            for xx in range(round(x * S), round((x + w) * S)):
+            for xx in range(round((x + ox) * S), round((x + ox + w) * S)):
                 if 0 <= yy < len(sheet) and 0 <= xx < len(sheet[0]):
                     sheet[yy][xx] = color
 
@@ -535,6 +664,9 @@ def write_preview(gi, path, parts):
     # Rahmen
     rows_n, v = (fh - 1) // u + 1, (fh - 1) % u
     cache = {}
+    if parts.get("bg"):
+        put(parts["bg"], BG_TEX, BG_LEFT, pad + BG_TOP)
+        rows_n = 0
     for r in range(rows_n):
         kind = "top" if r == 0 else ("mid" if r < rows_n - 1 else "bot")
         for c in range(gi.PANEL_COLS):
@@ -563,7 +695,7 @@ def write_preview(gi, path, parts):
         row, col = i // 2, i % 2
         single = i == len(labels) - 1
         x = (W - 118) // 2 if single else 9 + col * 120
-        top = pad + (AM_HEADER_LINES + 4 + 3 + 3 * row - 1) * 9
+        top = pad + (AM_HEADER_LINES + 4 + AM_BTN_LABEL_OFFSET + 3 * row - 1) * 9
         primary = single
         for kind, dx in (("left", 0), ("right", 59)):
             put(parts["btn"][(primary, kind)], gi.PANEL_SCALE, x + dx, top)
@@ -571,12 +703,13 @@ def write_preview(gi, path, parts):
         text(label, x + 8 + 18, top + 9 + 1)
         icon("chevron", x + 118 - 8 - 8, top + 9 + 0, 9)
 
-    # Verzierungen
-    put(parts["top_l"], CRY_TEX, 2, pad + CRY_TOP_Y)
-    put(flip(parts["top_l"]), CRY_TEX, W - 2 - CRY_TOP_W, pad + CRY_TOP_Y)
-    put(parts["bot_l"], CRY_TEX, 1, pad + fh + CRY_BOT_OVER - CRY_BOT_H)
-    put(flip(parts["bot_l"]), CRY_TEX, W - 1 - CRY_BOT_W, pad + fh + CRY_BOT_OVER - CRY_BOT_H)
-    put(parts["orn"], ORN_TEX, (W - ORN_W) / 2, pad - ORN_ABOVE)
+    # Verzierungen (mit Hintergrundbild stecken Kristalle und Truhe schon darin)
+    if not parts.get("bg"):
+        put(parts["top_l"], CRY_TEX, 2, pad + CRY_TOP_Y)
+        put(flip(parts["top_l"]), CRY_TEX, W - 2 - CRY_TOP_W, pad + CRY_TOP_Y)
+        put(parts["bot_l"], CRY_TEX, 1, pad + fh + CRY_BOT_OVER - CRY_BOT_H)
+        put(flip(parts["bot_l"]), CRY_TEX, W - 1 - CRY_BOT_W, pad + fh + CRY_BOT_OVER - CRY_BOT_H)
+        put(parts["orn"], ORN_TEX, (W - ORN_W) / 2, pad - ORN_ABOVE)
     if parts["title"] is not None:
         put(parts["title"], len(parts["title"]) / TITLE_H, (W - len(parts["title"][0]) * TITLE_H / len(parts["title"])) / 2,
             pad + TITLE_TOP)
@@ -611,6 +744,14 @@ def java_lines(info):
     L.append("    public static final char AM_BOT_BASE = (char) 0x%04X;" % AM_BOT_BASE)
     L.append("    public static final char AM_BOT_VAR_BASE = (char) 0x%04X;" % AM_BOT_VAR_BASE)
     L += const("AM_PANEL_TILE_ADVANCE", info["panel_adv"])
+    L.append("    /** Hintergrundbild (Rahmen mit Truhe und Kristallen) fuer Menues mit Rahmenhoehe AM_BG_PANEL_H. */")
+    L.append("    public static final char AM_BG_BASE = (char) 0x%04X;" % BG_BASE)
+    L += const("AM_BG_COLS", BG_COLS)
+    L += const("AM_BG_ROWS", BG_ROWS)
+    L += const("AM_BG_TILE_W", BG_TILE_W, "Breite einer Kachel in Pixeln (Spalte c steht bei AM_BG_LEFT + c * AM_BG_TILE_W).")
+    L += const("AM_BG_TILE_ADVANCE", info["bg_adv"])
+    L += const("AM_BG_LEFT", BG_LEFT, "Linke Kante des Bildes (negativ: es ragt links ueber die 256 Pixel hinaus).")
+    L += const("AM_BG_PANEL_H", BG_PANEL_H, "Rahmenhoehe, fuer die das Bild gebaut ist.")
     L.append("    /** Unterer Eckkristall: Basis + 2 * (Panelhoehe - AM_CRYSTAL_BOT_MIN) + Seite (0 links, 1 rechts). */")
     L.append("    public static final char AM_CRYSTAL_BOT_BASE = (char) 0x%04X;" % AM_CRYSTAL_BOT_BASE)
     L += const("AM_CRYSTAL_BOT_MIN", AM_CRYSTAL_BOT_MIN)
@@ -648,6 +789,7 @@ def java_lines(info):
     L += const("AM_NAME_X", AM_NAME_X, "Textbeginn in der Karte.")
     L += const("AM_CARD_ICON_CENTER_X", AM_CARD_ICON_CENTER_X, "Mitte der Itembox in der Karte.")
     L += const("AM_CENTER_PAD_LINES", AM_CENTER_PAD_LINES)
+    L += const("AM_BTN_LABEL_OFFSET", AM_BTN_LABEL_OFFSET, "Zeilen von der Karte bis zur Beschriftung der ersten Button-Reihe.")
     L += const("AM_CRYSTAL_TOP_Y", CRY_TOP_Y, "Oberkante der Seitenkristalle unter der Rahmenoberkante.")
     L += const("AM_CRYSTAL_BOT_H", CRY_BOT_H)
     L += const("AM_CRYSTAL_BOT_OVER", CRY_BOT_OVER, "So weit ragt der untere Kristall ueber die Unterkante.")

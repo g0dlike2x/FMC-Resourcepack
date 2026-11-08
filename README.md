@@ -180,7 +180,14 @@ PanelMenu.create(plugin)
   nicht bis in die unteren Ecken reichen (links/rechts je ca. 25 Pixel frei), sonst überlappen sich Kristall und Button.
 - Das Theme braucht oben zwei Leerzeilen (Truhe ragt aus dem Rahmen) und vier Kopfzeilen. Sitzt das Panel im Spiel nicht
   mittig: `AM_CENTER_PAD_LINES` in `amethyst_theme.py` ändern.
-- Banner (Truhe), Kristalle und Titelbild sind mit der OpenAI-Bild-API erzeugte Bilder (`art/*.png`, Prompts in
+- Das Lager benutzt ein fertiges **Hintergrundbild** (`art/lager_panel.png`: Rahmen mit Truhe und Kristallen, innen
+  durchsichtig). `amethyst_theme.py` skaliert es so, dass die Öffnung 256 Pixel breit ist, dehnt die Mitte auf die
+  Menühöhe (`BG_PANEL_H`), füllt das Innere mit Verlauf und Schein und schneidet es in 4 x 3 Kacheln (`U+F600`).
+  Das Bild ragt links und rechts über die 256 Pixel hinaus (der Dialogtext ist 300 Pixel breit). Das gilt nur für Menüs
+  mit genau dieser Rahmenhöhe; andere Amethyst-Menüs bekommen den Kachelrahmen mit einzelnen Kristallen.
+  Ändert sich die Zahl der Button-Reihen im Lager, muss `BG_PANEL_H` zur neuen Höhe passen (Wert steht im Lager-Menü
+  als `lastLabelLine * 9 + 15 + 6`).
+- Truhe (Banner) und Titelbild sind mit der OpenAI-Bild-API erzeugte Bilder (`art/*.png`, Prompts in
   `art/prompts.json`). Neu erzeugen: `OPENAI_API_KEY` als Umgebungsvariable setzen (nie ins Repo!), dann
   `python tools/ai_art.py gen <name>` (Rohbild nach `art/raw/`, nicht im Repo) und `python tools/ai_art.py prep <name> <breite>`
   (zuschneiden und verkleinern nach `art/<name>.png`), danach `python tools/generate_icons.py`. Ohne Titelbild

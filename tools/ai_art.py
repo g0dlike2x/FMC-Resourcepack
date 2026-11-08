@@ -4,7 +4,8 @@ Erzeugt Bilder (Verzierungen fuer Menues) mit der OpenAI-Bild-API und bereitet s
 Nur Standardbibliothek. Der Key kommt NIE in den Code oder ins Repo, sondern aus der Umgebungsvariable
 OPENAI_API_KEY.
 
-    python tools/ai_art.py gen <name>          Bild zu art/prompts.json[name] erzeugen -> art/raw/<name>.png
+    python tools/ai_art.py gen <name> [anzahl]  Bild zu art/prompts.json[name] erzeugen -> art/raw/<name>.png
+                                               (bei anzahl > 1: <name>_1.png, <name>_2.png ...)
     python tools/ai_art.py prep <name> [breite]  zuschneiden (transparenter Rand weg) und verkleinern -> art/<name>.png
 
 Rohbilder (art/raw/) sind gross und stehen nicht im Repo; die aufbereiteten Bilder in art/ schon, damit
@@ -28,7 +29,7 @@ PROMPTS = os.path.join(ART, "prompts.json")
 MODEL = os.environ.get("FMC_IMAGE_MODEL", "gpt-image-1.5")
 
 
-def generate(name):
+def generate(name, count=1):
     key = os.environ.get("OPENAI_API_KEY")
     if not key:
         sys.exit("OPENAI_API_KEY ist nicht gesetzt.")
@@ -40,7 +41,7 @@ def generate(name):
         "quality": spec.get("quality", "medium"),
         "background": "transparent",
         "output_format": "png",
-        "n": 1,
+        "n": count,
     }
     req = urllib.request.Request("https://api.openai.com/v1/images/generations", json.dumps(body).encode(),
                                  {"Authorization": "Bearer " + key, "Content-Type": "application/json"})
@@ -49,10 +50,11 @@ def generate(name):
     except urllib.error.HTTPError as e:
         sys.exit("HTTP %d: %s" % (e.code, e.read().decode()[:500].replace(key, "<key>")))
     os.makedirs(RAW, exist_ok=True)
-    path = os.path.join(RAW, name + ".png")
-    with open(path, "wb") as f:
-        f.write(base64.b64decode(data["data"][0]["b64_json"]))
-    print(path)
+    for i, item in enumerate(data["data"]):
+        path = os.path.join(RAW, name + ("" if count == 1 else "_%d" % (i + 1)) + ".png")
+        with open(path, "wb") as f:
+            f.write(base64.b64decode(item["b64_json"]))
+        print(path)
 
 
 def crop_alpha(rows, threshold=12, margin=2):
@@ -83,6 +85,6 @@ if __name__ == "__main__":
         print(__doc__)
         sys.exit(1)
     if sys.argv[1] == "gen":
-        generate(sys.argv[2])
+        generate(sys.argv[2], int(sys.argv[3]) if len(sys.argv) > 3 else 1)
     else:
         prep(sys.argv[2], int(sys.argv[3]) if len(sys.argv) > 3 else None)
