@@ -685,6 +685,690 @@
       ]
     },
     {
+      "type": "bitmap",
+      "file": "fmc:font/icons/back.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec00"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/next.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec01"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/refresh.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec02"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/check.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec03"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/close.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec04"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/tokens.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec05"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/juwelen.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec06"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/search.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec07"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/info.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec08"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/warning.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec09"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/lock.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec0a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/unlock.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec0b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/settings.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec0c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/toggle_on.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec0d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/toggle_off.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec0e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/plus.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec0f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/minus.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec10"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/bank.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec11"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/star.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec12"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/clock.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec13"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/booster.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec14"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/pickaxe.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec15"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/shard.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec16"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/minepoints.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec17"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/percent.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec18"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/flame.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec19"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/moneybag.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec1a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/chest.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec1b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/pass.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec1c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/quest.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec1d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/book.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec1e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/trophy.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec1f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/crown.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec20"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/medal_gold.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec21"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/medal_silver.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec22"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/medal_bronze.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec23"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/fish.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec24"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/rod.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec25"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/pearl.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec26"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/seemarke.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec27"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/dublone.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec28"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/user.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec29"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/users.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec2a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/shield.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec2b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/heart.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec2c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/bell.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec2d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/mail.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec2e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/chat.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec2f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/home.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec30"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/pin.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec31"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/gift.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec32"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/key.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec33"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/dice.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec34"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/sword.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec35"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/skull.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec36"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/feather.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec37"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/xp.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec38"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/cart.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec39"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/tag.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec3a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/gavel.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec3b"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/swap.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec3c"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/chart.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec3d"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/trash.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec3e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/edit.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec3f"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/eye.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec40"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/eye_off.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec41"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/grass.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec42"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/block.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec43"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/online.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec44"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/offline.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec45"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/hourglass.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec46"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/calendar.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec47"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/cookie.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec48"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/badge_star.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec49"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/badge_close.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec4a"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/chevron.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec4b"
+      ]
+    },
+    {
       "type": "space",
       "advances": {
         "\uf801": -1,
@@ -9897,6 +10581,15 @@
       "height": 24,
       "chars": [
         "\ue410"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/tokens.png",
+      "ascent": -4,
+      "height": 24,
+      "chars": [
+        "\ue411"
       ]
     },
     {

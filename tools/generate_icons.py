@@ -47,6 +47,12 @@ SS = 4          # Ueberabtastung pro Achse
 GLYPH_HEIGHT = 9
 GLYPH_ASCENT = 8
 
+# Grosse Variante jedes Icons (fuer Dialog-Buttons): eigenes Zeichen BIG_ICON_BASE + Index.
+# Hoehe 14, Oberkante 10 ueber der Grundlinie = mittig zur normalen Schrift.
+BIG_ICON_BASE = 0xEC00
+BIG_ICON_HEIGHT = 14
+BIG_ICON_ASCENT = 10
+
 
 # ── Farben ──────────────────────────────────────────────────────────────────
 
@@ -1396,6 +1402,7 @@ CARD_ASCENT = 1                # Oberkante der Karte = 6 Pixel unter der Oberkan
 
 STAR_BIG_CHAR = "\uE410"
 STAR_BIG_H = 24
+TOKENS_BIG_CHAR = "\uE411"      # grosse Token-Muenze, gleiche Groesse und Lage wie der Stern
 STAR_BIG_ASCENT = -4           # zentriert den Stern in der Karte
 STAR_X = 18                    # linke Kante des Sterns im Panel
 NAME_X = 50                    # Textbeginn in der Karte
@@ -1513,7 +1520,7 @@ PLUGIN_DIR = os.path.abspath(os.environ.get("FMC_PLUGIN_DIR") or os.path.join(RO
 JAVA_ENUM = os.path.join(PLUGIN_DIR, "src", "main", "java", "com", "example", "myplugin", "ui", "UiIcon.java")
 
 
-def write_java_enum(icon_adv, info):
+def write_java_enum(icon_adv, big_adv, info):
     """Schreibt Zeichen, Vorschub (Breite in Pixeln) und Panel-Masse als Java-Enum ins Plugin, damit
     beides nie auseinanderlaeuft. Der Vorschub wird fuers Ausrichten von Text gebraucht."""
     if not os.path.isdir(PLUGIN_DIR):
@@ -1544,7 +1551,8 @@ def write_java_enum(icon_adv, info):
     names = list(ICONS)
     for i, name in enumerate(names):
         end = ";" if i == len(names) - 1 else ","
-        lines.append("    %s(%s, %d)%s" % (name.upper(), lit(ICONS[name][0]), icon_adv[name], end))
+        lines.append("    %s(%s, %d, %s, %d)%s" % (name.upper(), lit(ICONS[name][0]), icon_adv[name],
+                                              lit(chr(BIG_ICON_BASE + i)), big_adv[name], end))
     lines += ["", "    // ── Balken ──",
               "    /** Balken-Segment (4 Pixel breit, per Textfarbe einfaerbbar) und sein Vorschub. */",
               "    public static final String BAR_SEGMENT = %s;" % lit(BAR_SEGMENT)]
@@ -1574,6 +1582,9 @@ def write_java_enum(icon_adv, info):
     lines += const("STAR_X", STAR_X, "Linke Kante des grossen Sterns in der Karte.")
     lines += ["    public static final String STAR_BIG = %s;" % lit(STAR_BIG_CHAR)]
     lines += const("STAR_BIG_ADVANCE", info["star_adv"])
+    lines += ["    /** Grosse Token-Muenze (statt des Sterns in der Karte). */",
+              "    public static final String TOKENS_BIG = %s;" % lit(TOKENS_BIG_CHAR)]
+    lines += const("TOKENS_BIG_ADVANCE", info["tokens_big_adv"])
     lines += const("NAME_X", NAME_X, "Textbeginn in der Karte.")
     lines += const("TEXT_RIGHT", TEXT_RIGHT, "Rechter Textrand in der Karte.")
 
@@ -1612,10 +1623,24 @@ def write_java_enum(icon_adv, info):
         "",
         "    private final String glyph;",
         "    private final int advance;",
+        "    private final String bigGlyph;",
+        "    private final int bigAdvance;",
         "",
-        "    UiIcon(String glyph, int advance) {",
+        "    UiIcon(String glyph, int advance, String bigGlyph, int bigAdvance) {",
         "        this.glyph = glyph;",
         "        this.advance = advance;",
+        "        this.bigGlyph = bigGlyph;",
+        "        this.bigAdvance = bigAdvance;",
+        "    }",
+        "",
+        "    /** Grosse Variante (14 Pixel hoch) fuer Dialog-Buttons. */",
+        "    public String bigGlyph() {",
+        "        return bigGlyph;",
+        "    }",
+        "",
+        "    /** Breite der grossen Variante in Pixeln (inklusive 1 Pixel Abstand). */",
+        "    public int bigAdvance() {",
+        "        return bigAdvance;",
         "    }",
         "",
         "    public String glyph() {",
@@ -1653,6 +1678,14 @@ def main():
             "ascent": GLYPH_ASCENT,
             "height": GLYPH_HEIGHT,
             "chars": [char],
+        })
+    for i, name in enumerate(ICONS):
+        providers.append({
+            "type": "bitmap",
+            "file": f"fmc:font/icons/{name}.png",
+            "ascent": BIG_ICON_ASCENT,
+            "height": BIG_ICON_HEIGHT,
+            "chars": [chr(BIG_ICON_BASE + i)],
         })
     space_advances = {c: -w for w, c in SPACE_NEG.items()}
     space_advances.update({c: w for w, c in SPACE_POS.items()})
@@ -1706,6 +1739,8 @@ def main():
     card_adv = single_advance(card_tiles, CARD_H, "Karte")
     providers.append({"type": "bitmap", "file": "fmc:font/icons/star.png",
                       "ascent": STAR_BIG_ASCENT, "height": STAR_BIG_H, "chars": [STAR_BIG_CHAR]})
+    providers.append({"type": "bitmap", "file": "fmc:font/icons/tokens.png",
+                      "ascent": STAR_BIG_ASCENT, "height": STAR_BIG_H, "chars": [TOKENS_BIG_CHAR]})
     providers.append({"type": "bitmap", "file": "fmc:font/icons/badge_close.png",
                       "ascent": X_BIG_ASCENT, "height": X_BIG_H, "chars": [X_BIG_CHAR]})
 
@@ -1723,10 +1758,12 @@ def main():
     chest_providers, chest_chars, chest_adv = chest_textures.write_all(PACK, write_png)
     providers.extend(chest_providers)
     icon_adv = {name: glyph_advance(rendered[name], GLYPH_HEIGHT) for name in ICONS}
-    write_java_enum(icon_adv, {
+    big_adv = {name: glyph_advance(rendered[name], BIG_ICON_HEIGHT) for name in ICONS}
+    write_java_enum(icon_adv, big_adv, {
         "panel_adv": panel_adv,
         "card_adv": card_adv,
         "star_adv": glyph_advance(rendered["star"], STAR_BIG_H),
+        "tokens_big_adv": glyph_advance(rendered["tokens"], STAR_BIG_H),
         "x_adv": glyph_advance(rendered["badge_close"], X_BIG_H),
         "btn_end_adv": btn_end_adv,
         "btn_mid_adv": btn_mid_adv,
