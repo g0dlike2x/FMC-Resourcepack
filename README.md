@@ -187,6 +187,13 @@ PanelMenu.create(plugin)
   mit genau dieser Rahmenhöhe; andere Amethyst-Menüs bekommen den Kachelrahmen mit einzelnen Kristallen.
   Ändert sich die Zahl der Button-Reihen im Lager, muss `BG_PANEL_H` zur neuen Höhe passen (Wert steht im Lager-Menü
   als `lastLabelLine * 9 + 15 + 6`).
+- **Item in der Karte:** `.cardItem(new ItemStack(material), zeile1, zeile2, zeile3)` zeigt das echte Item (vom Spiel
+  gerendert, wie im Inventar) links in der Karte; die Textzeilen beginnen mit `UiLine.itemCardLine(true/false)`. Das
+  Menü besteht dann aus drei Dialog-Teilen untereinander (Kopf, Item-Zeile, Buttons), das Spiel setzt sie mit etwa 10
+  Pixeln Abstand und zentriert die Item-Zeile. Diese Maße (`BODY_GAP`, `ITEM_GAP_H`, `ITEM_PAD_R` in
+  `amethyst_theme.py`) sind **Annahmen**, im Spiel nicht geprüft. Weicht die Karte um ein paar Pixel ab, dort anpassen und
+  `generate_icons.py` neu laufen lassen. Die unterste Kachelreihe des Hintergrunds und die Buttons hängen beide an Teil B
+  und bleiben deshalb zueinander stimmig, auch wenn der Abstand anders ist.
 - Truhe (Banner) und Titelbild sind mit der OpenAI-Bild-API erzeugte Bilder (`art/*.png`, Prompts in
   `art/prompts.json`). Neu erzeugen: `OPENAI_API_KEY` als Umgebungsvariable setzen (nie ins Repo!), dann
   `python tools/ai_art.py gen <name>` (Rohbild nach `art/raw/`, nicht im Repo) und `python tools/ai_art.py prep <name> <breite>`
