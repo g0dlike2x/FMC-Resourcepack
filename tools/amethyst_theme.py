@@ -49,28 +49,6 @@ AM_BTN_BELOW_LABEL = 15        # Unterkante des Buttons unter der Oberkante der 
 AM_CENTER_PAD_LINES = 2
 AM_BTN_LABEL_OFFSET = 2       # Zeilen von der Karte bis zur Beschriftung der ersten Button-Reihe (klassisch 3)
 
-# Karte mit echtem Item (Lager): Das Menue besteht dann aus drei Dialog-Bestandteilen untereinander:
-#   A  Text: Leerzeilen, Kopf (Rahmenbild oben, Titel, Untertitel)
-#   Z  Item-Zeile: das Item (vom Spiel gerendert) links, rechts daneben der Kartentext (Name, Bestand, Balken)
-#   B  Text: Rahmenbild unten und die Button-Reihen
-# Das Spiel setzt die Teile mit BODY_GAP Pixeln Abstand untereinander und zentriert die Item-Zeile. Beide Werte sind
-# Annahmen ueber das Vanilla-Layout (nicht im Spiel geprueft): ITEM_GAP_H Abstand zwischen Item und Text,
-# ITEM_PAD_R Rand rechts vom Text. Weichen sie ab, verschiebt sich die Karte um wenige Pixel; die Itembox hat Luft.
-BODY_GAP = 10
-ITEM_SIZE, ITEM_GAP_H, ITEM_PAD_R = 22, 2, 4
-ITEM_ROW_W = 224                                          # Breite der Item-Zeile (zentriert in den 256 Pixeln)
-ITEM_DESC_W = ITEM_ROW_W - ITEM_SIZE - ITEM_GAP_H - ITEM_PAD_R   # Breite des Kartentexts
-ITEM_ROW_X = (256 - ITEM_ROW_W) // 2                      # linke Kante des Items im Panel
-ITEM_DESC_X = ITEM_ROW_X + ITEM_SIZE + ITEM_GAP_H         # linke Kante des Kartentexts im Panel
-ITEM_ROW_H = 27                                           # drei Textzeilen
-ITEM_PLATE_X = 8 - ITEM_DESC_X                            # Karte (beginnt bei Panel-x 8) in Koordinaten des Kartentexts
-ITEM_TEXT_X = 4                                           # Textbeginn im Kartentext
-ITEM_TEXT_RIGHT = ITEM_DESC_W - 4                         # rechter Textrand im Kartentext
-ITEM_PLATE_TOP = -4                                       # Oberkante der Karte relativ zur ersten Kartentextzeile
-AM_CARD2_BASE = 0xF530                                    # Karte fuer die Item-Zeile (mit Aussparung fuers Item)
-B_TOP_T = AM_HEADER_LINES * 9 + 2 * BODY_GAP + ITEM_ROW_H # Oberkante von Teil B, gemessen ab Oberkante Rahmen
-BTN_ROWS = 4                                              # Button-Reihen im Lager (Hintergrundbild gilt dafuer)
-
 ORN_W, ORN_H, ORN_TEX = 96, 32, 2.5          # Ornament: Breite, Hoehe in GUI-Pixeln, Texturpixel je GUI-Pixel
 ORN_ABOVE = 18                             # so weit ragt die Truhe ueber den Rahmen
 CRY_TOP_W, CRY_TOP_H, CRY_TOP_Y = 11, 16, 14
@@ -224,8 +202,7 @@ def make_ornament(gi):
 BG_BASE = 0xF600
 BG_COLS, BG_ROWS, BG_TILE_W, BG_TILE_H = 4, 3, 69, 85      # 4 x 69 = 276 Pixel breit, 3 x 85 = 255 hoch
 BG_LEFT, BG_TOP = -10, -31       # linke / obere Kante des Bildes in Zeilenkoordinaten (Oberkante Rahmen = 0)
-BG_B_BASE = 0xF610               # Kacheln der untersten Reihe: stehen in Teil B und haengen an dessen Oberkante
-BG_PANEL_H = B_TOP_T + 27 * (BTN_ROWS - 1) + 24 + 6   # Unterkante der Oeffnung (letzte Button-Reihe + 6 Pixel)
+BG_PANEL_H = 192                 # Unterkante der Oeffnung; nur Menues mit dieser Rahmenhoehe nutzen das Bild
 BG_TEX = 3                       # Texturpixel je GUI-Pixel
 BG_INNER = ("#1E1550", "#120C2C")                  # Verlauf der Flaeche (oben, unten)
 BG_GLOW = "#7B3FE4"
@@ -505,32 +482,6 @@ def make_card_tile(gi, col):
     return ic
 
 
-def make_item_card_tile(gi, col):
-    """Kartenkachel fuer die Item-Zeile: wie make_card_tile, aber mit Rahmen um eine durchsichtige Aussparung, durch die das
-    vom Spiel gerenderte Item scheint (das Item wird vor dem Text gezeichnet, die Karte darf es also nicht verdecken)."""
-    ic = gi.Icon(gi.CARD_TILE_W, gi.CARD_H, scale=gi.PANEL_SCALE, ss=3)
-    ox = col * gi.CARD_TILE_W
-    w, h = gi.CARD_W, gi.CARD_H
-    # Item (22 x 22) steht in der Zeile (27 hoch) mittig; die Karte beginnt 4 Pixel ueber der Zeile
-    cx = ITEM_ROW_X + ITEM_SIZE / 2.0 - gi.CARD_X                   # Mitte des Items in Kartenkoordinaten
-    cy = -ITEM_PLATE_TOP + ITEM_ROW_H / 2.0
-    hole = gi._shift_x(gi.sd_box(cx - ITEM_SIZE / 2.0, cy - ITEM_SIZE / 2.0, cx + ITEM_SIZE / 2.0,
-                                 cy + ITEM_SIZE / 2.0, 2.0), ox)
-    card = gi._shift_x(gi.sd_box(0, 0, w, h, 3.5), ox)
-    plate = gi.sub(card, hole)
-    ic.paint(plate, gi.vgrad(0, h, gi.hexc("#2A1F55"), gi.hexc("#170F30")))
-    glow = gi.hexc(GLOW)
-    ic.paint(plate, lambda x, y: (glow[0], glow[1], glow[2], 0.35 * max(0.0, 1 - max(0.0, -card(x, y)) / 5.0) ** 2))
-    inner = gi._shift_x(gi.sd_box(1.3, 1.3, w - 1.3, h - 1.3, 2.4), ox)
-    ic.paint(gi.sub(card, inner), lambda x, y: gi.mixc(gi.hexc("#C79BFF"), gi.hexc("#8A4DFF"), (x + ox) / w))
-    half = ITEM_SIZE / 2.0 + 3.0
-    box = gi._shift_x(gi.sd_box(cx - half, cy - half, cx + half, cy + half, 3.0), ox)
-    box_in = gi._shift_x(gi.sd_box(cx - half + 1, cy - half + 1, cx + half - 1, cy + half - 1, 2.2), ox)
-    ic.paint(gi.sub(box, hole), gi.hexc("#7B55D6"))
-    ic.paint(gi.sub(box_in, hole), gi.vgrad(cy - half, cy + half, gi.hexc("#1D1340"), gi.hexc("#0F0824")))
-    return ic
-
-
 def make_button_tile(gi, kind, primary):
     w = gi.BTN_MID_W if kind == "mid" else gi.BTN_END_W
     ic = gi.Icon(w, gi.BTN_H, scale=gi.PANEL_SCALE, ss=3)
@@ -620,12 +571,8 @@ def write_all(gi, pack, write_png, providers, chest_rows):
     for r in range(BG_ROWS):
         for c in range(BG_COLS):
             out(f"am_bg_{r}_{c}.png", bg_tiles[r][c])
-            if r < BG_ROWS - 1:       # obere Reihen: an der Rahmenzeile in Teil A
-                prov(f"am_bg_{r}_{c}.png", gi.PANEL_ASCENT - (BG_TOP + BG_TILE_H * r), BG_TILE_H,
-                     chr(BG_BASE + r * BG_COLS + c))
-            else:                     # unterste Reihe: an der ersten Zeile von Teil B (liegt B_TOP_T unter dem Rahmen)
-                prov(f"am_bg_{r}_{c}.png", gi.PANEL_ASCENT - (BG_TOP + BG_TILE_H * r - B_TOP_T), BG_TILE_H,
-                     chr(BG_B_BASE + c))
+            prov(f"am_bg_{r}_{c}.png", gi.PANEL_ASCENT - (BG_TOP + BG_TILE_H * r), BG_TILE_H,
+                 chr(BG_BASE + r * BG_COLS + c))
     info["bg_adv"] = gi.single_advance([t for line in bg_tiles for t in line], BG_TILE_H, "Amethyst-Hintergrund")
 
     # Ornament, Titel, X, Linien, Karte, Buttons
@@ -663,13 +610,6 @@ def write_all(gi, pack, write_png, providers, chest_rows):
         out(f"am_card_{c}.png", rows)
         prov(f"am_card_{c}.png", gi.CARD_ASCENT, gi.CARD_H, chr(AM_CARD_BASE + c))
     info["card_adv"] = gi.single_advance(card, gi.CARD_H, "Amethyst-Karte")
-    card2 = []
-    for c in range(gi.CARD_COLS):
-        rows = make_item_card_tile(gi, c).render()
-        card2.append(rows)
-        out(f"am_cardi_{c}.png", rows)
-        prov(f"am_cardi_{c}.png", gi.PANEL_ASCENT - ITEM_PLATE_TOP, gi.CARD_H, chr(AM_CARD2_BASE + c))
-    info["card2_adv"] = gi.single_advance(card2, gi.CARD_H, "Amethyst-Item-Karte")
 
     btn = {}
     for primary, chars, prefix in ((False, AM_BTN, "am_btn"), (True, AM_BTN_HI, "am_btn_hi")):
@@ -684,18 +624,18 @@ def write_all(gi, pack, write_png, providers, chest_rows):
 
     write_preview(gi, os.path.join(gi.ROOT, "dist", "preview_amethyst.png"), {
         "orn": orn, "top_l": top_l, "bot_l": bot_l, "close": close, "rule_l": rule_l, "title": title_rows[0] if title_rows else None,
-        "card": card, "card2": card2, "btn": btn, "bg": bg_canvas})
+        "card": card, "btn": btn, "bg": bg_canvas})
     return info
 
 
 def write_preview(gi, path, parts):
     """Zeichnet das Lager-Menue aus den fertigen Bildern (Naeherung: Text in einer einfachen Pixelschrift statt der
-    Minecraft-Schrift, Item als Truhen-Icon, Positionen wie in PanelMenu mit BODY_GAP = 10). Nur zum Anschauen."""
-    S, W = 4, gi.PANEL_W
-    fh = BG_PANEL_H
+    Minecraft-Schrift, Positionen wie in PanelMenu). Nur zum Anschauen, landet in dist/."""
+    S, W, u = 4, gi.PANEL_W, gi.PANEL_UNIT
+    fh = BG_PANEL_H                            # Panelhoehe des Lager-Menues
     pad = AM_PAD_LINES * 9
     ox = 12                                    # Rand links/rechts: das Hintergrundbild ragt ueber die 256 Pixel hinaus
-    sheet = gi.blank((W + 2 * ox) * S, (pad + fh + 40) * S, (11, 8, 22, 255))
+    sheet = gi.blank((W + 2 * ox) * S, (pad + fh + 14) * S, (11, 8, 22, 255))
 
     def put(rows, tex_per_gui, x, y):
         tw, th = round(len(rows[0]) * S / tex_per_gui), round(len(rows) * S / tex_per_gui)
@@ -707,8 +647,8 @@ def write_preview(gi, path, parts):
                 if 0 <= yy < len(sheet) and 0 <= xx < len(sheet[0]):
                     sheet[yy][xx] = color
 
-    def text(s_, x, y, color=(255, 255, 255, 255), spacing=1):
-        for ch in s_.upper():
+    def text(s, x, y, color=(255, 255, 255, 255), spacing=1):
+        for ch in s.upper():
             pat = FONT5X7.get(ch, FONT5X7[" "]).split()
             for cy, line in enumerate(pat):
                 for cx, bit in enumerate(line):
@@ -718,45 +658,65 @@ def write_preview(gi, path, parts):
         return x
 
     def icon(name, x, y, size=14):
-        with open(os.path.join(gi.ICON_DIR, name + ".png"), "rb") as f:
+        path_ = os.path.join(gi.ICON_DIR, name + ".png")
+        with open(path_, "rb") as f:
             put(pngread.png_read(f.read()), 32.0 / size, x, y)
 
-    # Hintergrund (Rahmen, Truhe, Kristalle, Flaeche)
-    put(parts["bg"], BG_TEX, BG_LEFT, pad + BG_TOP)
+    # Rahmen
+    rows_n, v = (fh - 1) // u + 1, (fh - 1) % u
+    cache = {}
+    if parts.get("bg"):
+        put(parts["bg"], BG_TEX, BG_LEFT, pad + BG_TOP)
+        rows_n = 0
+    for r in range(rows_n):
+        kind = "top" if r == 0 else ("mid" if r < rows_n - 1 else "bot")
+        for c in range(gi.PANEL_COLS):
+            key = (kind, c)
+            if key not in cache:
+                cache[key] = frame_tile(gi, kind, c, v if kind == "bot" and v != u - 1 else None).render()
+            put(cache[key], gi.PANEL_SCALE, c * gi.PANEL_TILE_W, pad + r * u)
 
-    # Karte (Item-Zeile): Karte mit Aussparung, Item (hier das Truhen-Icon), Kartentext
-    row_top = pad + AM_HEADER_LINES * 9 + BODY_GAP
-    for c, rows in enumerate(parts["card2"]):
-        put(rows, gi.PANEL_SCALE, gi.CARD_X + c * gi.CARD_TILE_W, row_top + ITEM_PLATE_TOP)
-    icon("chest", ITEM_ROW_X, row_top + (ITEM_ROW_H - ITEM_SIZE) / 2.0, ITEM_SIZE)
-    tx = ITEM_DESC_X + ITEM_TEXT_X
-    text("Oak Log", tx, row_top + 1)
-    icon("chest", tx, row_top + 10, 9)
-    end = text("0", tx + 11, row_top + 11, (255, 255, 85, 255))
-    text("/ 64", end + 2, row_top + 11, (170, 170, 170, 255))
-    text("0%", ITEM_DESC_X + ITEM_TEXT_RIGHT - 14, row_top + 11)
-    rect(tx, row_top + 20, ITEM_TEXT_RIGHT - ITEM_TEXT_X, 4, (58, 53, 80, 255))
+    # Karte
+    card_top = pad + AM_HEADER_LINES * 9 + 6
+    for c, rows in enumerate(parts["card"]):
+        put(rows, gi.PANEL_SCALE, gi.CARD_X + c * gi.CARD_TILE_W, card_top)
+    icon("chest", AM_CARD_ICON_CENTER_X - 9, card_top + 8, 18)
+    base = pad + AM_HEADER_LINES * 9 + 9
+    text("Oak Log", AM_NAME_X, base + 1)
+    icon("chest", AM_NAME_X, base + 8, 9)
+    end = text("0", AM_NAME_X + 11, base + 10, (255, 255, 85, 255))
+    text("/ 64", end + 2, base + 10, (170, 170, 170, 255))
+    text("0%", 240 - 14, base + 10)
+    rect(AM_NAME_X, base + 20, 192, 4, (58, 53, 80, 255))
 
-    # Buttons in Teil B (Raster wie in PanelMenu: 2 Spalten, letzte Reihe mittig)
-    b_top = pad + B_TOP_T
+    # Buttons (Raster wie in PanelMenu: 2 Spalten, letzte Reihe mittig)
     labels = [("minus", "-1"), ("minus", "-64"), ("arrow_up", "Auffuellen"), ("plus", "Einzahlen"),
               ("double_up", "In SuperInv"), ("double_down", "Aus SuperInv"), ("settings", "Limit setzen")]
     for i, (ic_name, label) in enumerate(labels):
         row, col = i // 2, i % 2
         single = i == len(labels) - 1
         x = (W - 118) // 2 if single else 9 + col * 120
-        top = b_top + 27 * row
+        top = pad + (AM_HEADER_LINES + 4 + AM_BTN_LABEL_OFFSET + 3 * row - 1) * 9
+        primary = single
         for kind, dx in (("left", 0), ("right", 59)):
-            put(parts["btn"][(single, kind)], gi.PANEL_SCALE, x + dx, top)
+            put(parts["btn"][(primary, kind)], gi.PANEL_SCALE, x + dx, top)
         icon(ic_name, x + 8, top + 9 - 1)
         text(label, x + 8 + 18, top + 9 + 1)
         icon("chevron", x + 118 - 8 - 8, top + 9 + 0, 9)
 
-    # Titel, X, Untertitel mit Linien
+    # Verzierungen (mit Hintergrundbild stecken Kristalle und Truhe schon darin)
+    if not parts.get("bg"):
+        put(parts["top_l"], CRY_TEX, 2, pad + CRY_TOP_Y)
+        put(flip(parts["top_l"]), CRY_TEX, W - 2 - CRY_TOP_W, pad + CRY_TOP_Y)
+        put(parts["bot_l"], CRY_TEX, 1, pad + fh + CRY_BOT_OVER - CRY_BOT_H)
+        put(flip(parts["bot_l"]), CRY_TEX, W - 1 - CRY_BOT_W, pad + fh + CRY_BOT_OVER - CRY_BOT_H)
+        put(parts["orn"], ORN_TEX, (W - ORN_W) / 2, pad - ORN_ABOVE)
     if parts["title"] is not None:
         put(parts["title"], len(parts["title"]) / TITLE_H, (W - len(parts["title"][0]) * TITLE_H / len(parts["title"])) / 2,
             pad + TITLE_TOP)
     put(parts["close"], 4, 226, pad + CLOSE_Y)
+
+    # Untertitel mit Linien
     sub = "DEIN PERSOENLICHES LAGER"
     sw = len(sub) * 7 - 1
     start = (W - sw) // 2
@@ -792,17 +752,7 @@ def java_lines(info):
     L += const("AM_BG_TILE_W", BG_TILE_W, "Breite einer Kachel in Pixeln (Spalte c steht bei AM_BG_LEFT + c * AM_BG_TILE_W).")
     L += const("AM_BG_TILE_ADVANCE", info["bg_adv"])
     L += const("AM_BG_LEFT", BG_LEFT, "Linke Kante des Bildes (negativ: es ragt links ueber die 256 Pixel hinaus).")
-    L += const("AM_BG_PANEL_H", BG_PANEL_H, "Unterkante der Rahmenoeffnung, fuer die das Bild gebaut ist.")
-    L.append("    /** Unterste Kachelreihe des Hintergrunds: steht in Teil B und haengt an dessen Oberkante. */")
-    L.append("    public static final char AM_BG_B_BASE = (char) 0x%04X;" % BG_B_BASE)
-    L.append("    /** Karte fuer die Item-Zeile (mit Aussparung fuers Item): Basis + Spalte. */")
-    L.append("    public static final char AM_CARD2_BASE = (char) 0x%04X;" % AM_CARD2_BASE)
-    L += const("AM_CARD2_TILE_ADVANCE", info["card2_adv"])
-    L += const("AM_ITEM_SIZE", ITEM_SIZE, "Kantenlaenge des Items in der Karte.")
-    L += const("AM_ITEM_DESC_W", ITEM_DESC_W, "Breite des Kartentexts rechts vom Item.")
-    L += const("AM_ITEM_PLATE_X", ITEM_PLATE_X, "Linke Kante der Karte in Koordinaten des Kartentexts (negativ).")
-    L += const("AM_ITEM_TEXT_X", ITEM_TEXT_X, "Textbeginn im Kartentext.")
-    L += const("AM_ITEM_TEXT_RIGHT", ITEM_TEXT_RIGHT, "Rechter Textrand im Kartentext.")
+    L += const("AM_BG_PANEL_H", BG_PANEL_H, "Rahmenhoehe, fuer die das Bild gebaut ist.")
     L.append("    /** Unterer Eckkristall: Basis + 2 * (Panelhoehe - AM_CRYSTAL_BOT_MIN) + Seite (0 links, 1 rechts). */")
     L.append("    public static final char AM_CRYSTAL_BOT_BASE = (char) 0x%04X;" % AM_CRYSTAL_BOT_BASE)
     L += const("AM_CRYSTAL_BOT_MIN", AM_CRYSTAL_BOT_MIN)
