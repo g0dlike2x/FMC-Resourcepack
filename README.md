@@ -156,44 +156,62 @@ kopieren und die Inhalte auszutauschen.
   erzeugt: `generate_icons.py` für die Icons, `python tools/gen_font_widths.py <client.jar>` für die Schrift (nur
   nach einem Minecraft-Update mit geänderter Schrift nötig).
 - Aussehen von Rahmen, Karte und Stern: `make_panel_tile()` und `make_card_tile()` in `generate_icons.py`.
-## Amethyst-Theme (lila Panel, z. B. /lager)
+## Panel-Themes (/lager, /warp, /farmwelt)
 
-Neben dem klassischen Stil (rote Linie) gibt es `PanelTheme.AMETHYST`: Rahmen mit lila Glow, Kristalle an den Seiten und
-in den unteren Ecken, Banner mit Truhe und Titelbild, Karte mit Itembox und dunkle Buttons mit lila Hervorhebung.
-Alles wird in `tools/amethyst_theme.py` gezeichnet (von `generate_icons.py` mit aufgerufen, Dateien `am_*.png`).
+Neben dem klassischen Stil (rote Linie) gibt es verzierte Themes: Rahmen mit Glow, Verzierungen an den Seiten und in den
+unteren Ecken, Banner mit Ornament und Titelbild, Karte mit Itembox und dunkle Buttons mit farbiger Hervorhebung.
+Alles wird in `tools/amethyst_theme.py` gezeichnet (Liste `THEMES`, von `generate_icons.py` mit aufgerufen).
+
+| Theme | Menü | Look | Font | Dateien | Java |
+|---|---|---|---|---|---|
+| `PanelTheme.AMETHYST` | /lager | lila, Kristalle, Truhe | `fmc:icons` | `am_*.png` | `UiIcon.AM_*` |
+| `PanelTheme.WARP` | /warp | türkis, Enderperlen, Endportal mit Enderauge, Endstein | `fmc:warp` | `wp_*.png` | `UiIcon.WP_*` |
+| `PanelTheme.FARMWELT` | /farmwelt | grün, Grasblöcke, Baum, Wasser, Blumen | `fmc:farmwelt` | `fw_*.png` | `UiIcon.FW_*` |
+
+Alle Themes benutzen **dieselben Zeichen** (U+ED00 bis U+F6xx); Amethyst liegt in `fmc:icons`, jedes weitere Theme in
+einer eigenen Font (`pack/assets/fmc/font/<font>.json`). Das Plugin wählt die Font über `PanelTheme.font()`. Gleiche Teile
+(Rahmen, Karte, Buttons, X) haben in allen Themes denselben Vorschub, deshalb gibt es `WP_`/`FW_`-Konstanten nur für das,
+was vom Bild abhängt (Ecken, Ornament, Titel, Hintergrundbilder, Untertitelfarbe).
 
 ```java
 PanelMenu.create(plugin)
     .title(...)
-    .banner(UiIcon.AM_TITLE_LAGER, UiIcon.AM_TITLE_LAGER_ADVANCE, "DEIN PERSÖNLICHES LAGER")  // schaltet das Theme ein
-    .cardGlyph(UiIcon.AM_CARD_CHEST, UiIcon.AM_CARD_CHEST_ADVANCE)   // Symbol in der Itembox
+    .banner(PanelTheme.WARP, UiIcon.WP_TITLE_WARPS, UiIcon.WP_TITLE_WARPS_ADVANCE, "WÄHLE DEIN REISEZIEL")
+    .cardGlyph(UiIcon.WP_CARD_GLYPH, UiIcon.WP_CARD_GLYPH_ADVANCE)   // Symbol in der Itembox
     .card(zeile1, zeile2, zeile3)        // Textzeilen mit UiLine.create().to(UiIcon.AM_NAME_X) beginnen
     .button(...)
-    .emphasizeLast()                     // letzter Button mit lila Rand
+    .emphasizeLast()                     // optional: letzter Button hervorgehoben
     .open(player);
 ```
 
-- Ohne `.banner(...)` geht das Theme auch mit `.theme(PanelTheme.AMETHYST)`; dann gibt es Kristalle, aber keine Truhe.
-- Neues Titelbild: Text in `TITLES` (`amethyst_theme.py`) eintragen, `generate_icons.py` ausführen, danach gibt es
-  `UiIcon.AM_TITLE_<TEXT>` und `AM_TITLE_<TEXT>_ADVANCE`. Die Pixelschrift (`FONT5X7`) kennt A bis Z, Ziffern und `/ % - .`.
-- Die unteren Kristalle sind pro Panelhöhe ein eigenes Zeichen (U+F200 bis U+F40D). Die letzte Button-Reihe sollte
-  nicht bis in die unteren Ecken reichen (links/rechts je ca. 25 Pixel frei), sonst überlappen sich Kristall und Button.
-- Das Theme braucht oben zwei Leerzeilen (Truhe ragt aus dem Rahmen) und vier Kopfzeilen. Sitzt das Panel im Spiel nicht
+`.banner(titel, vorschub, untertitel)` ohne Theme nimmt Amethyst (so benutzt es das Lager).
+
+- Ohne `.banner(...)` geht ein Theme auch mit `.theme(PanelTheme.WARP)`; dann gibt es Ecken, aber kein Ornament.
+- Neues Titelbild: Text in `titles` des Themes (`amethyst_theme.py`) eintragen, `generate_icons.py` ausführen, danach gibt
+  es `UiIcon.<PRÄFIX>_TITLE_<TEXT>` und `..._ADVANCE`. Die Pixelschrift (`FONT5X7`) kennt A bis Z, Ziffern und `/ % - .`.
+- Die unteren Ecken sind pro Panelhöhe ein eigenes Zeichen (U+F200 bis U+F40D). Die letzte Button-Reihe sollte
+  nicht bis in die unteren Ecken reichen (links/rechts je ca. 25 Pixel frei), sonst überlappen sich Verzierung und Button.
+  Deshalb hat /farmwelt zwei Spalten (End sitzt mittig in der letzten Reihe), und /warp passt am besten bei einer
+  ungeraden Zahl von Zielen.
+- Das Theme braucht oben vier Leerzeilen (Ornament ragt aus dem Rahmen) und vier Kopfzeilen. Sitzt das Panel im Spiel nicht
   mittig: `AM_CENTER_PAD_LINES` in `amethyst_theme.py` ändern.
-- Das Lager benutzt ein fertiges **Hintergrundbild** (`art/lager_panel.png`: Rahmen mit Truhe und Kristallen, innen
-  durchsichtig). `amethyst_theme.py` skaliert es so, dass die Öffnung 256 Pixel breit ist, dehnt die Mitte auf die
-  Menühöhe (`BG_PANEL_H`), füllt das Innere mit Verlauf und Schein und schneidet es in 4 x 3 Kacheln (`U+F600`).
-  Das Bild ragt links und rechts über die 256 Pixel hinaus (der Dialogtext ist 300 Pixel breit). Das gilt nur für Menüs
-  mit genau dieser Rahmenhöhe; andere Amethyst-Menüs bekommen den Kachelrahmen mit einzelnen Kristallen.
-  Ändert sich die Zahl der Button-Reihen im Lager, muss `BG_PANEL_H` zur neuen Höhe passen (Wert steht im Lager-Menü
-  als `lastLabelLine * 9 + 15 + 6`).
-- Truhe (Banner) und Titelbild sind mit der OpenAI-Bild-API erzeugte Bilder (`art/*.png`, Prompts in
-  `art/prompts.json`). Neu erzeugen: `OPENAI_API_KEY` als Umgebungsvariable setzen (nie ins Repo!), dann
-  `python tools/ai_art.py gen <name>` (Rohbild nach `art/raw/`, nicht im Repo) und `python tools/ai_art.py prep <name> <breite>`
-  (zuschneiden und verkleinern nach `art/<name>.png`), danach `python tools/generate_icons.py`. Ohne Titelbild
-  (`art/<text>_title.png`) zeichnet `amethyst_theme.py` den Titel selbst in Pixelschrift.
-- `dist/preview_amethyst.png` zeigt eine Vorschau des Lager-Menüs (Näherung mit einfacher Schrift).
-- Offen/ungeprüft im Spiel: Position der Zeichen untereinander (Ornament, Titel, Untertitel, Kristalle), Überlagerung der
+- **Hintergrundbild:** Liegt ein Rahmenbild vor (`art/<theme>_panel.png`: Rahmen mit Ornament und Ecken, innen
+  durchsichtig), skaliert `amethyst_theme.py` es so, dass die Öffnung 256 Pixel breit ist, dehnt die Mitte auf die
+  Menühöhe, füllt das Innere mit Verlauf und Schein und schneidet es in Kacheln (4 Spalten, `U+F600`, je Höhe ein Block
+  von 32 Zeichen). Gebaut wird es für jede Höhe in `bg_heights` des Themes (Lager 192, Warp 165/192/219 = 5 bis 10
+  Ziele, Farmwelt 138). Menüs mit anderer Höhe bekommen den Kachelrahmen mit einzelnen Verzierungen. Die Höhe eines
+  Menüs ist `lastLabelLine * 9 + 15 + 6` (siehe `preview_height()` in `amethyst_theme.py`).
+- **KI-Bilder:** Ornament, Ecken, Titel und Rahmen sind mit der OpenAI-Bild-API erzeugte Bilder (`art/*.png`, Prompts in
+  `art/prompts.json`). `OPENAI_API_KEY` als Umgebungsvariable setzen (nie ins Repo!), dann für ein ganzes Theme
+  `python tools/ai_art.py theme warp` (bzw. `farmwelt`), oder einzeln `python tools/ai_art.py gen <name>` (Rohbild nach
+  `art/raw/`, nicht im Repo) und `python tools/ai_art.py prep <name>` (zuschneiden und verkleinern nach `art/<name>.png`,
+  Breite aus `prep_width`). Danach `python tools/generate_icons.py` und die Vorschau prüfen.
+- **Ohne KI-Bild:** Beim Warp- und Farmwelt-Theme zeichnet `tools/theme_art.py` einen Ersatz (Blöcke, Enderperle,
+  Enderauge, Baum, Blumen); ohne Rahmenbild gibt es den Kachelrahmen. Ist ein Rahmenbild unbrauchbar (Öffnung nicht
+  geschlossen), gibt es eine Warnung und ebenfalls den Kachelrahmen. Ohne Titelbild (`art/<text>_title.png`) wird der Titel
+  in Pixelschrift gezeichnet. Das Lager (Amethyst) braucht seine Bilder zwingend.
+- `dist/preview_<theme>.png` zeigt je Theme eine Vorschau des Menüs (Näherung mit einfacher Schrift).
+- Offen/ungeprüft im Spiel: Position der Zeichen untereinander (Ornament, Titel, Untertitel, Ecken), Überlagerung der
   Zeichen innerhalb einer Zeile und der Abstand der Karte zu den Buttons.
 
 ## Kisten-GUIs (ChestGui)
@@ -275,6 +293,9 @@ FMC-Resourcepack/
 │     └─ minecraft/textures/gui/    Buttons, Hintergrund, Trennlinien
 ├─ tools/
 │  ├─ generate_icons.py          ← erzeugt alle PNGs und UiIcon.java
+│  ├─ amethyst_theme.py          ← Panel-Themes (Lager, Warp, Farmwelt)
+│  ├─ theme_art.py               ← gezeichnete Ersatzbilder für Warp/Farmwelt
+│  ├─ ai_art.py                  ← KI-Bilder erzeugen und aufbereiten (art/)
 │  ├─ ui_textures.py             ← Buttons, Hintergründe, Trennlinien, Balken
 │  ├─ build_zip.py               ← baut dist/FMC-Resourcepack.zip
 │  └─ render_mock.py             ← Vorschaubild des Demo-Menüs

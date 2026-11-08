@@ -2,11 +2,13 @@
   "lager_banner": {
     "size": "1536x1024",
     "quality": "high",
+    "prep_width": 960,
     "prompt": "Game UI decoration asset for a Minecraft-style dark fantasy storage menu. Front view, perfectly symmetrical, wide horizontal composition: in the center a dark wooden treasure chest with ornate gold trim, gold corner straps and a glowing golden lock with a keyhole; on both sides of the chest stacked weathered gray stone bricks covered with moss; lush green ivy vines with leaves draping over the chest lid and the stones. Soft purple magical glow behind the chest. Glossy hand-painted game icon style with crisp dark outlines and chunky blocky voxel-inspired shapes, rich saturated colors. Fully transparent background, no text, no frame, no floor, no shadow on the ground."
   },
   "lager_crystals": {
     "size": "1024x1024",
     "quality": "high",
+    "prep_width": 320,
     "prompt": "Game UI decoration asset: a cluster of three glowing purple amethyst crystals of different heights growing from a small dark rocky base, the tallest in the middle leaning slightly to the left. Faceted, glossy hand-painted game icon style with crisp dark purple outlines, bright violet highlights and soft magical glow, Minecraft amethyst inspired. Fully transparent background, no text, no ground shadow."
   },
   "lager_panel": {
@@ -22,6 +24,55 @@
   "lager_title": {
     "size": "1536x1024",
     "quality": "high",
+    "prep_width": 640,
     "prompt": "Game UI title lettering: the single word \"LAGER\" in uppercase, chunky blocky pixel-art 3D letters (Minecraft inspired), bright white to light lavender top gradient with a thick deep-purple extruded side and dark violet outline, soft glowing violet aura around the letters, perfectly centered, exactly five letters L A G E R, correct spelling. Fully transparent background, nothing else, no frame, no subtitle."
+  },
+
+  "warp_banner": {
+    "size": "1536x1024",
+    "quality": "high",
+    "prep_width": 960,
+    "prompt": "Game UI decoration asset for a Minecraft-style teleport / warp menu. Front view, perfectly symmetrical, wide horizontal composition: in the center a Minecraft end portal frame block (pale yellow-green end stone with a dark teal-green top) with a glowing green eye of ender set into it, a swirling teal teleport vortex with tiny stars rising above it; on both sides small stacks of pale end stone bricks and dark obsidian blocks, with glossy teal ender pearls floating above them. Small purple and cyan magic particles and sparkles. Soft cyan-teal magical glow behind the portal frame. Glossy hand-painted game icon style with crisp dark outlines and chunky blocky voxel-inspired shapes, rich saturated colors. Fully transparent background, no text, no frame, no floor, no shadow on the ground."
+  },
+  "warp_corner": {
+    "size": "1024x1024",
+    "quality": "high",
+    "prep_width": 320,
+    "prompt": "Game UI decoration asset: a small pale end stone block (Minecraft) with two glossy teal-green ender pearls floating above it, the larger pearl slightly left of center, with a dark green core and a bright highlight, tiny purple teleport particles and a soft cyan glow around the pearls. Compact composition, taller than wide. Glossy hand-painted game icon style with crisp dark teal outlines. Fully transparent background, no text, no ground shadow."
+  },
+  "warp_panel": {
+    "size": "1024x1024",
+    "quality": "high",
+    "prompt": "Front-facing 2D UI panel FRAME for a Minecraft-style teleport / warp menu, flat orthographic view, perfectly symmetrical, centered with generous empty margin around it. One wide rectangular frame (width to height about 1.15 to 1) with a THIN glowing cyan-teal double border (bright aqua outer line plus a deep teal inner line, total border thickness only about 1.5 percent of the frame width) and slightly chamfered corners. The inside of the frame is completely EMPTY and fully transparent. SMALL compact decorations sit in all four corners, each only about 9 percent of the frame width and 9 percent of its height, hugging the corner and overlapping the border: glossy teal ender pearls on little pale end stone blocks with tiny purple particles. At the center of the top edge sits a Minecraft end portal frame block with a glowing green eye of ender, about 22 percent of the frame width wide, half above the border, flanked by small stacks of end stone bricks and obsidian with floating ender pearls. No text, no letters, no buttons, no icons inside. Hand-painted glossy game UI style with crisp dark outlines, matching Minecraft End dimension colors. Transparent background."
+  },
+  "warps_title": {
+    "size": "1536x1024",
+    "quality": "high",
+    "prep_width": 640,
+    "prompt": "Game UI title lettering: the single word \"WARPS\" in uppercase, chunky blocky pixel-art 3D letters (Minecraft inspired), bright white to light aqua top gradient with a thick deep-teal extruded side and dark teal outline, soft glowing cyan aura around the letters, a few tiny purple teleport particles, perfectly centered, exactly five letters W A R P S, correct spelling. Fully transparent background, nothing else, no frame, no subtitle."
+  },
+
+  "farmwelt_banner": {
+    "size": "1536x1024",
+    "quality": "high",
+    "prep_width": 960,
+    "prompt": "Game UI decoration asset for a Minecraft-style farm world menu. Front view, perfectly symmetrical, wide horizontal composition: in the center a Minecraft grass block with a small leafy oak tree with red apples growing on top of it; on both sides further grass blocks with small red poppy and yellow dandelion flowers and tall grass, and at the outer ends clear blue water blocks with a little waterfall splash. A few golden wheat stalks. Soft warm green glow behind the tree. Glossy hand-painted game icon style with crisp dark outlines and chunky blocky voxel-inspired shapes, rich saturated colors. Fully transparent background, no text, no frame, no floor, no shadow on the ground."
+  },
+  "farmwelt_corner": {
+    "size": "1024x1024",
+    "quality": "high",
+    "prep_width": 320,
+    "prompt": "Game UI decoration asset: a small Minecraft grass block with a tiny oak sapling, a red poppy flower and tufts of tall grass growing on top, a few drops of water at its side. Compact composition, taller than wide. Glossy hand-painted game icon style with crisp dark green outlines, bright fresh greens and a soft green glow. Fully transparent background, no text, no ground shadow."
+  },
+  "farmwelt_panel": {
+    "size": "1536x1024",
+    "quality": "high",
+    "prompt": "Front-facing 2D UI panel FRAME for a Minecraft-style farm world menu, flat orthographic view, perfectly symmetrical, centered with generous empty margin around it. One wide rectangular frame (width to height about 1.8 to 1) with a THIN glowing fresh-green double border (bright lime outer line plus a deep forest-green inner line, total border thickness only about 1.2 percent of the frame width) and slightly chamfered corners. The inside of the frame is completely EMPTY and fully transparent. SMALL compact decorations sit in all four corners, each only about 7 percent of the frame width and 12 percent of its height, hugging the corner and overlapping the border: little grass blocks with flowers and tall grass. At the center of the top edge sits a Minecraft grass block with a small oak tree on top, about 18 percent of the frame width wide, half above the border, flanked by small grass blocks and clear blue water blocks. No text, no letters, no buttons, no icons inside. Hand-painted glossy game UI style with crisp dark outlines, matching Minecraft overworld colors. Transparent background."
+  },
+  "farmwelt_title": {
+    "size": "1536x1024",
+    "quality": "high",
+    "prep_width": 800,
+    "prompt": "Game UI title lettering: the single word \"FARMWELT\" in uppercase, chunky blocky pixel-art 3D letters (Minecraft inspired), bright white to light lime-green top gradient with a thick deep-green extruded side and dark green outline, a little grass growing on top of the letters, soft glowing green aura, perfectly centered, exactly eight letters F A R M W E L T, correct spelling. Fully transparent background, nothing else, no frame, no subtitle."
   }
 }

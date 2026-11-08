@@ -1353,6 +1353,25 @@ def icon_double_down():
     return _double_chevron(True)
 
 
+# ── Batch 5: Warp / Farmwelt (Panel-Themes) ─────────────────────────────────
+
+def icon_ender_pearl():
+    """Enderperle: tuerkise Kugel mit dunklem Kern und Glanzlicht (Warp-Theme, End-Farmwelt)."""
+    ic = Icon()
+    pearl = sd_circle(16.0, 16.5, 12.0)
+    ic.paint(pearl, hexc("#06332D"), grow=1.2)
+
+    def col(x, y):
+        t = min(1.0, math.hypot(x - 12.0, y - 11.5) / 17.0)
+        return mixc(hexc("#8FF2DA"), hexc("#14695C"), t)
+    ic.paint(pearl, col)
+    ic.paint(sd_circle(17.2, 17.8, 5.2), hexc("#0C4C42", 0.85))
+    ic.paint(sd_circle(17.2, 17.8, 2.6), hexc("#08332C", 0.9))
+    ic.paint(ellipse(11.5, 10.5, 3.4, 2.4), (255, 255, 255, 0.9))
+    ic.sparkle(23.5, 23.0, 1.8, 0.75)
+    return ic
+
+
 # name -> (Zeichen, Funktion); die Zeichen werden der Reihenfolge nach ab U+E000 vergeben,
 # neue Icons also nur HINTEN anhaengen, sonst aendern sich bestehende Zeichen.
 _ICON_LIST = [
@@ -1383,6 +1402,8 @@ _ICON_LIST = [
     ("badge_star", icon_badge_star), ("badge_close", icon_badge_close), ("chevron", icon_chevron),
     # Batch 4 (Lager)
     ("arrow_up", icon_arrow_up), ("double_up", icon_double_up), ("double_down", icon_double_down),
+    # Batch 5 (Warp / Farmwelt)
+    ("ender_pearl", icon_ender_pearl),
 ]
 
 # Abstandszeichen (Font-Provider "space") und Balkensegment liegen im oberen Private-Use-Bereich,
@@ -1795,7 +1816,7 @@ def main():
     btn_mid_adv = single_advance([btn_rows["mid"]], BTN_H, "Button-Mitte")
 
     ui_textures.write_all(PACK, write_png)
-    am_info = amethyst_theme.write_all(sys.modules[__name__], PACK, write_png, providers, rendered["chest"])
+    am_info = amethyst_theme.write_all(sys.modules[__name__], PACK, write_png, providers, rendered)
     chest_providers, chest_chars, chest_adv = chest_textures.write_all(PACK, write_png)
     providers.extend(chest_providers)
     icon_adv = {name: glyph_advance(rendered[name], GLYPH_HEIGHT) for name in ICONS}

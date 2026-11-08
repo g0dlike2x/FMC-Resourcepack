@@ -713,6 +713,15 @@
     },
     {
       "type": "bitmap",
+      "file": "fmc:font/icons/ender_pearl.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": [
+        "\ue04f"
+      ]
+    },
+    {
+      "type": "bitmap",
       "file": "fmc:font/icons/back.png",
       "ascent": 10,
       "height": 14,
@@ -1420,6 +1429,15 @@
       "height": 14,
       "chars": [
         "\uec4e"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "fmc:font/icons/ender_pearl.png",
+      "ascent": 10,
+      "height": 14,
+      "chars": [
+        "\uec4f"
       ]
     },
     {
@@ -24580,7 +24598,7 @@
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/ui/am_bg_0_0.png",
+      "file": "fmc:font/ui/am_bg_192_0_0.png",
       "ascent": 38,
       "height": 85,
       "chars": [
@@ -24589,7 +24607,7 @@
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/ui/am_bg_0_1.png",
+      "file": "fmc:font/ui/am_bg_192_0_1.png",
       "ascent": 38,
       "height": 85,
       "chars": [
@@ -24598,7 +24616,7 @@
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/ui/am_bg_0_2.png",
+      "file": "fmc:font/ui/am_bg_192_0_2.png",
       "ascent": 38,
       "height": 85,
       "chars": [
@@ -24607,7 +24625,7 @@
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/ui/am_bg_0_3.png",
+      "file": "fmc:font/ui/am_bg_192_0_3.png",
       "ascent": 38,
       "height": 85,
       "chars": [
@@ -24616,7 +24634,7 @@
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/ui/am_bg_1_0.png",
+      "file": "fmc:font/ui/am_bg_192_1_0.png",
       "ascent": -47,
       "height": 85,
       "chars": [
@@ -24625,7 +24643,7 @@
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/ui/am_bg_1_1.png",
+      "file": "fmc:font/ui/am_bg_192_1_1.png",
       "ascent": -47,
       "height": 85,
       "chars": [
@@ -24634,7 +24652,7 @@
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/ui/am_bg_1_2.png",
+      "file": "fmc:font/ui/am_bg_192_1_2.png",
       "ascent": -47,
       "height": 85,
       "chars": [
@@ -24643,7 +24661,7 @@
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/ui/am_bg_1_3.png",
+      "file": "fmc:font/ui/am_bg_192_1_3.png",
       "ascent": -47,
       "height": 85,
       "chars": [
@@ -24652,7 +24670,7 @@
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/ui/am_bg_2_0.png",
+      "file": "fmc:font/ui/am_bg_192_2_0.png",
       "ascent": -132,
       "height": 85,
       "chars": [
@@ -24661,7 +24679,7 @@
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/ui/am_bg_2_1.png",
+      "file": "fmc:font/ui/am_bg_192_2_1.png",
       "ascent": -132,
       "height": 85,
       "chars": [
@@ -24670,7 +24688,7 @@
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/ui/am_bg_2_2.png",
+      "file": "fmc:font/ui/am_bg_192_2_2.png",
       "ascent": -132,
       "height": 85,
       "chars": [
@@ -24679,7 +24697,7 @@
     },
     {
       "type": "bitmap",
-      "file": "fmc:font/ui/am_bg_2_3.png",
+      "file": "fmc:font/ui/am_bg_192_2_3.png",
       "ascent": -132,
       "height": 85,
       "chars": [

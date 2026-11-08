@@ -7,6 +7,12 @@ OPENAI_API_KEY.
     python tools/ai_art.py gen <name> [anzahl]  Bild zu art/prompts.json[name] erzeugen -> art/raw/<name>.png
                                                (bei anzahl > 1: <name>_1.png, <name>_2.png ...)
     python tools/ai_art.py prep <name> [breite]  zuschneiden (transparenter Rand weg) und verkleinern -> art/<name>.png
+                                               (ohne breite: "prep_width" aus prompts.json, sonst Originalgroesse)
+    python tools/ai_art.py theme <theme>       alle Bilder eines Themes (warp, farmwelt, amethyst) erzeugen und
+                                               aufbereiten: Rahmen, Ecke, Ornament, Titel
+
+Danach python tools/generate_icons.py ausfuehren und dist/preview_<theme>.png ansehen. Ein misslungenes Bild einfach
+neu erzeugen (gen + prep) oder art/<name>.png loeschen, dann nimmt das Theme den gezeichneten Ersatz.
 
 Rohbilder (art/raw/) sind gross und stehen nicht im Repo; die aufbereiteten Bilder in art/ schon, damit
 generate_icons.py ohne API-Zugriff funktioniert.
@@ -29,11 +35,18 @@ PROMPTS = os.path.join(ART, "prompts.json")
 MODEL = os.environ.get("FMC_IMAGE_MODEL", "gpt-image-1.5")
 
 
+def _spec(name):
+    specs = json.load(open(PROMPTS, encoding="utf-8"))
+    if name not in specs:
+        sys.exit("Kein Prompt fuer '%s' in art/prompts.json" % name)
+    return specs[name]
+
+
 def generate(name, count=1):
     key = os.environ.get("OPENAI_API_KEY")
     if not key:
         sys.exit("OPENAI_API_KEY ist nicht gesetzt.")
-    spec = json.load(open(PROMPTS, encoding="utf-8"))[name]
+    spec = _spec(name)
     body = {
         "model": MODEL,
         "prompt": spec["prompt"],
@@ -69,6 +82,8 @@ def crop_alpha(rows, threshold=12, margin=2):
 
 
 def prep(name, width=None):
+    if width is None:
+        width = _spec(name).get("prep_width")
     rows = pngread.png_read(open(os.path.join(RAW, name + ".png"), "rb").read())
     rows = crop_alpha(rows)
     h, w = len(rows), len(rows[0])
@@ -80,11 +95,22 @@ def prep(name, width=None):
     print(out, len(rows[0]), "x", len(rows))
 
 
+def theme_names(key):
+    for th in am.THEMES:
+        if th.key == key:
+            return [th.panel_art, th.corner_art, th.banner_art] + [t.lower() + "_title" for t in th.titles]
+    sys.exit("Unbekanntes Theme '%s' (bekannt: %s)" % (key, ", ".join(t.key for t in am.THEMES)))
+
+
 if __name__ == "__main__":
-    if len(sys.argv) < 3 or sys.argv[1] not in ("gen", "prep"):
+    if len(sys.argv) < 3 or sys.argv[1] not in ("gen", "prep", "theme"):
         print(__doc__)
         sys.exit(1)
     if sys.argv[1] == "gen":
         generate(sys.argv[2], int(sys.argv[3]) if len(sys.argv) > 3 else 1)
-    else:
+    elif sys.argv[1] == "prep":
         prep(sys.argv[2], int(sys.argv[3]) if len(sys.argv) > 3 else None)
+    else:
+        for art_name in theme_names(sys.argv[2]):
+            generate(art_name)
+            prep(art_name)
