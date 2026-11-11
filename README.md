@@ -234,6 +234,23 @@ und `/bank` (`U+EA01`, 27 Slots).
 - Offen/ungeprüft im Spiel: Offsets (`CHEST_ASCENT = 13`, Titel bei x = 8) und ob die Items sicher vor dem
   Hintergrund liegen. Sitzt das Bild verschoben, nur diese Konstanten in `chest_textures.py` anpassen.
 
+## Menüs mit freiem Layout (Canvas, z. B. /jobs)
+
+Für Menüs mit Kacheln, Infokästen und Balken an beliebigen Stellen gibt es `ui/Canvas` im Plugin (Vorlage:
+`jobs/JobMenu.java`). Die Fonts dafür erzeugt `python tools/menu_kit.py` (läuft auch automatisch in der Action
+*Resourcepack Sync*, vor dem ZIP-Bau):
+
+- `fmc:menu`: Kästen in jeder Breite, Höhe und Farbe. Die Bilder sind weiß und werden per Textfarbe eingefärbt
+  (Fülle und Rand getrennt), Farben stehen nur im Plugin (`ui/Tone`).
+- `fmc:p0` bis `fmc:p8`: Vanilla-Schrift, alle Icons, Vanilla-Items (`ui/MenuItem`) und Blöcke für Balken, je um
+  0 bis 8 Pixel nach unten versetzt. Damit sitzt alles pixelgenau statt im 9-Pixel-Raster.
+- `fmc:b0` bis `fmc:b8`: doppelt große Vanilla-Schrift für Titel.
+- Vanilla-Texturen werden nicht kopiert, die Fonts verweisen auf `minecraft:font/…` und `minecraft:item/…`.
+- Neues Item: unten in `ui/MenuItem.java` anhängen (Breite = letzte nicht durchsichtige Spalte der 16er-Textur),
+  dann `menu_kit.py` neu laufen lassen.
+- Offen/ungeprüft im Spiel: Abstand der Textzeilen (9 Pixel angenommen, wie bei PanelMenu), Lage der Kästen zum Text
+  und ob Dialoge Textschatten zeichnen (Kästen und Balken haben ihn abgeschaltet).
+
 ## Wer bekommt das Pack?
 
 - Die Permission heißt **`fmc.resourcepack`** (Standard: niemand). Vergabe über LuckPerms, zum Beispiel:
