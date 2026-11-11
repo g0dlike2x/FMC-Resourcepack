@@ -246,8 +246,11 @@ Für Menüs mit Kacheln, Infokästen und Balken an beliebigen Stellen gibt es `u
   0 bis 8 Pixel nach unten versetzt. Damit sitzt alles pixelgenau statt im 9-Pixel-Raster.
 - `fmc:b0` bis `fmc:b8`: doppelt große Vanilla-Schrift für Titel.
 - Vanilla-Texturen werden nicht kopiert, die Fonts verweisen auf `minecraft:font/…` und `minecraft:item/…`.
-- Neues Item: unten in `ui/MenuItem.java` anhängen (Breite = letzte nicht durchsichtige Spalte der 16er-Textur),
-  dann `menu_kit.py` neu laufen lassen.
+- Neues Item: unten in `tools/data/menu_items.txt` anhängen, dann `python tools/menu_kit.py`. Das Skript holt Textur,
+  Breite und Einfärbung einmal aus den Vanilla-Daten (Netz), speichert sie in `tools/data/menu_items.json` und
+  schreibt `ui/MenuItem.java` neu (beides committen). Truhen, Köpfe, Schilde und animierte Texturen haben kein
+  flaches Bild; dafür in der Liste eine Textur angeben (`ZOMBIE_HEAD item/zombie_spawn_egg`).
+- Klicks: Jedes Zeichen in einem Button bekommt den Klick (Kasten, Text, Icons), der Button ist überall klickbar.
 - Offen/ungeprüft im Spiel: Abstand der Textzeilen (9 Pixel angenommen, wie bei PanelMenu), Lage der Kästen zum Text
   und ob Dialoge Textschatten zeichnen (Kästen und Balken haben ihn abgeschaltet).
 

@@ -12,9 +12,10 @@ Schreibt:
                                                           Bloecke; um 0..8 Pixel nach unten versetzt
     pack/assets/fmc/font/b0.json .. b8.json    fmc:b0..8  doppelt grosse Vanilla-Schrift (Titel), ebenso versetzt
 
-Benoetigt icons.json (von generate_icons.py) und liest die Item-Liste aus FMC-Plugin/.../ui/MenuItem.java
-(Pfad zum Plugin per Umgebungsvariable FMC_PLUGIN_DIR aenderbar). Die Konstanten unten muessen zu ui/MenuFont.java
-passen.
+Benoetigt icons.json (von generate_icons.py). Die Vanilla-Items stehen in tools/data/menu_items.txt; Textur, Breite
+und Einfaerbung werden beim ersten Mal aus den Vanilla-Daten geladen (Netz) und in tools/data/menu_items.json
+gespeichert. Schreibt ausserdem FMC-Plugin/.../ui/MenuItem.java (Pfad zum Plugin per Umgebungsvariable
+FMC_PLUGIN_DIR aenderbar). Die Konstanten unten muessen zu ui/MenuFont.java passen.
 
 Wie es funktioniert:
   - Kaesten sind beliebig breit: linke Kante + Mittelstuecke (1, 2, 4 ... 128 Pixel) + rechte Kante, und beliebig
@@ -31,7 +32,6 @@ Wie es funktioniert:
 """
 import json
 import os
-import re
 import struct
 import sys
 import zlib
@@ -44,6 +44,11 @@ ICONS_JSON = os.path.join(FONT_DIR, "icons.json")
 VANILLA_FONT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "vanilla_font_default.json")
 PLUGIN_DIR = os.environ.get("FMC_PLUGIN_DIR", os.path.join(ROOT, "..", "FMC-Plugin"))
 MENU_ITEM_JAVA = os.path.join(PLUGIN_DIR, "src", "main", "java", "com", "example", "myplugin", "ui", "MenuItem.java")
+ITEM_LIST = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "menu_items.txt")
+ITEM_CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "menu_items.json")
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from pngread import png_read  # noqa: E402
 
 # ── Muss zu ui/MenuFont.java passen ─────────────────────────────────────────────────────────────────────────────
 LINE = 9                      # Hoehe einer Textzeile
@@ -193,22 +198,240 @@ def block_providers(shift):
     return out
 
 
+# ── Vanilla-Items ───────────────────────────────────────────────────────────────────────────────────────────────
+# Liste: tools/data/menu_items.txt ("MATERIAL" oder "MATERIAL textur/pfad", Reihenfolge = Zeichen, nur anhaengen).
+# Textur, Breite und Einfaerbung werden einmal aus den Vanilla-Daten (github.com/misode/mcmeta) ermittelt und in
+# tools/data/menu_items.json zwischengespeichert; danach braucht das Skript kein Netz mehr.
+
+MCMETA = "https://raw.githubusercontent.com/misode/mcmeta/assets/assets/minecraft/"
+TEXTURE_KEYS = ["layer0", "side", "all", "texture", "front", "cross", "plant", "crop", "top", "end", "pattern",
+                "particle"]
+GRASS_TINT = 0x7CBD6B
+
+
+def fetch(path):
+    import urllib.request
+    with urllib.request.urlopen(MCMETA + path, timeout=30) as r:
+        return r.read()
+
+
+def fetch_json(path):
+    try:
+        return json.loads(fetch(path))
+    except Exception:
+        return None
+
+
+def strip_ns(ref):
+    return ref.split(":", 1)[1] if ":" in ref else ref
+
+
+def first_model(node):
+    """Erstes Modell eines items/*.json-Knotens und seine Einfaerbungen (select/condition: Rueckfallwert)."""
+    if not isinstance(node, dict):
+        return None, []
+    kind = strip_ns(node.get("type", "model"))
+    if kind == "model":
+        return node.get("model"), node.get("tints", [])
+    if kind == "special":
+        return None, []    # Truhe, Koepfe, Schild ...: 3D-Modell ohne passende Textur (Textur in der Liste angeben)
+    for key in ("fallback", "on_false", "on_true"):
+        if key in node:
+            found = first_model(node[key])
+            if found[0]:
+                return found
+    for key in ("cases", "entries"):
+        for entry in node.get(key, []):
+            found = first_model(entry.get("model"))
+            if found[0]:
+                return found
+    return None, []
+
+
+def model_texture(model_id):
+    """Die Textur, die am ehesten wie das Item aussieht (Item-Bild oder Seitenflaeche des Blocks)."""
+    textures, ref, seen = {}, model_id, set()
+    while ref and ref not in seen:
+        seen.add(ref)
+        model = fetch_json("models/" + strip_ns(ref) + ".json")
+        if model is None:
+            break
+        for k, v in model.get("textures", {}).items():
+            textures.setdefault(k, v)
+        ref = model.get("parent")
+    for key in TEXTURE_KEYS:
+        value = textures.get(key)
+        for _ in range(5):
+            if isinstance(value, str) and value.startswith("#"):
+                value = textures.get(value[1:])
+        if isinstance(value, str):
+            return strip_ns(value)
+    return None
+
+
+def tint_of(tints):
+    if not tints:
+        return None
+    t = tints[0]
+    kind = strip_ns(t.get("type", ""))
+    if kind == "grass":
+        return GRASS_TINT
+    value = t.get("value", t.get("default"))
+    return value & 0xFFFFFF if isinstance(value, int) else None
+
+
+def resolve_item(material, texture=None, tint=None):
+    """{texture, width, tint} oder None (unbekannt oder animierte Textur)."""
+    name = material.lower()
+    if texture is None:
+        item = fetch_json(f"items/{name}.json")
+        if item is None:
+            return None
+        model, tints = first_model(item.get("model"))
+        if not model:
+            return None
+        texture = model_texture(model)
+        tint = tint_of(tints)
+        if texture is None:
+            return None
+    try:
+        rows = png_read(fetch(f"textures/{texture}.png"))
+    except Exception:
+        return None
+    if len(rows) != len(rows[0]):
+        return None    # animiert (Streifen aus mehreren Bildern), eine Schrift kann nur das ganze Bild zeigen
+    width = 0
+    for x in range(len(rows[0])):
+        if any(row[x][3] != 0 for row in rows):
+            width = x + 1
+    if width == 0:
+        return None
+    return {"texture": texture, "width": width, "size": len(rows), "tint": tint}
+
+
 def read_menu_items():
-    with open(MENU_ITEM_JAVA, encoding="utf-8") as f:
-        source = f.read()
-    items = re.findall(r'^\s+([A-Z0-9_]+)\("([a-z0-9_/]+)",\s*(\d+)\)[,;]', source, re.MULTILINE)
-    if not items:
-        sys.exit(f"Keine Items in {MENU_ITEM_JAVA} gefunden")
-    return items
+    """[(MATERIAL, info oder None)] in fester Reihenfolge; ergaenzt den Zwischenspeicher bei Bedarf."""
+    entries = []
+    with open(ITEM_LIST, encoding="utf-8") as f:
+        for line in f:
+            line = line.split("#", 1)[0].strip()
+            if line:
+                parts = line.split()
+                entries.append((parts[0].upper(), parts[1] if len(parts) > 1 else None,
+                                int(parts[2], 16) if len(parts) > 2 else None))
+    cache = {}
+    if os.path.exists(ITEM_CACHE):
+        with open(ITEM_CACHE, encoding="utf-8") as f:
+            cache = json.load(f)
+    changed = False
+    for material, texture, tint in entries:
+        cached = cache.get(material) or {}
+        if material in cache and (texture is None
+                                  or (cached.get("texture") == texture and cached.get("tint") == tint)):
+            continue
+        print(f"  ermittle {material} ...")
+        cache[material] = resolve_item(material, texture, tint)
+        changed = True
+    if changed:
+        with open(ITEM_CACHE, "w", encoding="utf-8", newline="\n") as f:
+            json.dump(cache, f, indent=1, sort_keys=True)
+            f.write("\n")
+    if len(entries) > (BLOCK_BASE - ITEM_BASE) // 2:
+        sys.exit("Zu viele Items fuer den Zeichenbereich")
+    return [(m, cache.get(m)) for m, _, _ in entries]
 
 
 def item_providers(items, shift):
     out = []
-    for i, (_, texture, _) in enumerate(items):
+    for i, (_, info) in enumerate(items):
+        if not info:
+            continue
         for offset, height in ((0, 32), (1, 16)):
-            out.append({"type": "bitmap", "file": f"minecraft:{texture}.png", "ascent": 7 - shift,
+            out.append({"type": "bitmap", "file": f"minecraft:{info['texture']}.png", "ascent": 7 - shift,
                         "height": height, "chars": [chr(ITEM_BASE + 2 * i + offset)]})
     return out
+
+
+def write_menu_item_java(items):
+    """ui/MenuItem.java: ein Eintrag je aufloesbarem Item, Zeichen = Position in der Liste."""
+    lines = []
+    for i, (material, info) in enumerate(items):
+        if not info:
+            continue
+        # Minecraft: Vorschub = (Breite * Skalierung) + 1, die Skalierung ist Zielhoehe / Bildhoehe
+        big = int(0.5 + info["width"] * 32 / info["size"]) + 1
+        small = int(0.5 + info["width"] * 16 / info["size"]) + 1
+        tint = info.get("tint")
+        lines.append(f"    {material}({i}, {big}, {small}, {'0x%06X' % tint if tint is not None else '-1'})")
+    body = ",\n".join(lines) + ";"
+    java = f"""package com.example.myplugin.ui;
+
+import org.bukkit.Material;
+
+import java.util.Locale;
+
+/**
+ * GENERIERT von FMC-Resourcepack/tools/menu_kit.py - nicht von Hand aendern.
+ * Neue Items: in FMC-Resourcepack/tools/data/menu_items.txt unten anhaengen, dann das Skript ausfuehren.
+ *
+ * <p>Vanilla-Itembilder als Schriftzeichen fuer {{@link Canvas}}: gross (32 Pixel) und klein (16 Pixel). Das Pack
+ * verweist direkt auf die Texturen des Spiels; Bloecke zeigen eine Seitenflaeche. Graue Texturen (Laub, Gras) werden
+ * ueber {{@link #tint()}} eingefaerbt.
+ */
+public enum MenuItem {{
+{body}
+
+    private final int index;
+    private final int bigAdvance;
+    private final int smallAdvance;
+    private final int tint;
+
+    MenuItem(int index, int bigAdvance, int smallAdvance, int tint) {{
+        this.index = index;
+        this.bigAdvance = bigAdvance;
+        this.smallAdvance = smallAdvance;
+        this.tint = tint;
+    }}
+
+    /** Zeichen der grossen Variante (32 x 32). */
+    public String big() {{
+        return String.valueOf((char) (MenuFont.ITEM_BASE + 2 * index));
+    }}
+
+    /** Zeichen der kleinen Variante (16 x 16). */
+    public String small() {{
+        return String.valueOf((char) (MenuFont.ITEM_BASE + 2 * index + 1));
+    }}
+
+    public int bigAdvance() {{
+        return bigAdvance;
+    }}
+
+    public int smallAdvance() {{
+        return smallAdvance;
+    }}
+
+    /** Farbe, mit der das Bild eingefaerbt wird (0xFFFFFF = unveraendert). */
+    public int tint() {{
+        return tint < 0 ? 0xFFFFFF : tint;
+    }}
+
+    /** Das Item zu einem Material, oder {{@code fallback}}, wenn es kein Bild dafuer gibt. */
+    public static MenuItem of(Material material, MenuItem fallback) {{
+        if (material == null) {{
+            return fallback;
+        }}
+        try {{
+            return valueOf(material.name().toUpperCase(Locale.ROOT));
+        }} catch (IllegalArgumentException e) {{
+            return fallback;
+        }}
+    }}
+}}
+"""
+    os.makedirs(os.path.dirname(MENU_ITEM_JAVA), exist_ok=True)
+    with open(MENU_ITEM_JAVA, "w", encoding="utf-8", newline="\n") as f:
+        f.write(java)
 
 
 def icon_providers(shift):
@@ -267,10 +490,13 @@ def main():
         write_font(f"p{shift}", text_providers(1, shift) + icon_providers(shift) + item_providers(items, shift)
                    + block_providers(shift))
         write_font(f"b{shift}", text_providers(2, shift))
+    write_menu_item_java(items)
+    found = sum(1 for _, info in items if info)
     print(f"fmc:menu mit {count} Eintraegen, p0..p{SHIFTS - 1} und b0..b{SHIFTS - 1} geschrieben, "
-          f"{len(items)} Vanilla-Items:")
-    for i, (name, texture, _) in enumerate(items):
-        print(f"  U+{ITEM_BASE + 2 * i:04X}  {name}  ({texture})")
+          f"{found} von {len(items)} Vanilla-Items, MenuItem.java aktualisiert.")
+    for name, info in items:
+        if not info:
+            print(f"  ohne Bild: {name}")
 
 
 if __name__ == "__main__":
