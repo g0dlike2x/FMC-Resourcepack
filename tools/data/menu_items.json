@@ -1113,6 +1113,54 @@
   "tint": null,
   "width": 15
  },
+ "JOB_BERGARBEITER": {
+  "size": 64,
+  "texture": "fmc:font/art/job_bergarbeiter",
+  "tint": null,
+  "width": 64
+ },
+ "JOB_FARMER": {
+  "size": 64,
+  "texture": "fmc:font/art/job_farmer",
+  "tint": null,
+  "width": 64
+ },
+ "JOB_FISCHER": {
+  "size": 64,
+  "texture": "fmc:font/art/job_fischer",
+  "tint": null,
+  "width": 62
+ },
+ "JOB_GRAEBER": {
+  "size": 64,
+  "texture": "fmc:font/art/job_graeber",
+  "tint": null,
+  "width": 62
+ },
+ "JOB_HANDWERKER": {
+  "size": 64,
+  "texture": "fmc:font/art/job_handwerker",
+  "tint": null,
+  "width": 64
+ },
+ "JOB_HOLZFAELLER": {
+  "size": 64,
+  "texture": "fmc:font/art/job_holzfaeller",
+  "tint": null,
+  "width": 62
+ },
+ "JOB_JAEGER": {
+  "size": 64,
+  "texture": "fmc:font/art/job_jaeger",
+  "tint": null,
+  "width": 64
+ },
+ "JOB_VERZAUBERER": {
+  "size": 64,
+  "texture": "fmc:font/art/job_verzauberer",
+  "tint": null,
+  "width": 64
+ },
  "JUKEBOX": {
   "size": 16,
   "texture": "block/jukebox_side",

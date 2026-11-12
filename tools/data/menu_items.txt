@@ -355,3 +355,13 @@ PLAYER_HEAD
 CAMPFIRE
 SUNFLOWER
 ARROW
+
+# Eigene Job-Icons (KI, tools/ai_art.py jobs)
+JOB_GRAEBER fmc:font/art/job_graeber
+JOB_HOLZFAELLER fmc:font/art/job_holzfaeller
+JOB_BERGARBEITER fmc:font/art/job_bergarbeiter
+JOB_FARMER fmc:font/art/job_farmer
+JOB_JAEGER fmc:font/art/job_jaeger
+JOB_FISCHER fmc:font/art/job_fischer
+JOB_HANDWERKER fmc:font/art/job_handwerker
+JOB_VERZAUBERER fmc:font/art/job_verzauberer

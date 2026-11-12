@@ -27,7 +27,6 @@
     "prep_width": 640,
     "prompt": "Game UI title lettering: the single word \"LAGER\" in uppercase, chunky blocky pixel-art 3D letters (Minecraft inspired), bright white to light lavender top gradient with a thick deep-purple extruded side and dark violet outline, soft glowing violet aura around the letters, perfectly centered, exactly five letters L A G E R, correct spelling. Fully transparent background, nothing else, no frame, no subtitle."
   },
-
   "warp_banner": {
     "size": "1536x1024",
     "quality": "high",
@@ -51,7 +50,6 @@
     "prep_width": 640,
     "prompt": "Game UI title lettering: the single word \"WARPS\" in uppercase, chunky blocky pixel-art 3D letters (Minecraft inspired). The letter faces are SOLID and fully OPAQUE, filled with a vertical gradient from pale mint-cyan at the top to bright turquoise at the bottom (no white, no holes, nothing see-through inside the letters), with a thick deep-teal extruded side, a dark teal outline and a strong soft glowing cyan aura around the letters, a few tiny purple teleport particles, perfectly centered, exactly five letters W A R P S, correct spelling. Fully transparent background around the letters only, nothing else, no frame, no subtitle."
   },
-
   "farmwelt_banner": {
     "size": "1536x1024",
     "quality": "high",
@@ -74,5 +72,53 @@
     "quality": "high",
     "prep_width": 800,
     "prompt": "Game UI title lettering: the single word \"FARMWELT\" in uppercase, chunky blocky pixel-art 3D letters (Minecraft inspired), bright white to light lime-green top gradient with a thick deep-green extruded side and dark green outline, a little grass growing on top of the letters, soft glowing green aura, perfectly centered, exactly eight letters F A R M W E L T, correct spelling. Fully transparent background, nothing else, no frame, no subtitle."
+  },
+  "job_graeber": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no frame, no border, no ground shadow, no extra objects. Subject: a sturdy iron shovel with a wooden handle stuck diagonally into a small brown dirt mound with a few pebbles."
+  },
+  "job_holzfaeller": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no frame, no border, no ground shadow, no extra objects. Subject: a red-handled steel axe embedded in a chopped oak tree stump with visible rings and a small green leaf sprout."
+  },
+  "job_bergarbeiter": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no frame, no border, no ground shadow, no extra objects. Subject: an iron pickaxe resting on a gray stone ore chunk with sparkling light-blue diamonds and gold specks."
+  },
+  "job_farmer": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no frame, no border, no ground shadow, no extra objects. Subject: a wooden hoe crossed with a tied bundle of golden wheat ears."
+  },
+  "job_jaeger": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no frame, no border, no ground shadow, no extra objects. Subject: a wooden hunting bow with a taut string and a nocked arrow with red feathers, crossed with a brown leather quiver."
+  },
+  "job_fischer": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no frame, no border, no ground shadow, no extra objects. Subject: a bamboo fishing rod bent in an arc, the line hooking a shiny blue-silver fish."
+  },
+  "job_handwerker": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no frame, no border, no ground shadow, no extra objects. Subject: a steel hammer leaning on a small dark iron anvil with an orange glowing hot metal bar."
+  },
+  "job_verzauberer": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no frame, no border, no ground shadow, no extra objects. Subject: an open ancient spell book with purple glowing pages and small violet magic sparkles floating above it."
   }
 }

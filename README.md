@@ -251,6 +251,10 @@ Für Menüs mit Kacheln, Infokästen und Balken an beliebigen Stellen gibt es `u
   schreibt `ui/MenuItem.java` neu (beides committen). Truhen, Köpfe, Schilde und animierte Texturen haben kein
   flaches Bild; dafür in der Liste eine Textur angeben (`ZOMBIE_HEAD item/zombie_spawn_egg`).
 - Klicks: Jedes Zeichen in einem Button bekommt den Klick (Kasten, Text, Icons), der Button ist überall klickbar.
+- Eigene Icons (z. B. die Job-Icons): Prompt mit `"icon_size": 64` in `art/prompts.json`, dann
+  `OPENAI_API_KEY=... python tools/ai_art.py jobs` (legt `pack/assets/fmc/textures/font/art/<name>.png` an). In
+  `tools/data/menu_items.txt` als `JOB_X fmc:font/art/job_x` eintragen und `menu_kit.py` laufen lassen; im Plugin
+  ist es dann `MenuItem.JOB_X`. Einzelnes Icon neu: `python tools/ai_art.py jobs job_farmer`.
 - Offen/ungeprüft im Spiel: Abstand der Textzeilen (9 Pixel angenommen, wie bei PanelMenu), Lage der Kästen zum Text
   und ob Dialoge Textschatten zeichnen (Kästen und Balken haben ihn abgeschaltet).
 

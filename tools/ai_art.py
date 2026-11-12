@@ -10,6 +10,9 @@ OPENAI_API_KEY.
                                                (ohne breite: "prep_width" aus prompts.json, sonst Originalgroesse)
     python tools/ai_art.py theme <theme>       alle Bilder eines Themes (warp, farmwelt, amethyst) erzeugen und
                                                aufbereiten: Rahmen, Ecke, Ornament, Titel
+    python tools/ai_art.py jobs [job_x ...]    Job-Icons (job_* in prompts.json, mit "icon_size") erzeugen, als
+                                               64 x 64 nach pack/assets/fmc/textures/font/art/ legen; danach
+                                               tools/menu_kit.py (Eintraege JOB_* in tools/data/menu_items.txt)
 
 Danach python tools/generate_icons.py ausfuehren und dist/preview_<theme>.png ansehen. Ein misslungenes Bild einfach
 neu erzeugen (gen + prep) oder art/<name>.png loeschen, dann nimmt das Theme den gezeichneten Ersatz.
@@ -81,9 +84,34 @@ def crop_alpha(rows, threshold=12, margin=2):
     return [row[x0:x1] for row in rows[y0:y1]]
 
 
+ICON_DIR = os.path.join(ROOT, "pack", "assets", "fmc", "textures", "font", "art")
+
+
+def prep_icon(name, size):
+    """Menue-Icon: transparenten Rand weg, mittig auf ein Quadrat, auf size x size verkleinern -> direkt ins Pack
+    (pack/assets/fmc/textures/font/art/<name>.png). Im Plugin ueber tools/data/menu_items.txt einbinden."""
+    rows = crop_alpha(pngread.png_read(open(os.path.join(RAW, name + ".png"), "rb").read()), margin=0)
+    h, w = len(rows), len(rows[0])
+    side = max(w, h)
+    square = [[(0, 0, 0, 0)] * side for _ in range(side)]
+    ox, oy = (side - w) // 2, (side - h) // 2
+    for y in range(h):
+        square[oy + y][ox:ox + w] = rows[y]
+    rows = am.resize(square, size, size) if size < side else square
+    # Halbtransparente Kantenpixel der Verkleinerung haerter machen (wirkt im Spiel sonst ausgefranst)
+    rows = [[(r, g, b, 0 if a < 40 else (255 if a > 200 else a)) for r, g, b, a in row] for row in rows]
+    out = os.path.join(ICON_DIR, name + ".png")
+    gi.write_png(out, rows)
+    print(out, size, "x", size)
+
+
 def prep(name, width=None):
+    spec = _spec(name)
+    if spec.get("icon_size"):
+        prep_icon(name, spec["icon_size"])
+        return
     if width is None:
-        width = _spec(name).get("prep_width")
+        width = spec.get("prep_width")
     rows = pngread.png_read(open(os.path.join(RAW, name + ".png"), "rb").read())
     rows = crop_alpha(rows)
     h, w = len(rows), len(rows[0])
@@ -103,6 +131,14 @@ def theme_names(key):
 
 
 if __name__ == "__main__":
+    if len(sys.argv) >= 2 and sys.argv[1] == "jobs":
+        # Alle Job-Icons (job_* in prompts.json) erzeugen und ins Pack legen; danach tools/menu_kit.py
+        only = sys.argv[2:]
+        for art_name in [n for n in json.load(open(PROMPTS, encoding="utf-8")) if n.startswith("job_")]:
+            if not only or art_name in only:
+                generate(art_name)
+                prep(art_name)
+        sys.exit(0)
     if len(sys.argv) < 3 or sys.argv[1] not in ("gen", "prep", "theme"):
         print(__doc__)
         sys.exit(1)

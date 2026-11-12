@@ -303,7 +303,13 @@ def resolve_item(material, texture=None, tint=None):
         if texture is None:
             return None
     try:
-        rows = png_read(fetch(f"textures/{texture}.png"))
+        if texture.startswith("fmc:"):
+            # Eigenes Bild aus dem Pack (z. B. KI-Icons aus tools/ai_art.py): pack/assets/fmc/textures/<pfad>.png
+            local = os.path.join(PACK, "assets", "fmc", "textures", *texture[4:].split("/")) + ".png"
+            with open(local, "rb") as f:
+                rows = png_read(f.read())
+        else:
+            rows = png_read(fetch(f"textures/{texture}.png"))
     except Exception:
         return None
     if len(rows) != len(rows[0]):
@@ -334,8 +340,9 @@ def read_menu_items():
     changed = False
     for material, texture, tint in entries:
         cached = cache.get(material) or {}
-        if material in cache and (texture is None
-                                  or (cached.get("texture") == texture and cached.get("tint") == tint)):
+        local = texture is not None and texture.startswith("fmc:")   # eigene Bilder immer neu messen
+        if not local and material in cache and (texture is None
+                                                or (cached.get("texture") == texture and cached.get("tint") == tint)):
             continue
         print(f"  ermittle {material} ...")
         cache[material] = resolve_item(material, texture, tint)
@@ -355,7 +362,8 @@ def item_providers(items, shift):
         if not info:
             continue
         for char, height in ((ITEM_BASE + 2 * i, 32), (ITEM_BASE + 2 * i + 1, 16), (MEDIUM_BASE + i, MEDIUM)):
-            out.append({"type": "bitmap", "file": f"minecraft:{info['texture']}.png", "ascent": 7 - shift,
+            tex = info["texture"] if ":" in info["texture"] else "minecraft:" + info["texture"]
+            out.append({"type": "bitmap", "file": f"{tex}.png", "ascent": 7 - shift,
                         "height": height, "chars": [chr(char)]})
     return out
 
