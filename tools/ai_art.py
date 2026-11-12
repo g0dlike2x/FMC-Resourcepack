@@ -131,11 +131,16 @@ def theme_names(key):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) >= 2 and sys.argv[1] == "jobs":
-        # Alle Job-Icons (job_* in prompts.json) erzeugen und ins Pack legen; danach tools/menu_kit.py
+    if len(sys.argv) >= 2 and sys.argv[1] in ("jobs", "casino"):
+        # Alle Icons eines Typs erzeugen und ins Pack legen; danach tools/menu_kit.py
+        prefix = "job_" if sys.argv[1] == "jobs" else "casino_"
         only = sys.argv[2:]
-        for art_name in [n for n in json.load(open(PROMPTS, encoding="utf-8")) if n.startswith("job_")]:
+        for art_name in [n for n in json.load(open(PROMPTS, encoding="utf-8")) if n.startswith(prefix)]:
             if not only or art_name in only:
+                out = os.path.join(ICON_DIR, art_name + ".png")
+                if os.path.exists(out):
+                    print("Skip (exists):", art_name)
+                    continue
                 generate(art_name)
                 prep(art_name)
         sys.exit(0)

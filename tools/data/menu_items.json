@@ -323,6 +323,30 @@
   "tint": null,
   "width": 16
  },
+ "CASINO_COINFLIP": {
+  "size": 64,
+  "texture": "fmc:font/art/casino_coinflip",
+  "tint": null,
+  "width": 64
+ },
+ "CASINO_DAILYPOT": {
+  "size": 64,
+  "texture": "fmc:font/art/casino_dailypot",
+  "tint": null,
+  "width": 61
+ },
+ "CASINO_JACKPOT": {
+  "size": 64,
+  "texture": "fmc:font/art/casino_jackpot",
+  "tint": null,
+  "width": 57
+ },
+ "CASINO_SSP": {
+  "size": 64,
+  "texture": "fmc:font/art/casino_ssp",
+  "tint": null,
+  "width": 64
+ },
  "CAVE_SPIDER_SPAWN_EGG": {
   "size": 16,
   "texture": "item/cave_spider_spawn_egg",

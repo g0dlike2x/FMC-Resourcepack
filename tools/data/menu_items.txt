@@ -365,3 +365,9 @@ JOB_JAEGER fmc:font/art/job_jaeger
 JOB_FISCHER fmc:font/art/job_fischer
 JOB_HANDWERKER fmc:font/art/job_handwerker
 JOB_VERZAUBERER fmc:font/art/job_verzauberer
+
+# Eigene Casino-Icons (KI, tools/ai_art.py casino)
+CASINO_COINFLIP fmc:font/art/casino_coinflip
+CASINO_JACKPOT fmc:font/art/casino_jackpot
+CASINO_SSP fmc:font/art/casino_ssp
+CASINO_DAILYPOT fmc:font/art/casino_dailypot

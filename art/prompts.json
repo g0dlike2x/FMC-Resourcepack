@@ -120,5 +120,29 @@
     "quality": "high",
     "icon_size": 64,
     "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no frame, no border, no ground shadow, no extra objects. Subject: an open ancient spell book with purple glowing pages and small violet magic sparkles floating above it."
+  },
+  "casino_coinflip": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no frame, no border, no ground shadow, no extra objects. Subject: a large shiny gold coin mid-flip spinning in the air, one face showing a golden crown symbol and the other face an X, motion-blur trail behind it."
+  },
+  "casino_jackpot": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no frame, no border, no ground shadow, no extra objects. Subject: a shiny golden trophy cup overflowing with gold coins and glowing yellow stars bursting upward."
+  },
+  "casino_ssp": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no frame, no border, no ground shadow, no extra objects. Subject: three chunky cartoon hands side by side – a fist (rock), an open flat hand (paper), and two fingers in a V-shape (scissors), each a different vivid color."
+  },
+  "casino_dailypot": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no frame, no border, no ground shadow, no extra objects. Subject: a round golden cauldron pot filled to the brim with shiny gold coins, with yellow sparkles and a small four-pointed star floating above it."
   }
 }
