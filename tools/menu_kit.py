@@ -31,6 +31,7 @@ Wie es funktioniert:
     minecraft:item/*.png. Die Zeichenliste der Vanilla-Schrift liegt in tools/data/vanilla_font_default.json.
 """
 import json
+import math
 import os
 import struct
 import sys
@@ -61,6 +62,8 @@ BOX_BOTTOM_ROW = 7            # letzte sichtbare Reihe im unteren Streifen
 BLOCK_HEIGHTS = [1, 3, 5]
 BOX_BASE = 0xE000             # + ((ebene * 3 + streifen) * STUECKE + stueck) * ROWS + zeile
 ITEM_BASE = 0xF000            # + 2 * index (gross), + 1 (klein)
+MEDIUM_BASE = 0xF500          # + index: mittlere Groesse (MEDIUM Pixel, z. B. Job-Kacheln)
+MEDIUM = 24
 BLOCK_BASE = 0xF400           # + hoehenindex * len(MIDS) + breitenindex
 FILL, EDGE = 0, 1
 TOP, MID, BOT = 0, 1, 2
@@ -112,10 +115,15 @@ def keep_width(rows):
 
 # ── Kaesten ─────────────────────────────────────────────────────────────────────────────────────────────────────
 
+CORNER_R = CAP_W              # Eckenradius in Pixeln (hoechstens CAP_W, die Ecke liegt ganz in der Kante)
+
+
 def ring(dx, dy):
-    """0 = Aussenlinie, 1 = Rand, 2 = Glanzlinie, >= 3 Fuellung, < 0 aussen. Ecken um 1 Pixel abgeschraegt."""
-    if dx < 2 and dy < 2:
-        return dx + dy - 1
+    """0 = Aussenlinie, 1 = Rand, 2 = Glanzlinie, >= 3 Fuellung, < 0 aussen. Ecken rund mit Radius CORNER_R."""
+    r = CORNER_R
+    if dx < r and dy < r:
+        cx, cy = r - dx - 0.5, r - dy - 0.5
+        return math.floor(r - math.hypot(cx, cy))
     return min(dx, dy)
 
 
@@ -336,7 +344,7 @@ def read_menu_items():
         with open(ITEM_CACHE, "w", encoding="utf-8", newline="\n") as f:
             json.dump(cache, f, indent=1, sort_keys=True)
             f.write("\n")
-    if len(entries) > (BLOCK_BASE - ITEM_BASE) // 2:
+    if len(entries) > min((BLOCK_BASE - ITEM_BASE) // 2, 0xF800 - MEDIUM_BASE):
         sys.exit("Zu viele Items fuer den Zeichenbereich")
     return [(m, cache.get(m)) for m, _, _ in entries]
 
@@ -346,9 +354,9 @@ def item_providers(items, shift):
     for i, (_, info) in enumerate(items):
         if not info:
             continue
-        for offset, height in ((0, 32), (1, 16)):
+        for char, height in ((ITEM_BASE + 2 * i, 32), (ITEM_BASE + 2 * i + 1, 16), (MEDIUM_BASE + i, MEDIUM)):
             out.append({"type": "bitmap", "file": f"minecraft:{info['texture']}.png", "ascent": 7 - shift,
-                        "height": height, "chars": [chr(ITEM_BASE + 2 * i + offset)]})
+                        "height": height, "chars": [chr(char)]})
     return out
 
 
@@ -361,8 +369,10 @@ def write_menu_item_java(items):
         # Minecraft: Vorschub = (Breite * Skalierung) + 1, die Skalierung ist Zielhoehe / Bildhoehe
         big = int(0.5 + info["width"] * 32 / info["size"]) + 1
         small = int(0.5 + info["width"] * 16 / info["size"]) + 1
+        medium = int(0.5 + info["width"] * MEDIUM / info["size"]) + 1
         tint = info.get("tint")
-        lines.append(f"    {material}({i}, {big}, {small}, {'0x%06X' % tint if tint is not None else '-1'})")
+        lines.append(f"    {material}({i}, {big}, {small}, {medium}, "
+                     f"{'0x%06X' % tint if tint is not None else '-1'})")
     body = ",\n".join(lines) + ";"
     java = f"""package com.example.myplugin.ui;
 
@@ -384,13 +394,33 @@ public enum MenuItem {{
     private final int index;
     private final int bigAdvance;
     private final int smallAdvance;
+    private final int mediumAdvance;
     private final int tint;
 
-    MenuItem(int index, int bigAdvance, int smallAdvance, int tint) {{
+    MenuItem(int index, int bigAdvance, int smallAdvance, int mediumAdvance, int tint) {{
         this.index = index;
         this.bigAdvance = bigAdvance;
         this.smallAdvance = smallAdvance;
+        this.mediumAdvance = mediumAdvance;
         this.tint = tint;
+    }}
+
+    /** Zeichen der mittleren Variante ({{@value MenuFont#MEDIUM}} x {{@value MenuFont#MEDIUM}}). */
+    public String medium() {{
+        return String.valueOf((char) (MenuFont.MEDIUM_BASE + index));
+    }}
+
+    public int mediumAdvance() {{
+        return mediumAdvance;
+    }}
+
+    /** Zeichen und Vorschub fuer eine Groesse (16, {{@value MenuFont#MEDIUM}} oder 32). */
+    public String glyph(int size) {{
+        return size >= 32 ? big() : size == MenuFont.MEDIUM ? medium() : small();
+    }}
+
+    public int advance(int size) {{
+        return size >= 32 ? bigAdvance : size == MenuFont.MEDIUM ? mediumAdvance : smallAdvance;
     }}
 
     /** Zeichen der grossen Variante (32 x 32). */
@@ -445,7 +475,7 @@ def icon_providers(shift):
         if p.get("height") not in (9, 14):
             continue
         chars = p["chars"]
-        if any(ITEM_BASE <= ord(c) < BLOCK_BASE + 0x100 or 0xF800 <= ord(c) <= 0xF80F for row in chars for c in row):
+        if any(ITEM_BASE <= ord(c) <= 0xF80F for row in chars for c in row):
             continue
         out.append({"type": "bitmap", "file": p["file"], "ascent": p["ascent"] - shift,
                     "height": p["height"], "chars": chars})
