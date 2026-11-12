@@ -131,9 +131,10 @@ def theme_names(key):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) >= 2 and sys.argv[1] in ("jobs", "casino"):
+    icon_groups = {"jobs": "job_", "casino": "casino_", "shop": "shop_"}
+    if len(sys.argv) >= 2 and sys.argv[1] in icon_groups:
         # Alle Icons eines Typs erzeugen und ins Pack legen; danach tools/menu_kit.py
-        prefix = "job_" if sys.argv[1] == "jobs" else "casino_"
+        prefix = icon_groups[sys.argv[1]]
         only = sys.argv[2:]
         for art_name in [n for n in json.load(open(PROMPTS, encoding="utf-8")) if n.startswith(prefix)]:
             if not only or art_name in only:

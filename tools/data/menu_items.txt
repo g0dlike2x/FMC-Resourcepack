@@ -371,3 +371,19 @@ CASINO_COINFLIP fmc:font/art/casino_coinflip
 CASINO_JACKPOT fmc:font/art/casino_jackpot
 CASINO_SSP fmc:font/art/casino_ssp
 CASINO_DAILYPOT fmc:font/art/casino_dailypot
+# Eigene Shop-Icons (KI, tools/ai_art.py shop)
+SHOP_ITEMSHOP fmc:font/art/shop_itemshop
+SHOP_ORDERS fmc:font/art/shop_orders
+SHOP_AUKTION fmc:font/art/shop_auktion
+SHOP_VERKAUFEN fmc:font/art/shop_verkaufen
+SHOP_ALLE fmc:font/art/shop_alle
+SHOP_DROPS fmc:font/art/shop_drops
+SHOP_GLAS fmc:font/art/shop_glas
+SHOP_KERAMIK fmc:font/art/shop_keramik
+SHOP_WOLLE fmc:font/art/shop_wolle
+SHOP_NATUR fmc:font/art/shop_natur
+SHOP_ERDE fmc:font/art/shop_erde
+SHOP_STEIN fmc:font/art/shop_stein
+SHOP_ERZE fmc:font/art/shop_erze
+SHOP_NETHER fmc:font/art/shop_nether
+SHOP_ANBAU fmc:font/art/shop_anbau

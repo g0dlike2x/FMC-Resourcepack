@@ -1813,6 +1813,96 @@
   "width": 14
  },
  "SHIELD": null,
+ "SHOP_ALLE": {
+  "size": 64,
+  "texture": "fmc:font/art/shop_alle",
+  "tint": null,
+  "width": 64
+ },
+ "SHOP_ANBAU": {
+  "size": 64,
+  "texture": "fmc:font/art/shop_anbau",
+  "tint": null,
+  "width": 64
+ },
+ "SHOP_AUKTION": {
+  "size": 64,
+  "texture": "fmc:font/art/shop_auktion",
+  "tint": null,
+  "width": 64
+ },
+ "SHOP_DROPS": {
+  "size": 64,
+  "texture": "fmc:font/art/shop_drops",
+  "tint": null,
+  "width": 64
+ },
+ "SHOP_ERDE": {
+  "size": 64,
+  "texture": "fmc:font/art/shop_erde",
+  "tint": null,
+  "width": 64
+ },
+ "SHOP_ERZE": {
+  "size": 64,
+  "texture": "fmc:font/art/shop_erze",
+  "tint": null,
+  "width": 64
+ },
+ "SHOP_GLAS": {
+  "size": 64,
+  "texture": "fmc:font/art/shop_glas",
+  "tint": null,
+  "width": 64
+ },
+ "SHOP_ITEMSHOP": {
+  "size": 64,
+  "texture": "fmc:font/art/shop_itemshop",
+  "tint": null,
+  "width": 64
+ },
+ "SHOP_KERAMIK": {
+  "size": 64,
+  "texture": "fmc:font/art/shop_keramik",
+  "tint": null,
+  "width": 60
+ },
+ "SHOP_NATUR": {
+  "size": 64,
+  "texture": "fmc:font/art/shop_natur",
+  "tint": null,
+  "width": 54
+ },
+ "SHOP_NETHER": {
+  "size": 64,
+  "texture": "fmc:font/art/shop_nether",
+  "tint": null,
+  "width": 61
+ },
+ "SHOP_ORDERS": {
+  "size": 64,
+  "texture": "fmc:font/art/shop_orders",
+  "tint": null,
+  "width": 64
+ },
+ "SHOP_STEIN": {
+  "size": 64,
+  "texture": "fmc:font/art/shop_stein",
+  "tint": null,
+  "width": 64
+ },
+ "SHOP_VERKAUFEN": {
+  "size": 64,
+  "texture": "fmc:font/art/shop_verkaufen",
+  "tint": null,
+  "width": 64
+ },
+ "SHOP_WOLLE": {
+  "size": 64,
+  "texture": "fmc:font/art/shop_wolle",
+  "tint": null,
+  "width": 64
+ },
  "SHULKER_SPAWN_EGG": {
   "size": 16,
   "texture": "item/shulker_spawn_egg",

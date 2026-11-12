@@ -144,5 +144,95 @@
     "quality": "high",
     "icon_size": 64,
     "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no frame, no border, no ground shadow, no extra objects. Subject: a round golden cauldron pot filled to the brim with shiny gold coins, with yellow sparkles and a small four-pointed star floating above it."
+  },
+  "shop_itemshop": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no letters, no frame, no border, no ground shadow, no extra objects. Subject: a small wooden market stall with a red and white striped awning and colorful goods on the counter."
+  },
+  "shop_orders": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no letters, no frame, no border, no ground shadow, no extra objects. Subject: a rolled-out parchment order list with a red wax seal and a feather quill."
+  },
+  "shop_auktion": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no letters, no frame, no border, no ground shadow, no extra objects. Subject: a wooden auction gavel resting on its round sound block next to a small stack of gold coins."
+  },
+  "shop_verkaufen": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no letters, no frame, no border, no ground shadow, no extra objects. Subject: an open brown leather coin pouch spilling shiny gold coins."
+  },
+  "shop_alle": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no letters, no frame, no border, no ground shadow, no extra objects. Subject: an open wooden treasure chest overflowing with assorted goods: gems, gold bars and small blocks."
+  },
+  "shop_drops": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no letters, no frame, no border, no ground shadow, no extra objects. Subject: a small pile of loot: a sparkling blue diamond, a green emerald, a gold ingot and a teal ender pearl."
+  },
+  "shop_glas": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no letters, no frame, no border, no ground shadow, no extra objects. Subject: a stack of three glossy glass cubes, clear, light blue and purple stained glass, with reflections."
+  },
+  "shop_keramik": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no letters, no frame, no border, no ground shadow, no extra objects. Subject: a decorated terracotta clay vase with orange and blue glazed geometric patterns."
+  },
+  "shop_wolle": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no letters, no frame, no border, no ground shadow, no extra objects. Subject: three soft balls of wool yarn in white, red and blue."
+  },
+  "shop_natur": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no letters, no frame, no border, no ground shadow, no extra objects. Subject: a small leafy oak sapling with a red poppy flower growing out of a short oak log."
+  },
+  "shop_erde": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no letters, no frame, no border, no ground shadow, no extra objects. Subject: a single cube block with green grass on top and brown dirt with small roots on the sides."
+  },
+  "shop_stein": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no letters, no frame, no border, no ground shadow, no extra objects. Subject: a single cube block of gray cobblestone with a smooth stone brick leaning against it."
+  },
+  "shop_erze": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no letters, no frame, no border, no ground shadow, no extra objects. Subject: a chunk of gray rock with embedded veins of iron, gold, redstone and lapis ore."
+  },
+  "shop_nether": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no letters, no frame, no border, no ground shadow, no extra objects. Subject: a single cube block of dark red netherrack with small orange flames burning on top."
+  },
+  "shop_anbau": {
+    "size": "1024x1024",
+    "quality": "high",
+    "icon_size": 64,
+    "prompt": "Single game inventory icon for a Minecraft server menu, centered, filling most of a square canvas, slight three-quarter view. Chunky stylized pixel-art inspired look with clean shapes, bold dark outline around the whole object, simple cel shading with one highlight, rich saturated colors, very readable at a tiny size of 32 pixels. Fully transparent background, no text, no letters, no frame, no border, no ground shadow, no extra objects. Subject: a small wooden crate filled with orange carrots, potatoes and golden wheat."
   }
 }
